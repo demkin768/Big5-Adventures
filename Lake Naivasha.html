@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lake Naivasha - Hippos & Birdlife Haven</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo-text">
+                <img class="logo" src="Big5 logo.png" alt="BIG 5 Logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#destinations">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#destinations" data-tab="classic" class="tab-link">
+                                <i class="fas fa-paw"></i> Wildlife & Safari
+                            </a>
+                            <a href="#destinations" data-tab="adventure" class="tab-link">
+                                <i class="fas fa-mountain"></i> Mountains & Lakes
+                            </a>
+                            <a href="#destinations" data-tab="coastal" class="tab-link">
+                                <i class="fas fa-umbrella-beach"></i> Coastal & Beach
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="social-icons">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <a href="#" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/king_mwesh" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/_m_kinyua/?utm_source=qr&r=nametag" class="fa fa-instagram" target="_blank"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Slideshow Section -->
+        <section class="hero">
+            <div class="hero-slideshow">
+                <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1503917988258-f87a78e3c995?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0');">
+                    <div class="hero-slide-content">
+                        <h3>Lake Naivasha’s Serenity</h3>
+                        <p>Discover hippos and vibrant birdlife on a tranquil boat safari.</p>
+                        <a href="#highlights" class="btn">Explore Highlights</a>
+                    </div>
+                </div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1599422698873-b11a0a0e4a1a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0');">
+                    <div class="hero-slide-content">
+                        <h3>Crescent Island Walks</h3>
+                        <p>Walk among zebras, giraffes, and antelopes on a unique island safari.</p>
+                        <a href="#packages" class="btn">View Packages</a>
+                    </div>
+                </div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1541845157-a6f2c6c8a66f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0');">
+                    <div class="hero-slide-content">
+                        <h3>Birdwatcher’s Paradise</h3>
+                        <p>Spot over 400 bird species, including fish eagles and kingfishers.</p>
+                        <a href="#wildlife" class="btn">Discover Wildlife</a>
+                    </div>
+                </div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0');">
+                    <div class="hero-slide-content">
+                        <h3>Lakeside Sunsets</h3>
+                        <p>Experience breathtaking sunsets from luxury camps by the lake.</p>
+                        <a href="#faq" class="btn">Plan Your Visit</a>
+                    </div>
+                </div>
+                <div class="slideshow-controls">
+                    <div class="slideshow-dot active" data-slide="0"></div>
+                    <div class="slideshow-dot" data-slide="1"></div>
+                    <div class="slideshow-dot" data-slide="2"></div>
+                    <div class="slideshow-dot" data-slide="3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="highlights" id="highlights">
+            <div class="container">
+                <h2 class="text-center">Why Visit Lake Naivasha?</h2>
+                <div class="highlights-container">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-hippo"></i>
+                        </div>
+                        <h3>Hippo Spotting</h3>
+                        <p>Take a boat safari to see hippos lounging in the freshwater lake.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <h3>Crescent Island</h3>
+                        <p>Walk among giraffes, zebras, and antelopes on guided island safaris.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-feather-alt"></i>
+                        </div>
+                        <h3>Birdwatching</h3>
+                        <p>Spot over 400 bird species, including flamingos and African fish eagles.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Lakeside Photography</h3>
+                        <p>Capture stunning sunsets and wildlife with guided photography tours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>Discover Lake Naivasha</h2>
+                        <p>Lake Naivasha, nestled in Kenya’s Great Rift Valley just 90 km from Nairobi, is a freshwater lake renowned for its abundant wildlife and serene beauty. Home to hippos, over 400 bird species, and the unique Crescent Island, it offers boat safaris, walking tours, and birdwatching opportunities.</p>
+                        <p>Whether you’re exploring the lake by boat, strolling among grazing animals, or relaxing at a lakeside lodge, Lake Naivasha is a perfect blend of adventure and tranquility.</p>
+                        <a href="#packages" class="btn">Explore Packages</a>
+                    </div>
+                    <div class="intro-image">
+                        <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Lake Naivasha Landscape">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safari Packages Section -->
+        <section class="packages" id="packages">
+            <div class="container">
+                <h2 class="text-center">Lake Naivasha Packages with Transport</h2>
+                <p class="text-center">Choose from our curated packages for an unforgettable lakeside adventure.</p>
+                <div class="packages-tabs">
+                    <button class="packages-tab-btn active" data-tab="budget">Budget Camps</button>
+                    <button class="packages-tab-btn" data-tab="midrange">Mid-Range</button>
+                    <button class="packages-tab-btn" data-tab="luxury">Luxury Lodges</button>
+                </div>
+
+                <!-- Budget Camps Tab -->
+                <div class="packages-tab-content active" id="budget-tab">
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Naivasha Budget Camp">
+                                <div class="package-badge">Budget</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Naivasha Budget Camp</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Naivasha
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Basic tented accommodation with shared facilities</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>All meals included (breakfast, lunch, dinner)</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Guided boat safari and Crescent Island walk</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 14,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 16,500</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Fisherman’s Camp">
+                                <div class="package-badge">Popular</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Fisherman’s Camp</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Naivasha
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Comfortable tents with shared bathrooms</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>All meals with lakeside picnic option</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Boat tour and guided island walk</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 16,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 18,500</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Crayfish Camp">
+                            </div>
+                            <div class="package-content">
+                                <h3>Crayfish Camp</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Naivasha
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Tents with basic bedding and shared facilities</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Full board meals with campfire dinners</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Boat safari and birdwatching tour</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 15,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 17,500</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mid-Range Tab -->
+                <div class="packages-tab-content" id="midrange-tab">
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Naivasha Sopa Lodge">
+                                <div class="package-badge">Best Value</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Naivasha Sopa Lodge</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Naivasha
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Comfortable rooms with lake views</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Buffet meals with lakeside dining</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Guided boat tours and island walks</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 28,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 32,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Enashipai Resort">
+                            </div>
+                            <div class="package-content">
+                                <h3>Enashipai Resort</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Naivasha
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Spacious rooms with private balconies</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Gourmet meals with themed dinners</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Boat safaris and birdwatching tours</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 30,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 34,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Chui Lodge">
+                                <div class="package-badge">Family Friendly</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Chui Lodge</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Naivasha
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Family suites with lake views</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Children’s menu available</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Family-friendly boat and walking tours</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 29,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 33,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Lodges Tab -->
+                <div class="packages-tab-content" id="luxury-tab">
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Loldia House">
+                                <div class="package-badge">Luxury</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Loldia House</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Naivasha
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Luxury suites with private verandas</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Fine dining with lake views</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Private boat safaris and island walks</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 42,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 47,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Sanctuary Farm">
+                                <div class="package-badge">Premium</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Sanctuary Farm</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Naivasha
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Elegant cottages with lake views</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Gourmet dining with wine pairing</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Exclusive boat and birdwatching tours</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 40,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 45,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Crater Lake Camp">
+                                <div class="package-badge">All Inclusive</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Crater Lake Camp</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Naivasha
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Luxury tents with private decks</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>All-inclusive dining and drinks</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Private boat and island safaris</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 45,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 50,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wildlife Section -->
+        <section class="wildlife" id="wildlife">
+            <div class="container">
+                <h2 class="text-center">Wildlife & Ecosystem</h2>
+                <p class="text-center">Lake Naivasha’s freshwater ecosystem supports hippos, over 400 bird species, and grazing animals like zebras and giraffes on Crescent Island.</p>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1599422698873-b11a0a0e4a1a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Hippo">
+                        <div class="gallery-caption">Hippo - Common in Lake Naivasha’s waters</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1631646109206-4b5616964f84?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Zebra">
+                        <div class="gallery-caption">Zebra - Grazing on Crescent Island</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1612358405970-e1aeba9d76c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Giraffe">
+                        <div class="gallery-caption">Masai Giraffe - Roaming Crescent Island</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1541845157-a6f2c6c8a66f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="African Fish Eagle">
+                        <div class="gallery-caption">African Fish Eagle - Iconic lakeside raptor</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Lake Naivasha">
+                        <div class="gallery-caption">Lake Naivasha - Serene freshwater ecosystem</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Flamingo">
+                        <div class="gallery-caption">Flamingo - Vibrant visitor to the lake</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map">
+            <div class="container">
+                <h2 class="text-center">Where is Lake Naivasha?</h2>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127648.23987654321!2d36.435833!3d-0.816667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1828c6e7b2b8c7b1%3A0x5e3c7b8e9f2c1a3d!2sLake%20Naivasha!5e0!3m2!1sen!2ske!4v1753464652600!5m2!1sen!2ske"
+                        width="100%"
+                        height="400"
+                        style="border: 2px solid var(--primary); border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="#faq" class="btn">View Lakeside FAQs</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is it safe to do boat safaris on Lake Naivasha?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, boat safaris are safe with experienced guides who ensure safe distances from hippos and provide life jackets.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What’s the best time to visit Lake Naivasha?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The dry seasons (June-October, January-February) are ideal for boat trips and walking safaris, with clear weather and vibrant wildlife.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What should I pack for Lake Naivasha?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Pack light clothing, sunscreen, a hat, binoculars for birdwatching, comfortable walking shoes, and a light jacket for evenings.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I walk on Crescent Island without a guide?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Guided walks are recommended for safety and to learn about the wildlife, but experienced visitors may explore with prior arrangement.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I combine Lake Naivasha with Hell’s Gate?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, Hell’s Gate is just 10 km away, and many packages combine cycling in Hell’s Gate with boat safaris in Naivasha.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How long should I stay at Lake Naivasha?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A 1-2 day visit covers boat safaris, Crescent Island walks, and birdwatching. Add a day for Hell’s Gate or relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="text-center">What Our Visitors Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-text">
+                            The boat safari at Lake Naivasha was magical! Seeing hippos up close and the sunset was unforgettable.
+                        </div>
+                        <div class="testimonial-author">Emma Dubois</div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text">
+                            Walking on Crescent Island among giraffes was a highlight. Our guide’s birdwatching expertise was incredible!
+                        </div>
+                        <div class="testimonial-author">Rahul Mehra</div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text">
+                            The lakeside lodge was pure luxury. Combining Naivasha with Hell’s Gate made for a perfect adventure.
+                        </div>
+                        <div class="testimonial-author">Sophie & James Lee</div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="slider-dot active" data-slide="0"></div>
+                    <div class="slider-dot" data-slide="1"></div>
+                    <div class="slider-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/254713031409" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon">
+    </a>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footerlogo-text">
+                        <img class="footer-logo" src="Big5 logo.png" alt="BIG 5 Logo">
+                    </div>
+                    <p class="footer-about">Crafting unforgettable luxury safari experiences in Kenya since 2005. Our passion for wildlife and commitment to authentic luxury sets us apart.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#highlights"><i class="fas fa-chevron-right"></i> Highlights</a></li>
+                        <li><a href="#packages"><i class="fas fa-chevron-right"></i> Lakeside Packages</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Get In Touch</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Call Us</strong>
+                                <span>+254 700 123456</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:info@safarikenya.com">info@safarikenya.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Visit Us</strong>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Hours</strong>
+                                <span>Mon-Fri: 8AM-5PM</span>
+                                <span>Sat: 9AM-2PM</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Safari Newsletter</h4>
+                    <p>Subscribe for exclusive offers and wildlife updates:</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="far fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="payment-methods">
+                        <span>We accept:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Sustainability Policy</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <p class="footer-copyright">© 2025 SafariKenya. All rights reserved.<br>
+                Kenya Tourism License No. XYZ12345 | Member of Kenya Association of Tour Operators</p>
+            </div>
+        </div>
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </footer>
+
+    <script src="destinations.js"></script>
+</body>
+</html>

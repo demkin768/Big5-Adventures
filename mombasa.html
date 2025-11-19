@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisite-Mpunguti - Kenya's Marine Wonderland</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo-text">
+                <img class="logo" src="Big5 logo.png" alt="BIG 5 Logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <!-- Destinations Dropdown -->
+                    <li class="dropdown">
+                        <a href="#destinations">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#destinations" data-tab="classic" class="tab-link">
+                                <i class="fas fa-paw"></i> Wildlife & Safari
+                            </a>
+                            <a href="#destinations" data-tab="adventure" class="tab-link">
+                                <i class="fas fa-mountain"></i> Mountains & Lakes
+                            </a>
+                            <a href="#destinations" data-tab="coastal" class="tab-link">
+                                <i class="fas fa-umbrella-beach"></i> Coastal & Beach
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="social-icons">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <a href="#" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/king_mwesh" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/_m_kinyua/?utm_source=qr&r=nametag" class="fa fa-instagram" target="_blank"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <!-- Hero Slideshow Section -->
+    <section class="hero">
+        <div class="hero-slideshow">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1504173010664-32509aeebb62?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');">
+                <div class="hero-slide-content">
+                    <h3>Snorkeling & Diving</h3>
+                    <p>Explore vibrant coral reefs and marine life in the crystal waters of Kisite-Mpunguti Marine Park.</p>
+                    <a href="#packages" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');">
+                <div class="hero-slide-content">
+                    <h3>Dolphin Watching</h3>
+                    <p>Spot playful dolphins on a guided dhow trip through the marine park.</p>
+                    <a href="#packages" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1570549717481-0c2350b9b857?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');">
+                <div class="hero-slide-content">
+                    <h3>Dhow Sailing</h3>
+                    <p>Experience traditional Swahili dhow cruises with stunning coastal views.</p>
+                    <a href="#packages" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');">
+                <div class="hero-slide-content">
+                    <h3>Island Exploration</h3>
+                    <p>Visit Mpunguti and other islands for birdwatching and secluded beaches.</p>
+                    <a href="#packages" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1551969014-7d2c4cddf0b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');">
+                <div class="hero-slide-content">
+                    <h3>Sea Turtle Spotting</h3>
+                    <p>Observe green and hawksbill turtles in their natural habitat.</p>
+                    <a href="#packages" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1552410260-0fd9b577afa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');">
+                <div class="hero-slide-content">
+                    <h3>Fishing Excursions</h3>
+                    <p>Join sustainable fishing trips with expert guides in the marine park.</p>
+                    <a href="#packages" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="slideshow-controls">
+                <div class="slideshow-dot active" data-slide="0"></div>
+                <div class="slideshow-dot" data-slide="1"></div>
+                <div class="slideshow-dot" data-slide="2"></div>
+                <div class="slideshow-dot" data-slide="3"></div>
+                <div class="slideshow-dot" data-slide="4"></div>
+                <div class="slideshow-dot" data-slide="5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights" id="highlights">
+        <div class="container">
+            <h2 class="text-center">Why Visit Kisite-Mpunguti?</h2>
+            <div class="highlights-container">
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <h3>Vibrant Coral Reefs</h3>
+                    <p>Discover colorful underwater ecosystems teeming with marine life.</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Dhow Cruises</h3>
+                    <p>Sail on traditional boats for a unique coastal experience.</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-kiwi-bird"></i>
+                    </div>
+                    <h3>Birdwatching</h3>
+                    <p>Spot migratory birds on Mpunguti and surrounding islands.</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Dolphin Encounters</h3>
+                    <p>Watch dolphins swim alongside your boat in the marine park.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Discover Kisite-Mpunguti</h2>
+                    <p>Kisite-Mpunguti Marine National Park, located off Kenya’s south coast near Shimoni, is a pristine marine reserve established in 1978. Spanning 39 square kilometers, it encompasses Kisite Island and the Mpunguti Islands, known for their coral reefs, clear waters, and diverse marine life.</p>
+                    <p>Famous for dolphin and turtle sightings, snorkeling, and dhow sailing, the park offers a serene escape for marine enthusiasts and adventurers alike.</p>
+                    <a href="#wildlife" class="btn">Explore Marine Life</a>
+                </div>
+                <div class="intro-image">
+                    <img src="https://images.unsplash.com/photo-1504173010664-32509aeebb62?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Kisite-Mpunguti Coral Reef">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <h2 class="text-center">Marine Packages with Transport</h2>
+            <p class="text-center">Choose from our carefully selected range of marine adventure packages with transport included</p>
+            
+            <div class="packages-tabs">
+                <button class="packages-tab-btn active" data-tab="budget">Budget Hotels</button>
+                <button class="packages-tab-btn" data-tab="midrange">Mid-Range</button>
+                <button class="packages-tab-btn" data-tab="luxury">Luxury Resorts</button>
+            </div>
+            
+            <!-- Budget Hotels Tab -->
+            <div class="packages-tab-content active" id="budget-tab">
+                <div class="packages-grid">
+                    <!-- Shimoni Reef Lodge -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Shimoni Reef Lodge">
+                            <div class="package-badge">Budget</div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Shimoni Reef Lodge</h3>
+                            <div class="package-location">
+                                <i class="fas fa-map-marker-alt"></i> Shimoni, near Kisite-Mpunguti
+                            </div>
+                            <div class="package-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                    <div>Basic rooms with shared facilities</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                    <div>All meals included</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                                    <div>Daily snorkeling tours</div>
+                                </div>
+                            </div>
+                            <div class="package-pricing">
+                                <div class="price-option">
+                                    <h4>Van Package</h4>
+                                    <div class="price-amount">KSh 16,000</div>
+                                    <small>per person</small>
+                                </div>
+                                <div class="price-option">
+                                    <h4>Cruiser Package</h4>
+                                    <div class="price-amount">KSh 19,000</div>
+                                    <small>per person</small>
+                                </div>
+                            </div>
+                            <div class="package-actions">
+                                <a href="#packages" class="btn btn-small">Book Van</a>
+                                <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Wasini Island Camp -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Wasini Island Camp">
+                            <div class="package-badge">Popular</div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Wasini Island Camp</h3>
+                            <div class="package-location">
+                                <i class="fas fa-map-marker-alt"></i> Wasini Island, near Kisite-Mpunguti
+                            </div>
+                            <div class="package-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                    <div>Comfortable bandas with private bathrooms</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                    <div>All meals with seafood options</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                                    <div>Dhow trips included</div>
+                                </div>
+                            </div>
+                            <div class="package-pricing">
+                                <div class="price-option">
+                                    <h4>Van Package</h4>
+                                    <div class="price-amount">KSh 19,500</div>
+                                    <small>per person</small>
+                                </div>
+                                <div class="price-option">
+                                    <h4>Cruiser Package</h4>
+                                    <div class="price-amount">KSh 22,000</div>
+                                    <small>per person</small>
+                                </div>
+                            </div>
+                            <div class="package-actions">
+                                <a href="#packages" class="btn btn-small">Book Van</a>
+                                <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Coral Cove Cottages -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Coral Cove Cottages">
+                        </div>
+                        <div class="package-content">
+                            <h3>Coral Cove Cottages</h3>
+                            <div class="package-location">
+                                <i class="fas fa-map-marker-alt"></i> Shimoni, near Kisite-Mpunguti
+                            </div>
+                            <div class="package-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                    <div>Cozy cottages with sea views</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                    <div>Full board meals</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                                    <div>Marine park tours included</div>
+                                </div>
+                            </div>
+                            <div class="package-pricing">
+                                <div class="price-option">
+                                    <h4>Van Package</h4>
+                                    <div class="price-amount">KSh 18,000</div>
+                                    <small>per person</small>
+                                </div>
+                                <div class="price-option">
+                                    <h4>Cruiser Package</h4>
+                                    <div class="price-amount">KSh 21,000</div>
+                                    <small>per person</small>
+                                </div>
+                            </div>
+                            <div class="package-actions">
+                                <a href="#packages" class="btn btn-small">Book Van</a>
+                                <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mid-Range Tab -->
+            <div class="packages-tab-content" id="midrange-tab">
+                <div class="packages-grid">
+                    <!-- Blue Bay Cove -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Blue Bay Cove">
+                            <div class="package-badge">Best Value</div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Blue Bay Cove</h3>
+                            <div class="package-location">
+                                <i class="fas fa-map-marker-alt"></i> Wasini Island, near Kisite-Mpunguti
+                            </div>
+                            <div class="package-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                    <div>Comfortable suites with modern amenities</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                    <div>Gourmet seafood dining</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                                    <div>Daily snorkeling and dhow tours</div>
+                                </div>
+                            </div>
+                            <div class="package-pricing">
+                                <div class="price-option">
+                                    <h4>Van Package</h4>
+                                    <div class="price-amount">KSh 27,000</div>
+                                    <small>per person</small>
+                                </div>
+                                <div class="price-option">
+                                    <h4>Cruiser Package</h4>
+                                    <div class="price-amount">KSh 30,000</div>
+                                    <small>per person</small>
+                                </div>
+                            </div>
+                            <div class="package-actions">
+                                <a href="#packages" class="btn btn-small">Book Van</a>
+                                <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Wasini Island Resort -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Wasini Island Resort">
+                        </div>
+                        <div class="package-content">
+                            <h3>Wasini Island Resort</h3>
+                            <div class="package-location">
+                                <i class="fas fa-map-marker-alt"></i> Wasini Island, near Kisite-Mpunguti
+                            </div>
+                            <div class="package-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                    <div>Spacious rooms with ocean views</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                    <div>Buffet meals with Swahili cuisine</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                                    <div>Dolphin watching tours</div>
+                                </div>
+                            </div>
+                            <div class="package-pricing">
+                                <div class="price-option">
+                                    <h4>Van Package</h4>
+                                    <div class="price-amount">KSh 32,000</div>
+                                    <small>per person</small>
+                                </div>
+                                <div class="price-option">
+                                    <h4>Cruiser Package</h4>
+                                    <div class="price-amount">KSh 35,000</div>
+                                    <small>per person</small>
+                                </div>
+                            </div>
+                            <div class="package-actions">
+                                <a href="#packages" class="btn btn-small">Book Van</a>
+                                <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Shimoni Gardens -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Shimoni Gardens">
+                            <div class="package-badge">Family Friendly</div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Shimoni Gardens</h3>
+                            <div class="package-location">
+                                <i class="fas fa-map-marker-alt"></i> Shimoni, near Kisite-Mpunguti
+                            </div>
+                            <div class="package-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                    <div>Family-friendly cottages</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                    <div>Children’s menu available</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                                    <div>Guided marine tours for kids</div>
+                                </div>
+                            </div>
+                            <div class="package-pricing">
+                                <div class="price-option">
+                                    <h4>Van Package</h4>
+                                    <div class="price-amount">KSh 29,000</div>
+                                    <small>per person</small>
+                                </div>
+                                <div class="price-option">
+                                    <h4>Cruiser Package</h4>
+                                    <div class="price-amount">KSh 32,000</div>
+                                    <small>per person</small>
+                                </div>
+                            </div>
+                            <div class="package-actions">
+                                <a href="#packages" class="btn btn-small">Book Van</a>
+                                <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Luxury Resorts Tab -->
+            <div class="packages-tab-content" id="luxury-tab">
+                <div class="packages-grid">
+                    <!-- Ocean Village Club -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Ocean Village Club">
+                            <div class="package-badge">Luxury</div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Ocean Village Club</h3>
+                            <div class="package-location">
+                                <i class="fas fa-map-marker-alt"></i> Wasini Island, near Kisite-Mpunguti
+                            </div>
+                            <div class="package-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                    <div>Luxury suites with private decks</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                    <div>Gourmet dining with seafood specialties</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                                    <div>Private dhow tours</div>
+                                </div>
+                            </div>
+                            <div class="package-pricing">
+                                <div class="price-option">
+                                    <h4>Van Package</h4>
+                                    <div class="price-amount">KSh 47,000</div>
+                                    <small>per person</small>
+                                </div>
+                                <div class="price-option">
+                                    <h4>Cruiser Package</h4>
+                                    <div class="price-amount">KSh 50,000</div>
+                                    <small>per person</small>
+                                </div>
+                            </div>
+                            <div class="package-actions">
+                                <a href="#packages" class="btn btn-small">Book Van</a>
+                                <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Chale Island Resort -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Chale Island Resort">
+                            <div class="package-badge">Premium</div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Chale Island Resort</h3>
+                            <div class="package-location">
+                                <i class="fas fa-map-marker-alt"></i> Chale Island, near Kisite-Mpunguti
+                            </div>
+                            <div class="package-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                    <div>Elegant overwater bungalows</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                    <div>Fine dining with ocean views</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                                    <div>Exclusive diving excursions</div>
+                                </div>
+                            </div>
+                            <div class="package-pricing">
+                                <div class="price-option">
+                                    <h4>Van Package</h4>
+                                    <div class="price-amount">KSh 52,000</div>
+                                    <small>per person</small>
+                                </div>
+                                <div class="price-option">
+                                    <h4>Cruiser Package</h4>
+                                    <div class="price-amount">KSh 55,000</div>
+                                    <small>per person</small>
+                                </div>
+                            </div>
+                            <div class="package-actions">
+                                <a href="#packages" class="btn btn-small">Book Van</a>
+                                <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- The Sands at Nomad -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="The Sands at Nomad">
+                            <div class="package-badge">All Inclusive</div>
+                        </div>
+                        <div class="package-content">
+                            <h3>The Sands at Nomad</h3>
+                            <div class="package-location">
+                                <i class="fas fa-map-marker-alt"></i> Diani, near Kisite-Mpunguti
+                            </div>
+                            <div class="package-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                    <div>Luxury suites with butler service</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                    <div>All-inclusive premium dining</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                                    <div>Private marine park transfers</div>
+                                </div>
+                            </div>
+                            <div class="package-pricing">
+                                <div class="price-option">
+                                    <h4>Van Package</h4>
+                                    <div class="price-amount">KSh 57,000</div>
+                                    <small>per person</small>
+                                </div>
+                                <div class="price-option">
+                                    <h4>Cruiser Package</h4>
+                                    <div class="price-amount">KSh 60,000</div>
+                                    <small>per person</small>
+                                </div>
+                            </div>
+                            <div class="package-actions">
+                                <a href="#packages" class="btn btn-small">Book Van</a>
+                                <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marine Life Section (adapted from Wildlife) -->
+    <section class="wildlife" id="wildlife">
+        <div class="container">
+            <h2 class="text-center">Marine Life & Attractions</h2>
+            <p class="text-center">Kisite-Mpunguti is a biodiversity hotspot with over 250 fish species, dolphins, turtles, and vibrant coral reefs.</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504173010664-32509aeebb62?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Coral Reef">
+                    <div class="gallery-caption">Coral Reefs - Vibrant ecosystems teeming with life</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551969014-7d2c4cddf0b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Turtle">
+                    <div class="gallery-caption">Sea Turtle - Green and hawksbill turtles thrive here</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1552410260-0fd9b577afa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Fish">
+                    <div class="gallery-caption">Tropical Fish - Over 250 species in the park</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Dolphin">
+                    <div class="gallery-caption">Dolphins - Playful pods often seen on dhow trips</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1570549717481-0c2350b9b857?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Dhow">
+                    <div class="gallery-caption">Dhow Boats - Traditional sailing in the park</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551410224-699683e15636?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Island">
+                    <div class="gallery-caption">Mpunguti Island - Pristine beaches and birdwatching</div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="#faq" class="btn">View FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map">
+        <div class="container">
+            <h2 class="text-center">Where is Kisite-Mpunguti Marine National Park?</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127918.6153472345!2d39.35131585!3d-4.7146303499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400a2b4f6ec2fd%3A0xf6a716d562dad179!2sKisite-Mpunguti%20Marine%20National%20Park!5e0!3m2!1sen!2ske!4v1724850000000!5m2!1sen!2ske" 
+                    width="100%" 
+                    height="400" 
+                    style="border: 2px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is Kisite-Mpunguti safe for tourists?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, the marine park is safe with guided tours by licensed operators. Follow safety briefings for water activities.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is the best time to visit Kisite-Mpunguti?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>January-February and July-October offer calm seas and clear waters, ideal for snorkeling and diving. Avoid April-May due to heavy rains.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What should I pack for Kisite-Mpunguti?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Swimwear, sunscreen, hat, water shoes, snorkel gear (if preferred), light clothing, and a waterproof bag for boat trips.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is malaria a concern in Kisite-Mpunguti?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, use prophylaxis, insect repellent, and mosquito nets, especially during rainy seasons.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need diving experience for Kisite-Mpunguti?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, snorkeling is beginner-friendly, and diving tours offer beginner sessions with certified instructors.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long should I spend at Kisite-Mpunguti?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A 2-3 day trip is ideal for snorkeling, dhow trips, and island visits; extend to 5 days for a relaxed pace or diving certification.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="text-center">What Our Visitors Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-text">
+                        Snorkeling in Kisite-Mpunguti was unreal! The coral reefs and fish were stunning, and our guide ensured we saw dolphins.
+                    </div>
+                    <div class="testimonial-author">Sarah & Mark Johnson</div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-text">
+                        The dhow cruise was magical, with clear waters and a delicious seafood lunch on Wasini Island. Highly recommend!
+                    </div>
+                    <div class="testimonial-author">David Chen</div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-text">
+                        Our kids loved spotting turtles and exploring Mpunguti Island. A perfect family adventure in paradise.
+                    </div>
+                    <div class="testimonial-author">The Rodriguez Family</div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <div class="slider-dot active" data-slide="0"></div>
+                <div class="slider-dot" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <a href="https://wa.me/254701941527" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon">
+    </a>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: About & Social -->
+                <div class="footer-col">
+                    <div class="footerlogo-text">
+                        <img class="footer-logo" src="Big5 logo.png" alt="BIG 5 Logo">
+                    </div>
+                    <p class="footer-about">Crafting unforgettable luxury safari experiences in Kenya since 2005. Our passion for wildlife and commitment to authentic luxury sets us apart.</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#highlights"><i class="fas fa-chevron-right"></i> Highlights</a></li>
+                        <li><a href="#packages"><i class="fas fa-chevron-right"></i> Safari Packages</a></li>
+                        <li><a href="#best-time"><i class="fas fa-chevron-right"></i> Best Time to Visit</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div class="footer-col footer-contact">
+                    <h4>Get In Touch</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Call Us</strong>
+                                <span>+254 700 123456</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:info@safarikenya.com">info@safarikenya.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Visit Us</strong>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Hours</strong>
+                                <span>Mon-Fri: 8AM-5PM</span>
+                                <span>Sat: 9AM-2PM</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="footer-col">
+                    <h4>Safari Newsletter</h4>
+                    <p>Subscribe for exclusive offers and wildlife updates:</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="far fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="payment-methods">
+                        <span>We accept:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Sustainability Policy</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <p class="footer-copyright">© 2025 SafariKenya. All rights reserved.<br>
+                Kenya Tourism License No. XYZ12345 | Member of Kenya Association of Tour Operators</p>
+            </div>
+        </div>
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </footer>
+
+    <script src="destinations.js"></script>
+</body>
+</html>

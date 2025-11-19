@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamu - Swahili Heritage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo-text">
+                <img class="logo" src="Big5 logo.png" alt="BIG 5 Logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#destinations">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#destinations" data-tab="classic" class="tab-link">
+                                <i class="fas fa-paw"></i> Wildlife & Safari
+                            </a>
+                            <a href="#destinations" data-tab="adventure" class="tab-link">
+                                <i class="fas fa-mountain"></i> Mountains & Lakes
+                            </a>
+                            <a href="#destinations" data-tab="coastal" class="tab-link">
+                                <i class="fas fa-umbrella-beach"></i> Coastal & Beach
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="social-icons">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <a href="#" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/king_mwesh" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/_m_kinyua/?utm_source=qr&r=nametag" class="fa fa-instagram" target="_blank"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Slideshow Section -->
+        <section class="hero">
+            <div class="hero-slideshow">
+                <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1607877473388-6a4eb7e6c1ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3');">
+                    <div class="hero-slide-content">
+                        <h3>Swahili Heritage</h3>
+                        <p>Explore the UNESCO-listed Lamu Old Town with its rich history.</p>
+                        <a href="#highlights" class="btn">Explore Highlights</a>
+                    </div>
+                </div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1612271775963-7d36e8f1c9e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3');">
+                    <div class="hero-slide-content">
+                        <h3>Dhow Sailing</h3>
+                        <p>Sail the Indian Ocean on traditional Swahili dhows.</p>
+                        <a href="#packages" class="btn">View Packages</a>
+                    </div>
+                </div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3');">
+                    <div class="hero-slide-content">
+                        <h3>Serene Beaches</h3>
+                        <p>Relax on Lamu’s tranquil, unspoiled shores.</p>
+                        <a href="#activities" class="btn">Discover Activities</a>
+                    </div>
+                </div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1512428559087-560fa5ceab6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3');">
+                    <div class="hero-slide-content">
+                        <h3>Cultural Immersion</h3>
+                        <p>Experience authentic Swahili culture and cuisine.</p>
+                        <a href="#faq" class="btn">Plan Your Stay</a>
+                    </div>
+                </div>
+                <div class="slideshow-controls">
+                    <div class="slideshow-dot active" data-slide="0"></div>
+                    <div class="slideshow-dot" data-slide="1"></div>
+                    <div class="slideshow-dot" data-slide="2"></div>
+                    <div class="slideshow-dot" data-slide="3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="highlights" id="highlights">
+            <div class="container">
+                <h2 class="text-center">Why Visit Lamu?</h2>
+                <div class="highlights-container">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>UNESCO Old Town</h3>
+                        <p>Explore Lamu’s historic Swahili architecture and narrow streets.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <h3>Dhow Sailing</h3>
+                        <p>Sail on traditional dhows for a unique coastal experience.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <h3>Secluded Beaches</h3>
+                        <p>Relax on pristine, uncrowded beaches like Shela Beach.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Swahili Culture</h3>
+                        <p>Immerse in local traditions, markets, and cuisine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>Discover Lamu</h2>
+                        <p>Lamu, an archipelago 600 km from Nairobi, is a UNESCO World Heritage Site known for its well-preserved Swahili culture, historic Old Town, and serene beaches. With no cars, donkeys and dhows define its charm, offering a peaceful coastal escape.</p>
+                        <p>From exploring ancient architecture to sailing on traditional dhows, Lamu blends history, culture, and relaxation.</p>
+                        <a href="#packages" class="btn">Explore Packages</a>
+                    </div>
+                    <div class="intro-image">
+                        <img src="https://images.unsplash.com/photo-1607877473388-6a4eb7e6c1ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Lamu Old Town">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section class="packages" id="packages">
+            <div class="container">
+                <h2 class="text-center">Lamu Packages with Transport</h2>
+                <p class="text-center">Choose from our curated packages for a cultural coastal getaway.</p>
+                <div class="packages-tabs">
+                    <button class="packages-tab-btn active" data-tab="budget">Budget Guesthouses</button>
+                    <button class="packages-tab-btn" data-tab="midrange">Mid-Range</button>
+                    <button class="packages-tab-btn" data-tab="luxury">Luxury Retreats</button>
+                </div>
+
+                <!-- Budget Guesthouses Tab -->
+                <div class="packages-tab-content active" id="budget-tab">
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1612271775963-7d36e8f1c9e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Lamu Budget Guesthouse">
+                                <div class="package-badge">Budget</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Lamu Budget Guesthouse</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lamu Old Town
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Simple rooms with Swahili decor</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Breakfast and dinner included</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Dhow sailing and cultural tours</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Flight Package</h4>
+                                        <div class="price-amount">KSh 22,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Boat Package</h4>
+                                        <div class="price-amount">KSh 18,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Flight</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Boat</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Shela Guesthouse">
+                                <div class="package-badge">Popular</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Shela Guesthouse</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Shela Beach
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Cozy rooms with beach access</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>All meals with Swahili flavors</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Dhow tours and Old Town visits</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Flight Package</h4>
+                                        <div class="price-amount">KSh 24,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Boat Package</h4>
+                                        <div class="price-amount">KSh 20,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Flight</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Boat</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Lamu House">
+                            </div>
+                            <div class="package-content">
+                                <h3>Lamu House</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lamu Old Town
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Basic rooms with cultural charm</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Full board meals with local cuisine</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Guided cultural tours and dhow rides</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Flight Package</h4>
+                                        <div class="price-amount">KSh 23,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Boat Package</h4>
+                                        <div class="price-amount">KSh 19,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Flight</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Boat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mid-Range Tab -->
+                <div class="packages-tab-content" id="midrange-tab">
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Peponi Hotel">
+                                <div class="package-badge">Best Value</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Peponi Hotel</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Shela Beach
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Spacious rooms with ocean views</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Buffet meals with Swahili cuisine</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Dhow sailing and cultural tours</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Flight Package</h4>
+                                        <div class="price-amount">KSh 35,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Boat Package</h4>
+                                        <div class="price-amount">KSh 30,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Flight</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Boat</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Kijani Hotel">
+                            </div>
+                            <div class="package-content">
+                                <h3>Kijani Hotel</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Shela Beach
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Comfortable suites with balconies</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Gourmet dining with coastal flavors</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Dhow tours and Old Town visits</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Flight Package</h4>
+                                        <div class="price-amount">KSh 37,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Boat Package</h4>
+                                        <div class="price-amount">KSh 32,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Flight</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Boat</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Jannat House">
+                                <div class="package-badge">Family Friendly</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Jannat House</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lamu Old Town
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Family suites with cultural decor</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Children’s menu available</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Family-friendly cultural tours</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Flight Package</h4>
+                                        <div class="price-amount">KSh 36,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Boat Package</h4>
+                                        <div class="price-amount">KSh 31,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Flight</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Boat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Retreats Tab -->
+                <div class="packages-tab-content" id="luxury-tab">
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Manda Bay">
+                                <div class="package-badge">Luxury</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Manda Bay</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Manda Island
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Luxury villas with private verandas</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Fine dining with ocean views</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Private dhow sailing and cultural tours</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Flight Package</h4>
+                                        <div class="price-amount">KSh 50,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Boat Package</h4>
+                                        <div class="price-amount">KSh 45,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Flight</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Boat</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Majlis Resort">
+                                <div class="package-badge">Premium</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Majlis Resort</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Manda Island
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Elegant suites with ocean views</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Gourmet dining with Swahili cuisine</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Exclusive dhow tours and cultural visits</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Flight Package</h4>
+                                        <div class="price-amount">KSh 48,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Boat Package</h4>
+                                        <div class="price-amount">KSh 43,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Flight</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Boat</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="The Red Pepper House">
+                                <div class="package-badge">All Inclusive</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>The Red Pepper House</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lamu Old Town
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Luxury rooms with private decks</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>All-inclusive dining and drinks</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Private cultural tours and dhow rides</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Flight Package</h4>
+                                        <div class="price-amount">KSh 52,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Boat Package</h4>
+                                        <div class="price-amount">KSh 47,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Flight</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Boat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section class="activities" id="activities">
+            <div class="container">
+                <h2 class="text-center">Activities & Experiences</h2>
+                <p class="text-center">Lamu offers a blend of cultural immersion, historical exploration, and coastal relaxation, from dhow sailing to wandering the UNESCO Old Town.</p>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1607877473388-6a4eb7e6c1ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Lamu Old Town">
+                        <div class="gallery-caption">Lamu Old Town - UNESCO World Heritage Site</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1612271775963-7d36e8f1c9e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Dhow Sailing">
+                        <div class="gallery-caption">Dhow Sailing - Traditional Swahili boats</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Shela Beach">
+                        <div class="gallery-caption">Shela Beach - Serene coastal relaxation</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Swahili Culture">
+                        <div class="gallery-caption">Swahili Culture - Markets and cuisine</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1607877473388-6a4eb7e6c1ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Lamu Fort">
+                        <div class="gallery-caption">Lamu Fort - Historical landmark</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1509233725247-49e657c61113?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Sunset Dhow Ride">
+                        <div class="gallery-caption">Sunset Dhow Ride - Scenic coastal views</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map">
+            <div class="container">
+                <h2 class="text-center">Where is Lamu?</h2>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127673.2398765432!2d40.896667!3d-2.269167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x181f4f6d6e5e7f1d%3A0x7b7b8e9f2c1a3d!2sLamu%20Island!5e0!3m2!1sen!2ske!4v1753464652600!5m2!1sen!2ske"
+                        width="100%"
+                        height="400"
+                        style="border: 2px solid var(--primary); border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="#faq" class="btn">View Lamu FAQs</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What’s the best time to visit Lamu?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>July to October offers pleasant weather for cultural tours and beach activities. November to March is warmer but ideal for dhow sailing.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How do I get around Lamu?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Lamu has no cars; travel is by foot, donkey, or boat. Dhows and small boats connect the islands.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What should I pack for Lamu?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Pack light clothing, sunscreen, a hat, comfortable shoes for walking, and modest attire for cultural respect in the Old Town.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Are cultural tours in Lamu respectful?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, our tours involve local guides and support community initiatives, ensuring respectful cultural immersion.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I combine Lamu with other destinations?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, Lamu pairs well with Diani Beach or Watamu for a coastal itinerary or Tsavo for a safari-beach combo.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How long should I stay in Lamu?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A 3-4 day stay allows time for cultural tours, dhow sailing, and beach relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="text-center">What Our Visitors Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-text">
+                            Lamu’s Old Town is a cultural treasure! The dhow sailing at sunset was magical.
+                        </div>
+                        <div class="testimonial-author">Hassan Ali</div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text">
+                            The peaceful beaches and Swahili culture made Lamu unforgettable. Perfectly organized!
+                        </div>
+                        <div class="testimonial-author">Sarah Wanjiku</div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text">
+                            Staying at a luxury retreat and exploring the Old Town was a dream. Lamu is a gem!
+                        </div>
+                        <div class="testimonial-author">James & Maria Otieno</div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="slider-dot active" data-slide="0"></div>
+                    <div class="slider-dot" data-slide="1"></div>
+                    <div class="slider-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/254713031409" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon">
+    </a>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footerlogo-text">
+                        <img class="footer-logo" src="Big5 logo.png" alt="BIG 5 Logo">
+                    </div>
+                    <p class="footer-about">Crafting unforgettable luxury safari and coastal experiences in Kenya since 2005. Our passion for culture and adventure sets us apart.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#highlights"><i class="fas fa-chevron-right"></i> Highlights</a></li>
+                        <li><a href="#packages"><i class="fas fa-chevron-right"></i> Lamu Packages</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Get In Touch</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Call Us</strong>
+                                <span>+254 700 123456</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:info@safarikenya.com">info@safarikenya.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Visit Us</strong>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Hours</strong>
+                                <span>Mon-Fri: 8AM-5PM</span>
+                                <span>Sat: 9AM-2PM</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Safari Newsletter</h4>
+                    <p>Subscribe for exclusive offers and coastal updates:</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="far fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="payment-methods">
+                        <span>We accept:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Sustainability Policy</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <p class="footer-copyright">© 2025 SafariKenya. All rights reserved.<br>
+                Kenya Tourism License No. XYZ12345 | Member of Kenya Association of Tour Operators</p>
+            </div>
+        </div>
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </footer>
+
+    <script src="destinations.js"></script>
+</body>
+</html>

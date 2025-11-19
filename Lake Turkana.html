@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lake Turkana - The Jade Sea Adventure</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo-text">
+                <img class="logo" src="Big5 logo.png" alt="BIG 5 Logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#destinations">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#destinations" data-tab="classic" class="tab-link">
+                                <i class="fas fa-paw"></i> Wildlife & Safari
+                            </a>
+                            <a href="#destinations" data-tab="adventure" class="tab-link">
+                                <i class="fas fa-mountain"></i> Mountains & Lakes
+                            </a>
+                            <a href="#destinations" data-tab="coastal" class="tab-link">
+                                <i class="fas fa-umbrella-beach"></i> Coastal & Beach
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="social-icons">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <a href="#" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/king_mwesh" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/_m_kinyua/?utm_source=qr&r=nametag" class="fa fa-instagram" target="_blank"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Slideshow Section -->
+        <section class="hero">
+            <div class="hero-slideshow">
+                <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1605281100089-5f9c1c90a466?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3');">
+                    <div class="hero-slide-content">
+                        <h3>The Jade Sea</h3>
+                        <p>Explore the shimmering turquoise waters of Lake Turkana, the world’s largest desert lake.</p>
+                        <a href="#highlights" class="btn">Explore Highlights</a>
+                    </div>
+                </div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3');">
+                    <div class="hero-slide-content">
+                        <h3>Fossil Hunting</h3>
+                        <p>Discover ancient fossils at Koobi Fora, a UNESCO World Heritage Site.</p>
+                        <a href="#packages" class="btn">View Packages</a>
+                    </div>
+                </div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1541845157-a6f2c6c8a66f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3');">
+                    <div class="hero-slide-content">
+                        <h3>Turkana Culture</h3>
+                        <p>Immerse yourself in the vibrant traditions of the Turkana and El Molo communities.</p>
+                        <a href="#wildlife" class="btn">Discover Culture</a>
+                    </div>
+                </div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1503917988258-f87a78e3c995?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3');">
+                    <div class="hero-slide-content">
+                        <h3>Remote Desert Adventure</h3>
+                        <p>Journey to the rugged beauty of Kenya’s northern frontier.</p>
+                        <a href="#faq" class="btn">Plan Your Visit</a>
+                    </div>
+                </div>
+                <div class="slideshow-controls">
+                    <div class="slideshow-dot active" data-slide="0"></div>
+                    <div class="slideshow-dot" data-slide="1"></div>
+                    <div class="slideshow-dot" data-slide="2"></div>
+                    <div class="slideshow-dot" data-slide="3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="highlights" id="highlights">
+            <div class="container">
+                <h2 class="text-center">Why Visit Lake Turkana?</h2>
+                <div class="highlights-container">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Jade Sea Beauty</h3>
+                        <p>Marvel at the turquoise waters of the world’s largest permanent desert lake.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-skull"></i>
+                        </div>
+                        <h3>Fossil Sites</h3>
+                        <p>Explore Koobi Fora, a treasure trove of prehistoric fossils and human origins.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Cultural Immersion</h3>
+                        <p>Engage with Turkana and El Molo communities for authentic cultural experiences.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <h3>Boat Tours</h3>
+                        <p>Navigate the lake to spot crocodiles and enjoy stunning desert vistas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>Discover Lake Turkana</h2>
+                        <p>Known as the Jade Sea, Lake Turkana is the world’s largest permanent desert lake, located in Kenya’s remote northern frontier, about 700 km from Nairobi. Its striking turquoise waters, fossil-rich shores, and vibrant Turkana and El Molo cultures make it a unique destination for adventurers and history enthusiasts.</p>
+                        <p>From exploring UNESCO-listed fossil sites at Koobi Fora to boat tours spotting Nile crocodiles or engaging with local communities, Lake Turkana offers a blend of natural beauty, cultural richness, and archaeological wonder.</p>
+                        <a href="#packages" class="btn">Explore Packages</a>
+                    </div>
+                    <div class="intro-image">
+                        <img src="https://images.unsplash.com/photo-1605281100089-5f9c1c90a466?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Lake Turkana Landscape">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safari Packages Section -->
+        <section class="packages" id="packages">
+            <div class="container">
+                <h2 class="text-center">Lake Turkana Packages with Transport</h2>
+                <p class="text-center">Choose from our curated packages for a remote desert adventure.</p>
+                <div class="packages-tabs">
+                    <button class="packages-tab-btn active" data-tab="budget">Budget Camps</button>
+                    <button class="packages-tab-btn" data-tab="midrange">Mid-Range</button>
+                    <button class="packages-tab-btn" data-tab="luxury">Luxury Lodges</button>
+                </div>
+
+                <!-- Budget Camps Tab -->
+                <div class="packages-tab-content active" id="budget-tab">
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Turkana Budget Camp">
+                                <div class="package-badge">Budget</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Turkana Budget Camp</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Turkana
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Basic tented accommodation with shared facilities</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>All meals included (breakfast, lunch, dinner)</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-landmark"></i></div>
+                                        <div>Guided fossil site tour and cultural visit</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 35,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 40,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Loiyangalani Camp">
+                                <div class="package-badge">Popular</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Loiyangalani Camp</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Turkana
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Comfortable tents with shared bathrooms</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>All meals with desert picnic option</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Boat tour and cultural immersion</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 38,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 43,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Eliye Springs Camp">
+                            </div>
+                            <div class="package-content">
+                                <h3>Eliye Springs Camp</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Turkana
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Tents with basic bedding and shared facilities</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Full board meals with campfire dinners</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-landmark"></i></div>
+                                        <div>Fossil site visits and cultural tours</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 36,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 41,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mid-Range Tab -->
+                <div class="packages-tab-content" id="midrange-tab">
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Turkana Lodge">
+                                <div class="package-badge">Best Value</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Turkana Lodge</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Turkana
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Comfortable rooms with desert views</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Buffet meals with local flavors</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Boat tours and fossil site visits</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 50,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 55,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Desert Rose Lodge">
+                            </div>
+                            <div class="package-content">
+                                <h3>Desert Rose Lodge</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Turkana
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Spacious rooms with private balconies</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Gourmet meals with cultural themes</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-users"></i></div>
+                                        <div>Cultural tours and fossil exploration</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 52,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 57,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Oasis Lodge">
+                                <div class="package-badge">Family Friendly</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Oasis Lodge</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Turkana
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Family suites with desert views</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Children’s menu available</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Family-friendly boat and cultural tours</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 51,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 56,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Lodges Tab -->
+                <div class="packages-tab-content" id="luxury-tab">
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Turkana Luxury Camp">
+                                <div class="package-badge">Luxury</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Turkana Luxury Camp</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Turkana
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Luxury suites with private verandas</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Fine dining with lake views</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ship"></i></div>
+                                        <div>Private boat tours and fossil exploration</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 65,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 70,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Jade Sea Retreat">
+                                <div class="package-badge">Premium</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Jade Sea Retreat</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Turkana
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Elegant cottages with lake views</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>Gourmet dining with wine pairing</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-users"></i></div>
+                                        <div>Exclusive cultural and fossil tours</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 62,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 67,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-image">
+                                <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Koobi Fora Camp">
+                                <div class="package-badge">All Inclusive</div>
+                            </div>
+                            <div class="package-content">
+                                <h3>Koobi Fora Camp</h3>
+                                <div class="package-location">
+                                    <i class="fas fa-map-marker-alt"></i> Lake Turkana
+                                </div>
+                                <div class="package-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                                        <div>Luxury tents with private decks</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>All-inclusive dining and drinks</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-landmark"></i></div>
+                                        <div>Private fossil and cultural tours</div>
+                                    </div>
+                                </div>
+                                <div class="package-pricing">
+                                    <div class="price-option">
+                                        <h4>Van Package</h4>
+                                        <div class="price-amount">KSh 68,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                    <div class="price-option">
+                                        <h4>Cruiser Package</h4>
+                                        <div class="price-amount">KSh 73,000</div>
+                                        <small>per person</small>
+                                    </div>
+                                </div>
+                                <div class="package-actions">
+                                    <a href="#packages" class="btn btn-small">Book Van</a>
+                                    <a href="#packages" class="btn btn-small btn-outline">Book Cruiser</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wildlife Section -->
+        <section class="wildlife" id="wildlife">
+            <div class="container">
+                <h2 class="text-center">Wildlife & Ecosystem</h2>
+                <p class="text-center">Lake Turkana’s desert ecosystem supports Nile crocodiles, unique fish species, and diverse birdlife, alongside its rich fossil sites and cultural heritage.</p>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1599422698873-b11a0a0e4a1a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Nile Crocodile">
+                        <div class="gallery-caption">Nile Crocodile - Inhabiting Lake Turkana’s shores</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1541845157-a6f2c6c8a66f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Goliath Heron">
+                        <div class="gallery-caption">Goliath Heron - Graceful lakeside bird</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Flamingo">
+                        <div class="gallery-caption">Flamingo - Vibrant visitor to the lake</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1605281100089-5f9c1c90a466?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Lake Turkana">
+                        <div class="gallery-caption">Lake Turkana - The Jade Sea’s turquoise waters</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2088&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Fossil Site">
+                        <div class="gallery-caption">Koobi Fora - UNESCO fossil site</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Turkana Culture">
+                        <div class="gallery-caption">Turkana Culture - Vibrant local traditions</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map">
+            <div class="container">
+                <h2 class="text-center">Where is Lake Turkana?</h2>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1024000.2398765432!2d36.083333!3d3.583333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1771c8e7b2b8c7b1%3A0x5e3c7b8e9f2c1a3d!2sLake%20Turkana!5e0!3m2!1sen!2ske!4v1753464652600!5m2!1sen!2ske"
+                        width="100%"
+                        height="400"
+                        style="border: 2px solid var(--primary); border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="#faq" class="btn">View Desert FAQs</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is Lake Turkana safe to visit?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, with guided tours and experienced operators, Lake Turkana is safe. The remote location requires proper planning, included in our packages.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What’s the best time to visit Lake Turkana?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The dry season (June-October) is ideal for comfortable travel and clear lake views. Avoid the rainy season due to challenging road conditions.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What should I pack for Lake Turkana?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Pack lightweight clothing, sunscreen, a hat, sturdy shoes, binoculars for wildlife, and a jacket for cooler nights in the desert.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Are cultural tours respectful to local communities?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, our tours are designed with respect for Turkana and El Molo communities, supporting local guides and sustainable practices.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How do I get to Lake Turkana?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our packages include transport from Nairobi via 4x4 vans or cruisers, suitable for the remote roads. Flights to Lodwar are available for luxury packages.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How long should I stay at Lake Turkana?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A 3-4 day trip is ideal to explore fossil sites, enjoy boat tours, and engage with local cultures, given the remote location.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="text-center">What Our Adventurers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-text">
+                            Visiting Lake Turkana felt like stepping back in time. The fossil sites and Turkana culture were incredible!
+                        </div>
+                        <div class="testimonial-author">Amara Njeri</div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text">
+                            The Jade Sea’s beauty is unreal. Our boat tour and cultural visit were perfectly organized.
+                        </div>
+                        <div class="testimonial-author">Lucas Schmidt</div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text">
+                            Exploring Koobi Fora was a dream for a history buff like me. The desert landscape is breathtaking.
+                        </div>
+                        <div class="testimonial-author">Clara & Diego Lopez</div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="slider-dot active" data-slide="0"></div>
+                    <div class="slider-dot" data-slide="1"></div>
+                    <div class="slider-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/254713031409" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon">
+    </a>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footerlogo-text">
+                        <img class="footer-logo" src="Big5 logo.png" alt="BIG 5 Logo">
+                    </div>
+                    <p class="footer-about">Crafting unforgettable luxury safari experiences in Kenya since 2005. Our passion for wildlife and commitment to authentic luxury sets us apart.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#highlights"><i class="fas fa-chevron-right"></i> Highlights</a></li>
+                        <li><a href="#packages"><i class="fas fa-chevron-right"></i> Desert Packages</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Get In Touch</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Call Us</strong>
+                                <span>+254 700 123456</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:info@safarikenya.com">info@safarikenya.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Visit Us</strong>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Hours</strong>
+                                <span>Mon-Fri: 8AM-5PM</span>
+                                <span>Sat: 9AM-2PM</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Safari Newsletter</h4>
+                    <p>Subscribe for exclusive offers and wildlife updates:</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="far fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="payment-methods">
+                        <span>We accept:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Sustainability Policy</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <p class="footer-copyright">© 2025 SafariKenya. All rights reserved.<br>
+                Kenya Tourism License No. XYZ12345 | Member of Kenya Association of Tour Operators</p>
+            </div>
+        </div>
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </footer>
+
+    <script src="destinations.js"></script>
+</body>
+</html>
