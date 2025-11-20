@@ -178,64 +178,66 @@
               <p>We partner with local organizations to fund anti-poaching patrols and wildlife conservation. A portion of your booking supports Maasai community education and employment.</p>
             </div>
             <div class="conservation-image">
-              <img src="https://images.unsplash.com/photo-1516562308161-88c5c6b4ac1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Conservation Efforts">
+              <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Conservation Efforts">
             </div>
           </div>
         </div>
       </div>
 
       <!-- Right Side: Booking -->
-      <div class="booking-box">
-        <h2 id="bookingTitle">Book Your Safari</h2>
-        <div class="package-options">
-          <div class="package-box">
-            <h3>Van Package</h3>
-            <p><strong>KSh 21,000</strong> per person</p>
-            <p>Max People: 8</p>
-            <button class="btn-small" id="vanButton" onclick="setPackage(21000, 'Van Package', this)">Select Van</button>
-          </div>
-          <div class="package-box">
-            <h3>Cruiser Package</h3>
-            <p><strong>KSh 24,900</strong> per person</p>
-            <p>Max People: 6</p>
-            <button class="btn-small" id="cruiserButton" onclick="setPackage(24900, 'Cruiser Package', this)">Select Cruiser</button>
-          </div>
-        </div>
-        <form id="bookingForm">
-          <input type="hidden" id="pricePerPerson">
-          <input type="hidden" id="packageType">
-          <div id="formError"></div>
-          <div class="form-group">
-            <label for="people">Number of People</label>
-            <input type="number" id="people" min="1" value="1" aria-label="Number of people in your group">
-          </div>
-          <div class="form-group">
-            <label for="startDate">Start Date</label>
-            <input type="date" id="startDate" required aria-label="Start date of your booking">
-          </div>
-          <div class="form-group">
-            <label for="endDate">End Date</label>
-            <input type="date" id="endDate" required aria-label="End date of your booking">
-          </div>
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" required aria-label="Your full name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" required aria-label="Your email address">
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" required aria-label="Your phone number">
-          </div>
-          <div class="total-price" id="totalPrice">Total: KSh 0</div>
-          <div class="text-center">
-            <button type="submit" class="btn" disabled>Confirm Booking</button>
-          </div>
-        </form>
-      </div>
+<!-- Replace your current <div class="booking-box"> with this updated version -->
+<div class="booking-box">
+  <h2 id="bookingTitle">Book Your Safari</h2>
+  <div class="package-options">
+    <div class="package-box">
+      <h3>Van Package</h3>
+      <p><strong>KSh 21,000</strong> per person</p>
+      <p>Max People: 8</p>
+      <button class="btn-small" id="vanButton" onclick="setPackage(21000, 'Van Package', this)">Select Van</button>
     </div>
+    <div class="package-box">
+      <h3>Cruiser Package</h3>
+      <p><strong>KSh 24,900</strong> per person</p>
+      <p>Max People: 6</p>
+      <button class="btn-small" id="cruiserButton" onclick="setPackage(24900, 'Cruiser Package', this)">Select Cruiser</button>
+    </div>
+  </div>
+  <form id="bookingForm">
+    <input type="hidden" id="pricePerPerson">
+    <input type="hidden" id="packageType">
+    <div id="formError"></div>
+
+    <div class="form-group">
+      <label for="people">Number of People</label>
+      <input type="number" id="people" min="1" value="1" aria-label="Number of people in your group">
+    </div>
+    <div class="form-group">
+      <label for="startDate">Start Date</label>
+      <input type="date" id="startDate" required>
+    </div>
+    <div class="form-group">
+      <label for="endDate">End Date</label>
+      <input type="date" id="endDate" required>
+    </div>
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" required>
+    </div>
+
+    <div class="total-price" id="totalPrice">Total: KSh 0</div>
+    <div class="text-center">
+      <button type="submit" class="btn" disabled>Confirm Booking</button>
+    </div>
+  </form>
+</div>
   </main>
 
   <a href="https://wa.me/254701941527" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
