@@ -1,0 +1,235 @@
+.hero-section {
+      position: relative;
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 0 3px 6px rgba(0,0,0,0.6);
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      text-align: justify;
+      color: #fff;
+      border-radius: 12px;
+    }
+    .camp-container {
+      max-width: 1300px;
+      margin: 70px auto;
+      padding: 35px;
+      display: grid;
+      grid-template-columns: 2.5fr 1fr;
+      gap: 10px;
+    }
+    .booking-box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-left: 0px;
+      margin-right: -25px;
+      position: sticky;
+      top: 20px;
+      margin-bottom: 1500px;
+    }
+    .form-group {
+      margin-bottom: 12px;
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 4px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 0.9rem;
+    }
+    .total-price {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 10px;
+      text-align: center;
+    }
+    .btn-small {
+      margin-top: 8px;
+      padding: 6px 12px;
+      border-radius: 5px;
+      background: var(--primary);
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      font-size: 0.85rem;
+      transition: background 0.3s;
+    }
+    .btn-small:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    .btn-small.selected {
+      background: #28a745; /* Green to indicate selection */
+    }
+    .package-options {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+    }
+    .package-box {
+      flex: 0 0 48%;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .package-box h3 {
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+    .package-box p {
+      margin: 5px 0;
+      font-size: 0.85rem;
+    }
+    .package-box p:last-of-type {
+      color: #555;
+      font-size: 0.8rem;
+    }
+    .amenities, .itinerary, .testimonials, .conservation {
+      margin-bottom: 40px;
+    }
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .amenity-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .amenity-item i {
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+    .itinerary-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .itinerary-item {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .testimonial-item {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .testimonial-rating i {
+      color: #f4b400;
+      font-size: 1rem;
+    }
+    .conservation-content {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      align-items: center;
+    }
+    .conservation-text {
+      flex: 2;
+    }
+    .conservation-image {
+      flex: 1;
+    }
+    .conservation-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .gallery-container {
+      position: relative;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .camp-gallery {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    .camp-gallery img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      flex: 0 0 100%;
+    }
+    .gallery-controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .gallery-arrow {
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 1.5rem;
+    }
+    .gallery-thumbnails {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .gallery-thumbnails img {
+      width: 80px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.3s;
+    }
+    .gallery-thumbnails img.active {
+      opacity: 1;
+      border: 2px solid var(--primary);
+    }
+    #formError {
+      color: red;
+      margin-bottom: 10px;
+    }
+    #formError:empty {
+      display: none;
+    }
+    .btn:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    @media (max-width: 768px) {
+      .camp-container {
+        grid-template-columns: 1fr;
+      }
+      .booking-box {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+      .gallery-controls {
+        display: none; /* Use swipe gestures instead */
+      }
+      .gallery-thumbnails img {
+        width: 60px;
+        height: 40px;
+      }
+    }
