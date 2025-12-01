@@ -27,14 +27,13 @@
   gap: 40px;
 }
 
-/* ====================== BOOKING BOX - NO STICKY ====================== */
+/* ====================== BOOKING BOX ====================== */
 .booking-box {
   background: #fff;
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
   margin-top: 20px;
-  margin-bottom: 1700px;             /* Space from top */
 }
 
 /* Selected package button */
@@ -44,21 +43,33 @@
   box-shadow: 0 4px 10px rgba(40,167,69,0.3);
 }
 
-/* ====================== RESPONSIVE - MOBILE ====================== */
+/* ====================== MOBILE: BOOKING BOX BELOW ITINERARY ====================== */
 @media (max-width: 992px) {
   .camp-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 50px;
     padding: 20px;
     margin: 40px auto;
   }
 
+  /* Main content (welcome, gallery, amenities, itinerary) */
+  .camp-container > div:first-child { order: 1; }
+
+  /* Itinerary stays in place */
+  .itinerary { order: 2; }
+
+  /* BOOKING BOX APPEARS RIGHT AFTER ITINERARY */
   .booking-box {
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding: 25px;
-    border-radius: 16px;
+    order: 3;
+    margin: 0 15px 50px;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   }
+
+  /* Everything else comes after */
+  .testimonials  { order: 4; }
+  .conservation  { order: 5; }
 
   .hero-section h1 {
     font-size: 2.5rem;
@@ -66,29 +77,15 @@
 }
 
 @media (max-width: 576px) {
-  .hero-section h1 {
-    font-size: 2.2rem;
-  }
-
-  .camp-container {
-    padding: 15px;
-  }
+  .hero-section h1 { font-size: 2.2rem; }
+  .camp-container { padding: 15px; }
 }
 
 /* ====================== FORM STYLES ====================== */
-.form-group {
-  margin-bottom: 16px;
-}
+.form-group { margin-bottom: 16px; }
+label { font-weight: 600; display: block; margin-bottom: 8px; color: #333; }
 
-label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 8px;
-  color: #333;
-}
-
-input,
-select {
+input, select {
   width: 100%;
   padding: 12px;
   border-radius: 10px;
@@ -104,11 +101,15 @@ input:focus {
 }
 
 .total-price {
-  font-size: 1rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-top: 10px;
-      text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 25px 0;
+  text-align: center;
+  padding: 15px;
+  background: #fff8f0;
+  border-radius: 12px;
+  border: 2px solid #ffe0c2;
 }
 
 .btn-small {
@@ -124,21 +125,10 @@ input:focus {
   transition: all 0.3s;
 }
 
-.btn-small:hover {
-  background: #d35400;
-}
+.btn-small:hover { background: #d35400; }
+.btn-small:disabled { background: #ccc; cursor: not-allowed; }
 
-.btn-small:disabled {
-  background: #ccc;
-  cursor: not-allowed;
-}
-
-.package-options {
-  display: flex;
-  gap: 15px;
-  margin: 20px 0;
-}
-
+.package-options { display: flex; gap: 15px; margin: 20px 0; }
 .package-box {
   flex: 1;
   background: #f9f9f9;
@@ -148,51 +138,27 @@ input:focus {
   box-shadow: 0 3px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s;
 }
+.package-box:hover { transform: translateY(-5px); }
 
-.package-box:hover {
-  transform: translateY(-5px);
-}
-
-.package-box h3 {
-  margin-bottom: 10px;
-  font-size: 1.15rem;
-}
-
-.package-box p {
-  margin: 8px 0;
-  font-size: 0.95rem;
-}
-
-.package-box p:last-of-type {
-  color: #666;
-  font-size: 0.88rem;
-}
+.package-box h3 { margin-bottom: 10px; font-size: 1.15rem; }
+.package-box p { margin: 8px 0; font-size: 0.95rem; }
+.package-box p:last-of-type { color: #666; font-size: 0.88rem; }
 
 #formError {
   color: #eb2b0d;
   font-size: 0.95rem;
-  margin-bottom: 5px;
-  text-align: absolute;
-  padding: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 10px;
+  background: #ffebee;
   border-radius: 8px;
 }
+#formError:empty { display: none; }
 
-#formError:empty {
-  display: none;
-}
+.btn:disabled { background: #ccc; cursor: not-allowed; }
 
-.btn:disabled {
-  background: #ccc;
-  cursor: not-allowed;
-}
-
-/* ====================== REST OF YOUR STYLES (Gallery, Amenities, etc.) ====================== */
-.amenities,
-.itinerary,
-.testimonials,
-.conservation {
-  margin-bottom: 0px;
-}
+/* ====================== CONTENT SECTIONS ====================== */
+.amenities, .itinerary, .testimonials, .conservation { margin-bottom: 60px; }
 
 .amenities-grid {
   display: grid;
@@ -200,7 +166,6 @@ input:focus {
   gap: 25px;
   margin-top: 25px;
 }
-
 .amenity-item {
   display: flex;
   flex-direction: column;
@@ -208,24 +173,22 @@ input:focus {
   text-align: center;
   gap: 12px;
 }
-
 .amenity-item i {
-  font-size: 2.2rem;
-  color: var(--primary);
+  font-size: 2.2rem; 
+  color: var(--primary); 
 }
 
 .itinerary-list {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-top: 25px;
+  display: flex; 
+  flex-direction: column; 
+  gap: 25px; 
+  margin-top: 25px; 
 }
-
 .itinerary-item {
   background: #f9f9f9;
   padding: 25px;
   border-radius: 14px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 3px  12px rgba(0,0,0,0.06);
 }
 
 .testimonial-item {
@@ -235,45 +198,36 @@ input:focus {
   margin-bottom: 30px;
   box-shadow: 0 3px 12px rgba(0,0,0,0.06);
 }
-
-.testimonial-rating i {
-  color: #f4b400;
-  font-size: 1.1rem;
-}
+.testimonial-rating i { color: #f4b400; font-size: 1.1rem; }
 
 .conservation-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  margin-top: 0px;
+  margin-top: 30px;
   align-items: center;
 }
-
 .conservation-image img {
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* Gallery */
+/* ====================== GALLERY ====================== */
 .gallery-container {
-   position: relative;
-   overflow: hidden;
-   margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
-.camp-gallery {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
+.camp-gallery { display: flex; transition: transform 0.5s ease; }
 .camp-gallery img {
-      width: 100%;
-      height: 350px;
-      object-fit: cover;
-      border-radius: 10px;
-      flex: 0 0 100%;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  flex: 0 0 100%;
 }
-
 .gallery-controls {
   position: absolute;
   top: 50%;
@@ -283,19 +237,16 @@ input:focus {
   transform: translateY(-50%);
   padding: 0 15px;
 }
-
 .gallery-arrow {
+  background: rgba(0,0,0,0.6);
   color: #fff;
   padding: 14px;
   cursor: pointer;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   transition: 0.3s;
 }
-
-.gallery-arrow:hover {
-  background: var(--primary);
-}
+.gallery-arrow:hover { background: var(--primary); }
 
 .gallery-thumbnails {
   display: flex;
@@ -304,7 +255,6 @@ input:focus {
   margin-top: 20px;
   flex-wrap: wrap;
 }
-
 .gallery-thumbnails img {
   width: 90px;
   height: 60px;
@@ -315,7 +265,6 @@ input:focus {
   border: 3px solid transparent;
   transition: all 0.3s;
 }
-
 .gallery-thumbnails img.active {
   opacity: 1;
   border-color: var(--primary);
