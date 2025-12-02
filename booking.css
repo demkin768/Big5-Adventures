@@ -95,7 +95,7 @@
 
 @media (max-width: 576px) {
   .hero-section h1 {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
   }
 
   .camp-container {
@@ -407,11 +407,6 @@ img {
 }
 
 /* Extra safe fix for images */
-img {
-  width: 100% !important;
-  height: auto !important;
-  display: block !important;
-}
 
 /* Make sure hero background doesn’t cause overflow */
 .hero-section {
