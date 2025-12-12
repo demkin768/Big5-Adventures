@@ -111,7 +111,25 @@ document.querySelectorAll('.dropdown-menu .tab-link').forEach(link => {
         }
     });
 });
+// Auto-open correct tab when URL has #wildlife-tab, #mountains-lakes-tab, etc.
+  document.addEventListener("DOMContentLoaded", function() {
+    const hash = window.location.hash; // e.g. #mountains-lakes-tab
+    if (hash) {
+      // Remove active class from all tabs & contents
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
 
+      // Add active to correct tab button
+      const targetTab = hash.replace('-tab', ''); // #mountains-lakes-tab → mountains-lakes
+      document.querySelector(`.tab-btn[data-tab="${targetTab}"]`)?.classList.add('active');
+
+      // Show correct content
+      document.querySelector(hash)?.classList.add('active');
+
+      // Smooth scroll to section
+      document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
 // Testimonial Slider
 function showTestimonial(index) {
     testimonials.forEach(testimonial => testimonial.classList.remove('active'));
