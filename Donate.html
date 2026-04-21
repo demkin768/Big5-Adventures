@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Save The Big5 Campaign | Big5 Global</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0f172a;color:white}
+header{padding:70px 20px;text-align:center;background:url('https://images.unsplash.com/photo-1549366021-9f761d040a94') center/cover no-repeat}
+header h1{font-size:44px;margin:0}
+header p{font-size:18px;margin-top:10px}
+.container{max-width:900px;margin:auto;padding:30px}
+.card{background:#1e293b;border-radius:14px;padding:30px;margin-bottom:30px}
+button{padding:14px 22px;margin:8px;font-size:16px;border:none;border-radius:8px;background:#22c55e;color:white;cursor:pointer}
+button.active{background:#800000 !important}
+button:hover{background:#16a34a}
+input,select{padding:12px;border-radius:8px;border:none;width:240px;margin:8px}
+.story img{width:100%;border-radius:12px;margin:15px 0}
+.progress{background:#334155;border-radius:20px;height:20px;margin-top:15px;overflow:hidden}
+.progress-bar{background:#22c55e;height:100%;width:0%}
+.share button{background:#3b82f6}
+.share button:hover{background:#2563eb}
+.footer{text-align:center;margin-top:40px;font-size:14px;opacity:0.7}
+.amounts{display:flex;flex-wrap:wrap;justify-content:center}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Big5 Global Foundation</h1>
+<p>Help Protect Wildlife & Support Communities</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Campaign Goal</h2>
+<p>We are raising funds to support wildlife protection, conservation programs, emergency relief and humanitarian initiatives across Kenya and Africa.</p>
+<h3>$780 raised of $85,000 goal</h3>
+<div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+</div>
+
+<div class="card story">
+<h2>The Story</h2>
+<p>Big5 Global Foundation is committed to protecting Africa's wildlife while supporting vulnerable communities.</p>
+<p>Across Kenya and Africa, wildlife conservation and human wellbeing are deeply connected. When communities thrive, wildlife can survive.</p>
+<p>Our initiatives focus on wildlife conservation, anti-poaching efforts, habitat protection, and emergency humanitarian assistance for communities affected by drought, conflict, and poverty.</p>
+<img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2017/08/Nigeria_Borno_2017_UN055930.jpg" alt="Children drinking water">
+<p>Your donation helps fund ranger patrols, conservation technology, community support programs, and emergency relief efforts.</p>
+<p>Together we can protect the Big Five, preserve ecosystems, and support people living alongside wildlife.</p>
+<p>By contributing to this campaign, you become part of a global movement working to safeguard Africa's wildlife and help communities build a safer and more sustainable future.</p>
+</div>
+
+<div class="card" style="text-align:center">
+<h2>Donate to the Campaign</h2>
+
+<div class="amounts">
+<button onclick="alert('Please enter your donation amount in the box below before proceeding')">$20 Protect Wildlife</button>
+<button onclick="alert('Please enter your donation amount in the box below before proceeding')">$30 Clean Water Supply</button>
+<button onclick="alert('Please enter your donation amount in the box below before proceeding')">$50 Shelter Setup</button>
+<button onclick="alert('Please enter your donation amount in the box below before proceeding')">$75 Education Support</button>
+<button onclick="alert('Please enter your donation amount in the box below before proceeding')">$100 Medical Support</button>
+</div>
+
+<h3 style="margin-top:20px">Together We Can Change Lives</h3>
+<input type="text" id="first" placeholder="First Name">
+<input type="text" id="last" placeholder="Last Name">
+<br>
+<input type="email" id="email" placeholder="Email (optional)">
+
+<h3 style="margin-top:20px">Donation Amount</h3>
+<select id="currency">
+<option value="USD">USD · US Dollar</option>
+<option value="KES">KES · Kenya Shilling</option>
+<option value="EUR">EUR · Euro</option>
+<option disabled>──────────</option>
+<option value="GBP">GBP · British Pound</option>
+<option value="CAD">CAD · Canadian Dollar</option>
+<option value="AUD">AUD · Australian Dollar</option>
+<option value="INR">INR · Indian Rupee</option>
+<option value="JPY">JPY · Japanese Yen</option>
+<option value="CNY">CNY · Chinese Yuan</option>
+</select>
+<br>
+<input type="number" id="amount" placeholder="Enter donation amount" min="1">
+
+<h3 style="margin-top:20px">Payment Method</h3>
+<div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap">
+<button onclick="selectPayment('card')" id="cardBtn">Credit Card</button>
+<button onclick="selectPayment('paypal')" id="paypalBtn">PayPal</button>
+</div>
+
+<div id="cardDetails" style="display:none;margin-top:15px">
+<p style="font-size:14px;opacity:0.9">Secure card payments are processed by Paystack.</p>
+</div>
+
+<br>
+<button id="donateNowBtn" onclick="processDonation()" disabled>Donate Now</button>
+</div>
+
+<div class="card share" style="text-align:center">
+<h2>Share This Campaign</h2>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://big5adventures.com/donate" target="_blank"><button>Share on Facebook</button></a>
+<a href="https://twitter.com/intent/tweet?text=Support Big5 Global Wildlife Campaign&url=https://big5adventures.com/donate" target="_blank"><button>Share on X</button></a>
+<a href="https://www.instagram.com" target="_blank"><button>Share on Instagram</button></a>
+</div>
+
+<div class="footer">
+<p>© Big5 Global Conservation Campaign</p>
+</div>
+
+</div>
+
+<script>
+let raised = 780;
+let goal = 85000;
+document.getElementById("progressBar").style.width = (raised / goal) * 100 + "%";
+
+let paymentMethod = '';
+
+const firstInput = document.getElementById('first');
+const lastInput = document.getElementById('last');
+const donateBtn = document.getElementById('donateNowBtn');
+
+function validateForm(){
+    const ok = firstInput.value.trim() && lastInput.value.trim() && paymentMethod;
+    donateBtn.disabled = !ok;
+}
+
+[firstInput, lastInput].forEach(el => {
+    el.addEventListener('input', validateForm);
+});
+
+function selectPayment(method){
+    if(paymentMethod === method){
+        paymentMethod = '';
+        document.getElementById('cardBtn').classList.remove('active');
+        document.getElementById('paypalBtn').classList.remove('active');
+        document.getElementById('cardDetails').style.display = 'none';
+        validateForm();
+        return;
+    }
+
+    paymentMethod = method;
+
+    document.getElementById('cardDetails').style.display = (method === 'card') ? 'block' : 'none';
+
+    document.getElementById('cardBtn').classList.remove('active');
+    document.getElementById('paypalBtn').classList.remove('active');
+    document.getElementById(method + 'Btn').classList.add('active');
+
+    validateForm();
+}
+
+function processDonation(){
+    let amount = document.getElementById("amount").value;
+    let first = firstInput.value;
+    let last = lastInput.value;
+    let email = document.getElementById("email").value;
+    let currency = document.getElementById("currency").value;
+
+    if(!amount || !first || !last || !paymentMethod){
+        alert("Please fill in your details to proceed");
+        donateBtn.classList.remove('active');
+        return;
+    }
+
+    // toggle maroon ON/OFF on click
+    donateBtn.classList.toggle('active');
+
+    if(paymentMethod === 'paypal'){
+        let url = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=big5global1@gmail.com&currency_code=${currency}&amount=${amount}`;
+        window.open(url,'_blank');
+        return;
+    }
+
+    if(paymentMethod === 'card'){
+        payWithPaystack(amount, currency, email, first + " " + last);
+        return;
+    }
+}
+
+function payWithPaystack(amount, currency, email, name){
+    let handler = PaystackPop.setup({
+        key: 'pk_test_your_public_key_here',
+        email: email || 'donor@big5global.org',
+        amount: amount * 100,
+        currency: currency,
+        metadata: {
+            custom_fields: [{
+                display_name: "Donor Name",
+                variable_name: "donor_name",
+                value: name
+            }]
+        },
+        callback: function(response){
+            alert('Donation successful! Reference: ' + response.reference);
+        },
+        onClose: function(){
+            alert('Transaction was not completed.');
+        }
+    });
+    handler.openIframe();
+}
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+
+</body>
+</html>
