@@ -172,7 +172,7 @@ function processDonation(){
     }
 
     // toggle maroon ON/OFF on click
-    donateBtn.classList.toggle('active');
+    donateBtn.classList.add('active');
 
     if(paymentMethod === 'paypal'){
         let url = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=big5global2@gmail.com&currency_code=${currency}&amount=${amount}`;
