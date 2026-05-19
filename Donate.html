@@ -41,7 +41,7 @@ input,select{padding:12px;border-radius:8px;border:none;width:240px;margin:8px}
 </div>
 
 <div class="card story">
-<h2>The Story</h2>
+<h2>The Foundation</h2>
 <p>Big5 Global Foundation is committed to protecting Africa's wildlife while supporting vulnerable communities.</p>
 <p>Across Kenya and Africa, wildlife conservation and human wellbeing are deeply connected. When communities thrive, wildlife can survive.</p>
 <p>Our initiatives focus on wildlife conservation, anti-poaching efforts, habitat protection, and emergency humanitarian assistance for communities affected by drought, conflict, and poverty.</p>
@@ -136,6 +136,7 @@ function selectPayment(method){
         paymentMethod = '';
         document.getElementById('cardBtn').classList.remove('active');
         document.getElementById('paypalBtn').classList.remove('active');
+        donateBtn.classList.remove("active");
         document.getElementById('cardDetails').style.display = 'none';
         validateForm();
         return;
@@ -170,10 +171,7 @@ function processDonation(){
         donateBtn.classList.remove('active');
         return;
     }
-
-    // toggle maroon ON/OFF on click
-    donateBtn.classList.add('active');
-
+    
     if(paymentMethod === 'paypal'){
         let url = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=big5global2@gmail.com&currency_code=${currency}&amount=${amount}`;
         window.open(url,'_blank');
