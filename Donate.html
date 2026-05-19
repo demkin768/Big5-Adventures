@@ -171,9 +171,6 @@ function processDonation(){
         donateBtn.classList.remove('active');
         return;
     }
-
-  donateBtn.disabled = true;
-  donateBtn.classList.add("active");
     
     if(paymentMethod === 'paypal'){
         let url = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=big5global2@gmail.com&currency_code=${currency}&amount=${amount}`;
@@ -208,12 +205,6 @@ function payWithPaystack(amount, currency, email, name){
         }
     });
     handler.openIframe();
-    }
-
-function resetDonateButton(){
-  donateBtn.textContent = "Donate Now";
-  donateBtn.classList.remove("active");
-  validateForm();
 }
 </script>
 <script src="https://js.paystack.co/v1/inline.js"></script>
