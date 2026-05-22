@@ -258,6 +258,14 @@ function validateForm(){
     el.addEventListener('input', validateForm);
 });
 
+function goToDonate(){
+
+document.querySelector('#first').scrollIntoView({
+behavior:'smooth'
+});
+
+}
+
 function selectPayment(method){
     if(paymentMethod === method){
         paymentMethod = '';
