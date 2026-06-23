@@ -19,6 +19,7 @@ body {
     color: var(--text);
     line-height: 1.6;
     background-color: #f9f9f9;
+    width: 100%;
 }
 
 .container {
@@ -30,7 +31,6 @@ body {
 
 section {
     padding: 60px 0;
-    width: 100%;
 }
 
 h1, h2, h3, h4 {
