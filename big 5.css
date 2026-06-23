@@ -1021,11 +1021,11 @@ footer {
 }
     .nav-links li {
         margin-left: 14px;
-        font-size: 0.9rem;
+        font-size: 1.0rem;
 
 }
 .social-icons {
-        right: 20px;
+        right: 10px;
 
 }
 }
