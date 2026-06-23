@@ -3,54 +3,86 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="Big5img.png" type="image/x-icon" style="width: 32px; height: 3002px;">
 <title>Save The Big 5 & Support Communities Campaign | Big5 Global Foundation</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f5f7fa;color:#2d4059;scroll-behavior:smooth;}
-header{padding:70px 20px;text-align:center;background:url('Big5Header') center/cover no-repeat}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f5f7fa;color:#131f3b;scroll-behavior:smooth;overflow-x:hidden}
+header{
+padding:70px 20px;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+url('Big5Header.jpg')
+center/cover no-repeat;
+}
 header h1{font-size:44px;margin:0}
 header p{font-size:18px;margin-top:10px}
-.container{max-width:100%;margin:auto;padding:30px}
-.card{background:#6b706d;border-radius:14px;padding:30px;margin-bottom:30px}
-.card h2,.card h3{color:#b6bcc6}
+*{box-sizing:border-box;}
+html,body{width:100%;max-width:100%;overflow-x:hidden;}
+.container{width:100%;max-width:100%;margin:auto;padding:5px;box-sizing:border-box}
+.card{background:#b6bcc6;border-radius:14px;padding:30px;margin-bottom:30px;box-sizing:border-box}
+.card h2,.card h3,.card p,.card li,.card label{color:#000000 !important}
 button{padding:14px 22px;margin:8px;font-size:16px;border:none;border-radius:8px;background:#22c55e;color:white;cursor:pointer}
 button.active{background:#800000 !important}
 button:hover{background:#16a34a}
 input,select{padding:12px;border-radius:8px;border:none;width:240px;margin:8px}
-.hero-block{
-background:#2d4059;color:white;text-align:center;padding:80px 20px;width:100%;margin:0;border-radius:0;}
+.hero-block{background:#2d4059;color:white;text-align:center;padding:60px 20px;width:100%;margin:0;border-radius:0;background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1728223621746-a65fbaa283a3?q=80&w=2180&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+center/cover no-repeat;}
 
 .hero-block h1{font-size:48px;margin:0;color:white;}
 
 .hero-block p{font-size:20px;margin-top:15px;color:white;}
-.story img{width:100%;border-radius:12px;margin:15px 0}
+.story img{width:100%;border-radius:0px;margin:15px 0}
 .progress{background:#334155;border-radius:20px;height:20px;margin-top:15px;overflow:hidden}
 .progress-bar{background:#22c55e;height:100%;width:0%}
-.donation-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:25px;}
 
-.donation-grid-two{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:25px;max-width:800px;margin-left:auto;margin-right:auto;}
+.story-row{display:flex;gap:25px;align-items:flex-start;margin-top:15px;}
 
-.donation-item{background:white;color:#111827;border-radius:18px;overflow:hidden;text-align:center;padding-bottom:25px;}
+.story-text{flex:0.85;line-height:1.8;}
+
+.story-image{flex:1.4;max-width:85%;margin-top:14px;}
+
+.story-image img{width:100%;height:461px;object-fit:cover;border-radius:0;display:block;}
+
+@media(max-width:900px){.story-row{flex-direction:column;}
+}
+
+.donation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;margin-top:25px;}
+
+.donation-grid-two{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:25px;max-width:100%;margin-left:auto;margin-right:auto;}
+
+.donation-item{background:white;color:#111827;border-radius:18px;overflow:hidden;text-align:center;padding-bottom:25px;max-width:380px;margin:0 auto;width:100%;}
 
 .donation-item img{width:100%;height:240px;object-fit:cover;display:block;}
 
 .donation-item h3{font-size:22px;margin:20px 15px;}
 
-.donation-item p{font-size:16px;line-height:1.7;padding:0 25px;}
+.donation-item p{font-size:17px;line-height:1.7;padding:0 25px;}
 
 .donate-card-btn{background:#b91c1c;color:white;border:none;padding:14px 28px;border-radius:10px;font-size:18px;cursor:pointer;margin-top:20px;}
 
 .donate-card-btn:hover{background:#991b1b;}
 
-input,select{padding:12px;border-radius:8px;border:none;width:240px;margin:8px;}
+input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 
 .main-btn{padding:14px 22px;margin:8px;font-size:16px;border:none;border-radius:8px;background:#22c55e;color:white;cursor:pointer;}
 
 .main-btn.active{background:#800000 !important;}
 
-.share button{background:#3b82f6}
+.share button{background:#3b82f6;border-radius:0;}
 .share button:hover{background:#2563eb}
-.footer{text-align:center;margin-top:40px;font-size:14px;opacity:0.7}
+.share{margin-bottom:10px}
+.footer{text-align:center;margin-top:10px;font-size:14px;opacity:0.7}
+.footer-block{background:#131f3b;color:white;text-align:center;margin-top:0px;font-size:14px;width:100%;padding:30px;border-radius:0px;}
 @media(max-width:900px){
+.story-row{display:flex;flex-direction:column-reverse;}
+.story-image img{height:auto;}
+.story-image{max-width:100%;width:100%;margin-top:9px;}
+.story-text{margin-top:-20px;}
 .donation-grid{grid-template-columns:1fr;}
 .donation-grid-two{grid-template-columns:1fr;}
 }
@@ -68,22 +100,32 @@ input,select{padding:12px;border-radius:8px;border:none;width:240px;margin:8px;}
 
 <div class="card">
 <h2>Campaign Goal</h2>
-<p>We are raising funds to support wildlife protection, conservation programs, emergency relief and humanitarian initiatives across Kenya and Africa.</p>
-<h3>$720 raised of $85,000 goal</h3>
+<p>Join the campaign to support wildlife protection, conservation programs, emergency relief and humanitarian initiatives across Kenya and Africa.</p>
+<h3>$745 raised of $85,000 goal</h3>
 <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
 </div>
 
 <div class="card story">
 <h2>The Foundation</h2>
-<p>Big5 Global Foundation is committed to protecting Africa's wildlife while supporting vulnerable communities.</p>
+<p>Big5 Global is committed to protecting Africa's wildlife while supporting vulnerable communities.</p>
 <p>Across Kenya and Africa, wildlife conservation and human wellbeing are deeply connected. When communities thrive, wildlife can survive.</p>
 <p>Our initiatives focus on wildlife conservation, anti-poaching efforts, habitat protection, and emergency humanitarian assistance for communities affected by drought, conflict, and poverty.</p>
-<img src="Water Supply.jpg" alt="Children drinking water">
-<p>Your donation helps fund ranger patrols, conservation technology, community support programs, and emergency relief efforts.</p>
-<p>Together we can protect the Big Five, preserve ecosystems, and support people living alongside wildlife.</p>
-<p>By contributing to this campaign, you become part of a global movement working to safeguard Africa's wildlife and help communities build a safer and more sustainable future.</p>
+<div class="story-row">
+
+<div class="story-text">
+<p contenteditable="false">Your donation helps fund ranger patrols, conservation technology, community support programs, and emergency relief efforts. Together we can protect the Big Five, preserve natural ecosystems, and support people who depend on these landscapes for their livelihoods.</p>
+
+<p contenteditable="false"><b><i>Donations made are also being channeled towards humanitarian assistance in Sudan in partnership with The World Food Programme (WFP).Almost 19.5 million people are facing acute hunger due to the devastating civil conflict.The UN World Food Programme (WFP) is a critical lifeline for millions of people, with emergency food assistance helping to reverse famine conditions in the region. This is in support of the 17 <a href="https://sdgs.un.org/goals" target="_blank">UN Sustainable Development Goals</a> (SDGs). </b></i></p>
+    
+<p contenteditable="false">By contributing to this campaign, you become part of a global movement working to safeguard Africa's wildlife and help communities build a safer and more sustainable future.</p>
 </div>
 
+<div class="story-image">
+<img src="Water Supply.jpg" alt="Children drinking water">
+</div>
+</div>
+
+</div>
 <div class="card" style="text-align:center">
 <h2>Donate to the Campaign</h2>
 
@@ -92,20 +134,20 @@ input,select{padding:12px;border-radius:8px;border:none;width:240px;margin:8px;}
 <div class="donation-item">
 <img src="Protect Wildlife.jpg" alt="Protect Wildlife">
 <h3>Protect Wildlife – $20</h3>
-<p>Help support wildlife conservation, anti-poaching patrols, animal rescue operations, and habitat protection programs.</p>
+<p>Help support wildlife conservation, anti-poaching patrols, animal rescue operations, and habitat protection programs. #Savetheelephants #Savetherhino</p>
 <button class="donate-card-btn" onclick="goToDonate()">Donate Now</button>
 </div>
 
 <div class="donation-item">
 <img src="Clean Water.jpg" alt="Clean Water">
-<h3>Clean Water Supply – $30</h3>
-<p>Provide access to clean and safe drinking water for families in areas facing severe shortages.</p>
+<h3>Water Wells & Clean Water Supply – $30</h3>
+<p>Provide access to clean and safe drinking water for wildlife and communities in areas facing severe water crises.</p>
 <button class="donate-card-btn" onclick="goToDonate()">Donate Now</button>
 </div>
 
 <div class="donation-item">
 <img src="Food Packages.jpeg" alt="Food Packages">
-<h3>Fresh Meals – $50</h3>
+<h3>Fresh Meal Packages – $50</h3>
 <p>Provide nutritious meals to children, families, displaced people, and vulnerable communities facing hunger and food insecurity.</p>
 <button class="donate-card-btn" onclick="goToDonate()">Donate Now</button>
 </div>
@@ -165,8 +207,8 @@ input,select{padding:12px;border-radius:8px;border:none;width:240px;margin:8px;}
 
 <h3 style="margin-top:20px">Payment Method</h3>
 <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap">
-<button onclick="selectPayment('card')" id="cardBtn">Credit Card</button>
-<button onclick="selectPayment('paypal')" id="paypalBtn">PayPal</button>
+<button onclick="selectPayment('card')" id="cardBtn"><strong><i class="fa-regular fa-credit-card"></i>&nbsp;Credit/Debit Card</strong</button>
+<button onclick="selectPayment('paypal')" id="paypalBtn"><strong><i class="fa-brands fa-paypal"></i>&nbsp;PayPal</strong></button>
 </div>
 
 <div id="cardDetails" style="display:none;margin-top:15px">
@@ -174,7 +216,7 @@ input,select{padding:12px;border-radius:8px;border:none;width:240px;margin:8px;}
 </div>
 
 <br>
-<button id="donateNowBtn" onclick="processDonation()" disabled>Donate Now</button>
+<button id="donateNowBtn" onclick="processDonation()" disabled><strong>Donate Now</strong></button>
 </div>
 
 <div class="footer">
@@ -184,19 +226,18 @@ input,select{padding:12px;border-radius:8px;border:none;width:240px;margin:8px;}
 </div>
 <div class="card share" style="text-align:center">
 <h2>Share This Campaign</h2>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://big5adventures.com/donate" target="_blank"><button>Share on Facebook</button></a>
-<a href="https://twitter.com/intent/tweet?text=Support Big5 Global Wildlife Campaign&url=https://big5adventures.com/donate" target="_blank"><button>Share on X</button></a>
-<a href="https://www.instagram.com" target="_blank"><button>Share on Instagram</button></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://big5adventures.com/Donate" target="_blank"><button>Share on Facebook</button></a>
+<a href="https://twitter.com/intent/tweet?text=Save The Big 5 and Support Communities Campaign&url=https://big5adventures.com/Donate" target="_blank"><button>Share on X</button></a>
+<a href="https://www.instagram.com/big5global" target="_blank"><button>Share on Instagram</button></a>
 </div>
 
-<div class="footer">
-<p>© Big5 Global Conservation Campaign</p>
 </div>
-
+<div class="footer-block">
+<p>2026 © Big5 Global Conservation Campaign</p>
 </div>
 
 <script>
-let raised = 720;
+let raised = 745;
 let goal = 85000;
 document.getElementById("progressBar").style.width = (raised / goal) * 100 + "%";
 
@@ -217,8 +258,9 @@ function validateForm(){
 
 function goToDonate(){
 
-document.querySelector('#first').scrollIntoView({
-behavior:'smooth'
+document.getElementById('first').scrollIntoView({
+behavior:'smooth',
+block:'center'
 });
 
 }
