@@ -1020,8 +1020,8 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
     .nav-links li {
-        margin-left: 10px;
-        font-size: 0.8rem;
+        margin-left: 14px;
+        font-size: 0.9rem;
 
 }
 .social-icons {
