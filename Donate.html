@@ -36,6 +36,23 @@ center/cover no-repeat;}
 .hero-block h1{font-size:48px;margin:0;color:white;}
 
 .hero-block p{font-size:20px;margin-top:15px;color:white;}
+.hero-block{position:relative;}
+
+.hero-donate-btn{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    background:#b91c1c;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 30px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s; }
+.hero-donate-btn:hover{
+    background:#991b1b;
+}
 .story img{width:100%;border-radius:0px;margin:15px 0}
 .progress{background:#334155;border-radius:20px;height:20px;margin-top:15px;overflow:hidden}
 .progress-bar{background:#22c55e;height:100%;width:0%}
@@ -47,6 +64,15 @@ center/cover no-repeat;}
 .story-image{flex:1.4;max-width:1200px;margin-top:17px;}
 
 .story-image img{width:100%;height:480px;object-fit:cover;border-radius:0;display:block;}
+.image-caption{
+    margin-top:0px;
+    margin-bottom:-6px;
+    padding-right:8px;
+    font-size:13px;
+    color:#6b7280;
+    font-style:italic;
+    text-align:right;
+}
 
 @media(max-width:900px){.story-row{flex-direction:column;}
 }
@@ -103,13 +129,33 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 .share{margin-bottom:10px}
 .footer{text-align:center;margin-top:10px;font-size:14px;opacity:0.7}
 .footer-block{background:#131f3b;color:white;text-align:center;margin-top:0px;font-size:14px;width:100%;padding:30px;border-radius:0px;}
-@media(max-width:900px){
+@media(max-width:992px){
+.story-row{display:flex;gap:25px;align-items:flex-start;margin-top:15px;justify-content:center;max-width:1500px;margin-left:auto;margin-right:auto;width:100%;}
+
+.story-text{flex:0.90;line-height:1.8;}
+
+.story-image{flex:1.4;max-width:1200px;margin-top:23px;}
+
+.story-image img{width:100%;height:520px;object-fit:contain;border-radius:0;display:block;}
+.hero-donate-btn{
+    right:20px;
+    bottom:20px;
+    padding:12px 24px;
+    font-size:16px;
+}
+
+@media(max-width:768px){
 .story-row{display:flex;flex-direction:column-reverse;}
 .story-image img{height:auto;}
-.story-image{max-width:100%;width:100%;margin-top:30px;}
+.story-image{max-width:100%;width:100%;margin-top:5px;}
 .story-text{margin-top:-20px;}
 .donation-grid{grid-template-columns:1fr;}
 .donation-grid-two{grid-template-columns:1fr;}
+.hero-donate-btn{
+    right:7px;
+    bottom:15px;
+    padding:9px 22px;
+    font-size:16px;
 }
 .amounts{display:flex;flex-wrap:wrap;justify-content:center}
 </style>
@@ -134,7 +180,7 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 <h2>The Foundation</h2>
 <p>Big5 Global is committed to protecting Africa's wildlife while supporting vulnerable communities.</p>
 <p>Across Kenya and Africa, wildlife conservation and human wellbeing are deeply connected. When communities thrive, wildlife can survive.</p>
-<p>Our initiatives focus on wildlife conservation, anti-poaching efforts, habitat protection, and emergency humanitarian assistance for communities affected by drought, conflict, and poverty.</p>
+<p>Our initiatives focus on wildlife conservation, anti-poaching efforts, habitat protection, and emergency humanitarian assistance for communities affected by drought, conflict, and poverty.  We set the precedent by channeling 30% of profits from Big5 Adventures towards wildlife conservation and community projects.</p>
 <div class="story-row">
 
 <div class="story-text">
@@ -147,6 +193,7 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 
 <div class="story-image">
 <img src="Water Supply.jpg" alt="Children drinking water">
+<p class="image-caption">Image: Gilbertson/Zumapress/picture alliance</p>
 </div>
 </div>
 
@@ -218,7 +265,7 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
             without food, clean water, shelter, or medical care. Your support can provide
             life-saving humanitarian assistance to those who need it most.
         </p>
-            Together, we can restore hope and help families rebuild their lives.
+             Donations are chanelled towards humanitarian assistance in Sudan in partnership with The World Food Programme (WFP), in support of the 17 <a href="https://sdgs.un.org/goals" target="_blank">UN Sustainable Development Goals
         </p>
 
         <button class="donate-card-btn" onclick="goToDonate()">
