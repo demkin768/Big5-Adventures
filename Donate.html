@@ -68,6 +68,30 @@ center/cover no-repeat;}
 
 .donate-card-btn:hover{background:#991b1b;}
 
+.sudan-donation-card{
+    display:flex;
+    align-items:center;
+    gap:40px; padding-bottom:20px;
+
+}
+
+.sudan-content{
+    flex:1;
+}
+
+.sudan-image{
+  flex:1.4;
+}
+
+.sudan-image img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display:block;
+    border-radius:0;
+    display:block;
+}
+
 input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 
 .main-btn{padding:14px 22px;margin:8px;font-size:16px;border:none;border-radius:8px;background:#22c55e;color:white;cursor:pointer;}
@@ -182,6 +206,33 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 </div>
 
 </div>
+
+<div class="card">
+<section class="sudan-donation-card">
+
+    <div class="sudan-content">
+        <h2>Sudan Donation</h2>
+
+        <p>
+            Millions of people in Sudan have been displaced by conflict, leaving families
+            without food, clean water, shelter, or medical care. Your support can provide
+            life-saving humanitarian assistance to those who need it most.
+        </p>
+            Together, we can restore hope and help families rebuild their lives.
+        </p>
+
+        <button class="donate-card-btn" onclick="goToDonate()">
+            Donate Now
+        </button>
+    </div>
+
+    <div class="sudan-image">
+        <img src="Sudan.jpg" alt="Sudan Humanitarian Relief">
+    </div>
+
+</section>
+</div>
+
 <div class="card" style="text-align:center">
 <h2>Together We Can Change Lives</h2>
 <input type="text" id="first" placeholder="First Name">
