@@ -54,7 +54,8 @@ center/cover no-repeat;}
     background:#991b1b;
 }
 .story img{width:100%;border-radius:0px;margin:15px 0}
-.progress{background:#334155;border-radius:20px;height:20px;margin-top:15px;max-width:1600px;overflow:hidden}
+.card-goal{max-width:1700px;}
+.progress{background:#334155;border-radius:20px;height:20px;margin-top:15px;max-width:1700px;overflow:hidden}
 .progress-bar{background:#22c55e;height:100%;width:0%}
 
 .card-story{max-width:1700px;margin-left:auto;margin-right:auto;}
@@ -78,9 +79,9 @@ center/cover no-repeat;}
 @media(max-width:900px){.story-row{flex-direction:column;}
 }
 
-.donation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;margin-top:5px;max-width:1600px;margin-left:auto;margin-right:auto;justify-content:center;}
+.donation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:60px;margin-top:5px;max-width:1600px;margin-left:auto;margin-right:auto;justify-content:center;}
 
-.donation-grid-two{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;margin-top:5px;max-width:1600px;margin-left:auto;margin-right:auto;justify-content:center;}
+.donation-grid-two{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:60px;margin-top:5px;max-width:1600px;margin-left:auto;margin-right:auto;justify-content:center;}
 
 .donation-item{background:white;color:#111827;border-radius:18px;overflow:hidden;text-align:center;padding-bottom:25px;max-width:380px;margin:0 auto;width:100%;
                display:flex;flex-direction:column;}
@@ -100,7 +101,7 @@ center/cover no-repeat;}
     display:flex;
     align-items:center;
     flex-direction:row;
-    gap:30px; padding-bottom:0px;max-width:1700px;margin-left:auto;margin-right:auto;
+    gap:30px; padding-bottom:0px;max-width:1600px;margin-left:auto;margin-right:auto;
 
 }
 
@@ -211,11 +212,13 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 
 <div class="container">
 
-<div class="card">
+<div class="card goal">
+<div class="card-goal">
 <h2>Campaign Goal</h2>
 <p>Join the campaign to support wildlife protection, conservation programs, emergency relief and humanitarian initiatives across Kenya and Africa.</p>
 <h3>$745 raised of $85,000 goal</h3>
 <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+</div>
 </div>
 
 <div class="card story">
