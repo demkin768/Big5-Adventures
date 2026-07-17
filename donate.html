@@ -134,7 +134,85 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 .share{margin-bottom:10px}
 .footer{text-align:center;margin-top:10px;font-size:14px;opacity:0.7}
 .footer-block{background:#131f3b;color:white;text-align:center;margin-top:0px;font-size:14px;width:100%;padding:30px;border-radius:0px;}
-
+ 
+/* ===== Donation Modal ===== */
+.modal-overlay{
+    position:fixed;top:0;left:0;width:100%;height:100%;
+    background:rgba(0,0,0,0.7);
+    display:none;align-items:center;justify-content:center;
+    z-index:1000;padding:20px;
+}
+.modal-overlay.open{display:flex;}
+.modal-box{
+    background:#fff;border-radius:16px;overflow:hidden;
+    max-width:950px;width:100%;max-height:90vh;
+    display:flex;position:relative;
+    box-shadow:0 15px 50px rgba(0,0,0,0.4);
+}
+.modal-close{
+    position:absolute;top:12px;right:12px;
+    background:rgba(0,0,0,0.55);color:#fff;border:none;
+    border-radius:50%;width:34px;height:34px;font-size:18px;
+    cursor:pointer;z-index:10;padding:0;margin:0;line-height:1;
+}
+.modal-close:hover{background:rgba(0,0,0,0.8);}
+ 
+.modal-payment{
+    flex:0.9;padding:35px;overflow-y:auto;color:#131f3b;text-align:center;
+}
+.modal-payment h2{margin-top:0;color:#131f3b;font-size:28px;}
+.modal-payment h3{font-size:20px;}
+ 
+.modal-payment input,
+.modal-payment select{
+    width:100%;
+    margin:8px 0;
+    border-radius:0;
+    background:#fff;
+    border:1px solid #9ca3af;
+}
+ 
+.form-row{
+    display:flex;
+    gap:12px;
+    margin:8px 0;
+}
+.form-row input{
+    width:100%;
+    margin:0;
+    border-radius:0;
+    border:1px solid #9ca3af;
+}
+ 
+.payment-methods{
+    display:flex;
+    gap:15px;
+    margin-top:10px;
+}
+.payment-methods button{
+    flex:1;
+    margin:0;
+}
+ 
+@media(max-width:480px){
+    .form-row{flex-direction:column;}
+    .payment-methods{flex-direction:column;}
+}
+ 
+.modal-item{
+    flex:1;background:#b6bcc6;display:flex;flex-direction:column;overflow-y:auto;
+}
+.modal-item img{width:100%;height:260px;object-fit:cover;display:block;}
+.modal-item-content{padding:22px;color:#000;}
+.modal-item-content h3{margin-top:0;font-size:22px;}
+.modal-item-content p{font-size:15px;line-height:1.6;}
+ 
+@media(max-width:768px){
+    .modal-box{flex-direction:column;max-height:95vh;overflow-y:auto;}
+    .modal-item img{height:180px;}
+    .modal-payment{padding:25px 20px;}
+}
+ 
 @media(max-width:992px){
 .story-row{display:flex;flex-direction:column-reverse;}
 .story-image img{height:auto;}
@@ -208,7 +286,7 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 <div class="hero-block">
 <h1>Big5 Global Foundation</h1>
 <p>Protecting Wildlife & Supporting Communities</p>
-<button class="hero-donate-btn" onclick="goToDonate()">Donate</button>
+<button class="hero-donate-btn" onclick="openDonateModal('general')">Donate</button>
 </div>
 
 <div class="container">
@@ -256,21 +334,21 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 <img src="Clean Water.jpg" alt="Clean Water">
 <h3>Water Wells & Clean Water Supply – $20</h3>
 <p>Provide access to clean and safe drinking water for wildlife and communities in areas facing severe water crises.</p>
-<button class="donate-card-btn" onclick="goToDonate()">Donate Now</button>
+<button class="donate-card-btn" onclick="openDonateModal('water')">Donate Now</button>
 </div>
 
 <div class="donation-item">
 <img src="Protect Wildlife.jpg" alt="Protect Wildlife">
 <h3>Protect Wildlife – $30</h3>
 <p>Help support wildlife conservation, anti-poaching patrols, animal rescue operations, and habitat protection programs. #Savetheelephants #Savetherhino</p>
-<button class="donate-card-btn" onclick="goToDonate()">Donate Now</button>
+<button class="donate-card-btn" onclick="openDonateModal('wildlife')">Donate Now</button>
 </div>
 
 <div class="donation-item">
 <img src="Food Packages.jpeg" alt="Food Packages">
 <h3>Fresh Meal Packages – $50</h3>
 <p>Provide nutritious meals to children, families, displaced people, and vulnerable communities facing hunger and food insecurity.</p>
-<button class="donate-card-btn" onclick="goToDonate()">Donate Now</button>
+<button class="donate-card-btn" onclick="openDonateModal('food')">Donate Now</button>
 </div>
 
 </div>
@@ -281,21 +359,21 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 <img src="Shelter.jpg" alt="Shelter Setup">
 <h3>Shelter Setup – $85</h3>
 <p>Support temporary housing, blankets, safe shelters, and emergency humanitarian assistance.</p>
-<button class="donate-card-btn" onclick="goToDonate()">Donate Now</button>
+<button class="donate-card-btn" onclick="openDonateModal('shelter')">Donate Now</button>
 </div>
 
 <div class="donation-item">
 <img src="Education.jfif" alt="Education Support">
 <h3>Education Support – $100</h3>
 <p>Help children access school supplies, learning materials, and education support programs.</p>
-<button class="donate-card-btn" onclick="goToDonate()">Donate Now</button>
+<button class="donate-card-btn" onclick="openDonateModal('education')">Donate Now</button>
 </div>
 
 <div class="donation-item">
 <img src="Medical.avif" alt="Medical Support">
 <h3>Medical Support – $150</h3>
 <p>Provide emergency medical aid, healthcare support, and humanitarian treatment assistance.</p>
-<button class="donate-card-btn" onclick="goToDonate()">Donate Now</button>
+<button class="donate-card-btn" onclick="openDonateModal('medical')">Donate Now</button>
 
 </div>
 
@@ -317,7 +395,7 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
              Donations are chanelled towards humanitarian assistance in partnership with The World Food Programme (WFP), in support of the 17 <a href="https://sdgs.un.org/goals" target="_blank">UN Sustainable Development Goals</a> (SDGs).
         </p>
 
-        <button class="donate-card-btn" onclick="goToDonate()">
+        <button class="donate-card-btn" onclick="openDonateModal('sudan')">
             Donate Now
         </button>
     </div>
@@ -327,49 +405,6 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
     </div>
 
 </section>
-</div>
-
-<div class="card" style="text-align:center">
-<h2>Together We Can Change Lives</h2>
-<input type="text" id="first" placeholder="First Name">
-<input type="text" id="last" placeholder="Last Name">
-<br>
-<input type="email" id="email" placeholder="Email (optional)">
-
-<div class="card" style="text-align:center">
-<h3 style="margin-top:20px">Donation Amount</h3>
-<select id="currency">
-<option value="USD">USD · US Dollar</option>
-<option value="EUR">EUR · Euro</option>
-<option value="KES">KES · Kenya Shilling</option>
-<option disabled>──────────</option>
-<option value="GBP">GBP · British Pound</option>
-<option value="CAD">CAD · Canadian Dollar</option>
-<option value="AUD">AUD · Australian Dollar</option>
-<option value="INR">INR · Indian Rupee</option>
-<option value="JPY">JPY · Japanese Yen</option>
-<option value="CNY">CNY · Chinese Yuan</option>
-</select>
-<br>
-<input type="number" id="amount" placeholder="Enter donation amount" min="1">
-
-<h3 style="margin-top:20px">Payment Method</h3>
-<div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap">
-<button onclick="selectPayment('card')" id="cardBtn"><strong><i class="fa-regular fa-credit-card"></i>&nbsp;Credit/Debit Card</strong></button>
-<button onclick="selectPayment('paypal')" id="paypalBtn"><strong><i class="fa-brands fa-paypal"></i>&nbsp;PayPal</strong></button>
-</div>
-
-<div id="cardDetails" style="display:none;margin-top:15px">
-<p style="font-size:14px;opacity:0.9">Secure card payments are processed by Paystack.</p>
-</div>
-
-<br>
-<button id="donateNowBtn" onclick="processDonation()" disabled><strong>Donate Now</strong></button>
-</div>
-
-<div class="footer">
-<p> Donation amount is not limited</p>
-</div>
 </div>
 
 </div>
@@ -385,83 +420,203 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 <div class="footer-block">
 <p>2026 © Big5 Global Campaign. All Rights Reserved</p>
 </div>
+ 
+<!-- ===== Donation Modal ===== -->
+<div class="modal-overlay" id="donateModal">
+<div class="modal-box">
+<button class="modal-close" onclick="closeDonateModal()">&times;</button>
+ 
+<div class="modal-item">
+<img id="modalItemImg" src="" alt="Donation item">
+<div class="modal-item-content">
+<h3 id="modalItemTitle"></h3>
+<p id="modalItemDesc"></p>
+</div>
+</div>
+ 
+<div class="modal-payment">
+<h2>Together We Can Change Lives</h2>
+ 
+<div class="form-row">
+<input type="text" id="first" placeholder="First Name">
+<input type="text" id="last" placeholder="Last Name">
+</div>
+ 
+<input type="email" id="email" placeholder="Email (optional)">
+ 
+<h3 style="margin-top:20px">Donation Amount</h3>
+<select id="currency">
+<option value="USD">USD · US Dollar</option>
+<option value="EUR">EUR · Euro</option>
+<option value="KES">KES · Kenya Shilling</option>
+<option disabled>──────────</option>
+<option value="GBP">GBP · British Pound</option>
+<option value="CAD">CAD · Canadian Dollar</option>
+<option value="AUD">AUD · Australian Dollar</option>
+<option value="INR">INR · Indian Rupee</option>
+<option value="JPY">JPY · Japanese Yen</option>
+<option value="CNY">CNY · Chinese Yuan</option>
+</select>
+<input type="number" id="amount" placeholder="Enter donation amount" min="1" step="1">
+ 
+<h3 style="margin-top:20px">Payment Method</h3>
+<div class="payment-methods">
+<button onclick="selectPayment('card')" id="cardBtn"><strong><i class="fa-regular fa-credit-card"></i>&nbsp;Credit/Debit Card</strong></button>
+<button onclick="selectPayment('paypal')" id="paypalBtn"><strong><i class="fa-brands fa-paypal"></i>&nbsp;PayPal</strong></button>
+</div>
+ 
+<div id="cardDetails" style="display:none;margin-top:15px">
+<p style="font-size:14px;opacity:0.9">Secure card payments are processed by Paystack.</p>
+</div>
+ 
+<br>
+<button id="donateNowBtn" onclick="processDonation()" disabled style="width:100%"><strong>Donate Now</strong></button>
+<p style="font-size:13px;opacity:0.7;margin-top:15px">Donation amount is not limited</p>
+</div>
+ 
+</div>
+</div>
 
 <script>
 let raised = 705;
 let goal = 85000;
 document.getElementById("progressBar").style.width = (raised / goal) * 100 + "%";
 
+ 
 let paymentMethod = '';
-
+ 
 const firstInput = document.getElementById('first');
 const lastInput = document.getElementById('last');
+const emailInput = document.getElementById('email');
+const amountInput = document.getElementById('amount');
 const donateBtn = document.getElementById('donateNowBtn');
-
+const modal = document.getElementById('donateModal');
+ 
+const donationItems = {
+    water:{
+        title:"Water Wells & Clean Water Supply",
+        price:20,
+        img:"Clean Water.jpg",
+        desc:"Provide access to clean and safe drinking water for wildlife and communities in areas facing severe water crises."
+    },
+    wildlife:{
+        title:"Protect Wildlife",
+        price:30,
+        img:"Protect Wildlife.jpg",
+        desc:"Help support wildlife conservation, anti-poaching patrols, animal rescue operations, and habitat protection programs."
+    },
+    food:{
+        title:"Fresh Meal Packages",
+        price:50,
+        img:"Food Packages.jpeg",
+        desc:"Provide nutritious meals to children, families, displaced people, and vulnerable communities facing hunger and food insecurity."
+    },
+    shelter:{
+        title:"Shelter Setup",
+        price:85,
+        img:"Shelter.jpg",
+        desc:"Support temporary housing, blankets, safe shelters, and emergency humanitarian assistance."
+    },
+    education:{
+        title:"Education Support",
+        price:100,
+        img:"Education.jfif",
+        desc:"Help children access school supplies, learning materials, and education support programs."
+    },
+    medical:{
+        title:"Medical Support",
+        price:150,
+        img:"Medical.avif",
+        desc:"Provide emergency medical aid, healthcare support, and humanitarian treatment assistance."
+    },
+    sudan:{
+        title:"Sudan Humanitarian Relief",
+        price:null,
+        img:"Sudan AV.avif",
+        desc:"Support families displaced by conflict in Sudan with food, clean water, shelter, and medical care, in partnership with the World Food Programme (WFP)."
+    },
+    general:{
+        title:"General Campaign Donation",
+        price:null,
+        img:"https://images.unsplash.com/photo-1728223621746-a65fbaa283a3?q=80&w=2180&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        desc:"Support wildlife protection, conservation programs, and humanitarian relief across Kenya and Africa, wherever the need is greatest."
+    }
+};
+ 
+function openDonateModal(key){
+    const item = donationItems[key];
+    if(!item) return;
+ 
+    document.getElementById('modalItemImg').src = item.img;
+    document.getElementById('modalItemImg').alt = item.title;
+    document.getElementById('modalItemTitle').textContent = item.price ? (item.title + " – $" + item.price) : item.title;
+    document.getElementById('modalItemDesc').textContent = item.desc;
+ 
+    amountInput.value = "";
+ 
+    resetPaymentSelection();
+    firstInput.value = "";
+    lastInput.value = "";
+    emailInput.value = "";
+    validateForm();
+ 
+    modal.classList.add('open');
+}
+ 
+function closeDonateModal(){
+    modal.classList.remove('open');
+}
+ 
+function resetPaymentSelection(){
+    paymentMethod = '';
+    document.getElementById('cardBtn').classList.remove('active');
+    document.getElementById('paypalBtn').classList.remove('active');
+    document.getElementById('cardDetails').style.display = 'none';
+}
+ 
 function validateForm(){
     const ok = firstInput.value.trim() && lastInput.value.trim() && paymentMethod;
     donateBtn.disabled = !ok;
 }
-
-[firstInput, lastInput].forEach(el => {
+ 
+[firstInput, lastInput, emailInput].forEach(el => {
     el.addEventListener('input', validateForm);
 });
-
-function goToDonate(){
-
-document.getElementById('first').scrollIntoView({
-behavior:'smooth',
-block:'center'
-});
-
-}
-
+ 
 function selectPayment(method){
     if(paymentMethod === method){
-        paymentMethod = '';
-        document.getElementById('cardBtn').classList.remove('active');
-        document.getElementById('paypalBtn').classList.remove('active');
-        donateBtn.classList.remove("active");
-        document.getElementById('cardDetails').style.display = 'none';
+        resetPaymentSelection();
         validateForm();
         return;
     }
-
+ 
     paymentMethod = method;
-
     document.getElementById('cardDetails').style.display = (method === 'card') ? 'block' : 'none';
-
     document.getElementById('cardBtn').classList.remove('active');
     document.getElementById('paypalBtn').classList.remove('active');
     document.getElementById(method + 'Btn').classList.add('active');
-
+ 
     validateForm();
 }
-
+ 
 function processDonation(){
-    let amount = document.getElementById("amount").value;
-    let first = firstInput.value;
-    let last = lastInput.value;
-    let email = document.getElementById("email").value;
+    let amount = parseFloat(amountInput.value);
+    let first = firstInput.value.trim();
+    let last = lastInput.value.trim();
+    let email = emailInput.value.trim();
     let currency = document.getElementById("currency").value;
-
-     // toggle donate button
-    if(donateBtn.classList.contains('active')){
-        donateBtn.classList.remove('active');
-        return;
-    }
-
-    if(!amount || !first || !last || !paymentMethod){
+ 
+    if(!amount || amount <= 0 || !first || !last || !paymentMethod){
         alert("Please fill in your details to proceed");
-        donateBtn.classList.remove('active');
         return;
     }
-    
+ 
     if(paymentMethod === 'paypal'){
-        let url = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=big5global2@gmail.com&currency_code=${currency}&amount=${amount}`;
+        let url = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=big5global2@gmail.com&currency_code=${encodeURIComponent(currency)}&amount=${encodeURIComponent(amount)}`;
         window.open(url,'_blank');
+        closeDonateModal();
         return;
     }
-
     if(paymentMethod === 'card'){
         payWithPaystack(amount, currency, email, first + " " + last);
         return;
@@ -483,6 +638,7 @@ function payWithPaystack(amount, currency, email, name){
         },
         callback: function(response){
             alert('Donation successful! Reference: ' + response.reference);
+            closeDonateModal(); 
         },
         onClose: function(){
             alert('Transaction was not completed.');
