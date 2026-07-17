@@ -591,6 +591,15 @@ function closeDonateModal(){
         history.back();
 }
  
+}
+ 
+window.addEventListener('popstate', function(){
+    if(modal.classList.contains('open')){
+        modalOpenViaHistory = false;
+        modal.classList.remove('open');
+    }
+});
+
 function resetPaymentSelection(){
     paymentMethod = '';
     document.getElementById('cardBtn').classList.remove('active');
