@@ -484,6 +484,7 @@ document.getElementById("progressBar").style.width = (raised / goal) * 100 + "%"
 
  
 let paymentMethod = '';
+let modalOpenViaHistory = false;
  
 const firstInput = document.getElementById('first');
 const lastInput = document.getElementById('last');
@@ -546,6 +547,25 @@ const donationItems = {
 function openDonateModal(key){
     const item = donationItems[key];
     if(!item) return;
+  
+    document.getElementById('loadingOverlay').classList.add('open');
+ 
+    const minDisplayTime = 500;
+    const startTime = Date.now();
+ 
+    const preloadImg = new Image();
+    const finish = function(){
+        const elapsed = Date.now() - startTime;
+        const remaining = Math.max(0, minDisplayTime - elapsed);
+        setTimeout(function(){ showDonateModal(item); }, remaining);
+    };
+    preloadImg.onload = finish;
+    preloadImg.onerror = finish;
+    preloadImg.src = item.img;
+}
+ 
+function showDonateModal(item){
+    document.getElementById('loadingOverlay').classList.remove('open');
  
     document.getElementById('modalItemImg').src = item.img;
     document.getElementById('modalItemImg').alt = item.title;
@@ -572,6 +592,15 @@ function closeDonateModal(){
         history.back();
 }
  
+}
+ 
+window.addEventListener('popstate', function(){
+    if(modal.classList.contains('open')){
+        modalOpenViaHistory = false;
+        modal.classList.remove('open');
+    }
+});
+
 function resetPaymentSelection(){
     paymentMethod = '';
     document.getElementById('cardBtn').classList.remove('active');
