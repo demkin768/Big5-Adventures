@@ -158,9 +158,9 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 .modal-close:hover{background:rgba(0,0,0,0.8);}
  
 .modal-payment{
-    flex:0.9;padding:35px;overflow-y:auto;color:#131f3b;text-align:center;
+    flex:0.9;padding:20px;overflow-y:auto;color:#131f3b;text-align:center;
 }
-.modal-payment h2{margin-top:0;color:#131f3b;font-size:28px;}
+.modal-payment h2{margin-top:0;color:#131f3b;font-size:25px;}
 .modal-payment h3{font-size:20px;}
  
 .modal-payment input,
@@ -546,6 +546,25 @@ const donationItems = {
 function openDonateModal(key){
     const item = donationItems[key];
     if(!item) return;
+  
+    document.getElementById('loadingOverlay').classList.add('open');
+ 
+    const minDisplayTime = 500;
+    const startTime = Date.now();
+ 
+    const preloadImg = new Image();
+    const finish = function(){
+        const elapsed = Date.now() - startTime;
+        const remaining = Math.max(0, minDisplayTime - elapsed);
+        setTimeout(function(){ showDonateModal(item); }, remaining);
+    };
+    preloadImg.onload = finish;
+    preloadImg.onerror = finish;
+    preloadImg.src = item.img;
+}
+ 
+function showDonateModal(item){
+    document.getElementById('loadingOverlay').classList.remove('open');
  
     document.getElementById('modalItemImg').src = item.img;
     document.getElementById('modalItemImg').alt = item.title;
@@ -561,10 +580,15 @@ function openDonateModal(key){
     validateForm();
  
     modal.classList.add('open');
+    history.pushState({donateModal:true}, '');
+    modalOpenViaHistory = true;
 }
  
 function closeDonateModal(){
     modal.classList.remove('open');
+    if(modalOpenViaHistory){
+        modalOpenViaHistory = false;
+        history.back();
 }
  
 function resetPaymentSelection(){
