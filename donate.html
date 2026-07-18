@@ -702,7 +702,7 @@ function payWithPaystack(amount, currency, email, name){
         },
         callback: function(response){
             alert('Donation successful! Reference: ' + response.reference);
-            closeDonateModal(); 
+            
         },
         onClose: function(){
             alert('Transaction was not completed.');
