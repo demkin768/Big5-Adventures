@@ -106,13 +106,9 @@ center/cover no-repeat;}
 
 }
 
-.sudan-content{
-    flex:1;padding:-10px 5px 5px 15px;
-}
+.sudan-content{flex:1;padding:-10px 5px 5px 15px;}
 
-.sudan-image{
-  flex:1.5;align-self:stretch;
-}
+.sudan-image{flex:1.5;align-self:stretch;}
 
 .sudan-image img{
     width:100%;
@@ -121,6 +117,29 @@ center/cover no-repeat;}
     display:block;
     border-radius:0;
     display:block;
+}
+
+.newsletter-block{
+    background:#131f3b;color:#fff;text-align:center;
+    padding:50px 20px;border-radius:14px;margin-bottom:25px;
+}
+.newsletter-block h2{color:#fff;margin-top:0;font-size:32px;}
+.newsletter-block p{color:#fff;opacity:0.85;margin-bottom:25px;max-width:600px;margin-left:auto;margin-right:auto;}
+.newsletter-form{
+    display:flex;justify-content:center;gap:0;flex-wrap:wrap;
+    max-width:500px;margin:0 auto;
+}
+.newsletter-form input{
+    flex:1;min-width:200px;margin:0;
+    border-radius:8px 0 0 8px;
+}
+.newsletter-form button{
+    background:#b91c1c;border-radius:0 8px 8px 0;
+    margin:0;padding:14px 28px;
+}
+.newsletter-form button:hover{background:#991b1b;}
+@media(max-width:480px){
+    .newsletter-form input,.newsletter-form button{border-radius:8px;width:100%;}
 }
 
 input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
@@ -427,6 +446,15 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 
 </section>
 </div>
+ 
+<div class="newsletter-block">
+<h2>Newsletter</h2>
+<p>Get the latest updates, stories, and progress from our conservation and humanitarian work.</p>
+<div class="newsletter-form">
+<input type="email" id="newsletterEmail" placeholder="Enter your email">
+<button onclick="subscribeNewsletter()">Subscribe</button>
+</div>
+</div>
 
 </div>
 <div class="share-block">
@@ -630,7 +658,18 @@ window.addEventListener('popstate', function(){
         modal.classList.remove('open');
     }
 });
-
+ 
+function subscribeNewsletter(){
+    const emailField = document.getElementById('newsletterEmail');
+    const email = emailField.value.trim();
+    if(!email){
+        alert("Please enter your email address");
+        return;
+    }
+    alert("Thanks for subscribing! You'll hear from us soon.");
+    emailField.value = "";
+}
+ 
 function resetPaymentSelection(){
     paymentMethod = '';
     document.getElementById('cardBtn').classList.remove('active');
