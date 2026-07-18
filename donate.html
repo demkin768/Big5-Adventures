@@ -229,6 +229,7 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
  
 @media(max-width:768px){
     .modal-box{flex-direction:column;max-height:95vh;overflow-y:auto;}
+    .modal-item, .modal-payment{overflow-y:visible;}
     .modal-item img{height:180px;}
     .modal-payment{padding:25px 20px;}
 }
@@ -606,6 +607,10 @@ function showDonateModal(item){
     validateForm();
  
     modal.classList.add('open');
+    modal.scrollTop = 0;
+    document.querySelector('.modal-box').scrollTop = 0;
+    document.querySelector('.modal-payment').scrollTop = 0;
+    document.querySelector('.modal-item').scrollTop = 0;  
     history.pushState({donateModal:true}, '');
     modalOpenViaHistory = true;
 }
