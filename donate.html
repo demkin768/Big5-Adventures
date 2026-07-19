@@ -632,7 +632,7 @@ function showDonateModal(item){
     document.querySelector('.modal-box').scrollTop = 0;
     document.querySelector('.modal-payment').scrollTop = 0;
     document.querySelector('.modal-item').scrollTop = 0;  
-    history.pushState({donateModal:true}, '');
+    window.location.hash = 'donate';
     modalOpenViaHistory = true;
 }
  
@@ -640,13 +640,13 @@ function closeDonateModal(){
     modal.classList.remove('open');
     if(modalOpenViaHistory){
         modalOpenViaHistory = false;
-        history.back();
+        if(window.location.hash === '#donate'){history.back();}
 }
  
 }
  
-window.addEventListener('popstate', function(){
-    if(modal.classList.contains('open')){
+window.addEventListener('hashchange', function(){
+    if(window.location.hash !== '#donate' && modal.classList.contains('open')){
         modalOpenViaHistory = false;
         modal.classList.remove('open');
     }
