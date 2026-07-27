@@ -429,7 +429,7 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 
 </div>
 
-<div class="card sudan-card">
+<div class="card sudan-card" id="sudan">
 <section class="sudan-donation-card">
 
     <div class="sudan-content">
@@ -738,7 +738,7 @@ function payWithPaystack(amount, currency, email, name){
     let handler = PaystackPop.setup({
         key: 'pk_live_02166bc4dbe3aaaac6535ee5265331c72a81966f',
         email: email || 'info@big5.org',
-        amount: amount * 100,
+        amount: Math.round(amount * 100),
         currency: currency,
         metadata: {
             custom_fields: [{
