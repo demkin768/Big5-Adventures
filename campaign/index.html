@@ -160,27 +160,45 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 .share{margin-bottom:10px}
 .footer{text-align:center;margin-top:10px;font-size:14px;opacity:0.7}
 .footer-block{background:#131f3b;color:white;text-align:center;margin-top:0px;font-size:14px;width:100%;padding:30px;border-radius:0px;}
- 
+.footer-top-row{
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+    gap:20px;
+    max-width:1200px;margin-left:auto;margin-right:auto;
+}
+.footer-top-row .footer-brand{grid-column:1;justify-self:start;}
+.footer-top-row .footer-socials-col{grid-column:2;justify-self:center;}
+@media(max-width:768px){
+    .footer-top-row{grid-template-columns:1fr;justify-items:center;}
+    .footer-top-row .footer-brand{grid-column:1;justify-self:center;}
+    .footer-top-row .footer-socials-col{grid-column:1;justify-self:center;}
+} 
  .footer-brand{
     display:flex;align-items:center;justify-content:flex-start;
     gap:4px;margin-bottom:18px;flex-wrap:wrap;text-align:left;
-
+}
     @media(max-width:768px){
     .footer-brand{justify-content:center;text-align:center;}
 }
-}
 .footer-logo{height:48px;width:auto;}
 .footer-brand-name{font-size:16px;font-weight:bold;color:#fff;line-height:1.25;}
- 
+  
+.footer-socials-col{
+    display:flex;flex-direction:column;align-items:center;
+    gap:10px;
+}
 .footer-socials{
     display:flex;justify-content:center;
-    gap:22px;margin-bottom:18px;flex-wrap:wrap;
+    gap:22px;flex-wrap:wrap;
 }
 .footer-socials a{
-    color:#fff;font-size:25px;transition:.3s;
+    color:#fff;font-size:22px;transition:.3s;
 }
 .footer-socials a:hover{color:#22c55e;}
-
+ 
+.footer-top-row p{margin:0;}
+ 
 /* ===== Scroll to Top ===== */
 .scroll-top-btn{
     position:fixed;bottom:24px;right:24px;
@@ -520,10 +538,12 @@ input,select{padding:12px;border-radius:0px;border:none;width:240px;margin:8px;}
 </button>
 
 <div class="footer-block">
+<div class="footer-top-row">
 <div class="footer-brand">
 <img src="Big5img.png" alt="Big5 Global Foundation" class="footer-logo">
 <span class="footer-brand-name">Big5 Global<br>Foundation</span>
 </div>
+<div class="footer-socials-col">
 <div class="footer-socials">
 <a href="https://x.com/" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
 <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
