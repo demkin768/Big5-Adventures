@@ -125,7 +125,7 @@ SHOP TITLE BAR (split hero — white, unchanged regardless of header theme)
 
 .shop-title-bar{
 background-color:#fff;
-padding:60px 0 18px;
+padding:100px 0 18px;
 border-bottom:1px solid #eef1f5;
 position:sticky;
 top:0;
