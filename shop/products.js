@@ -315,7 +315,7 @@ const products = [
   reviews: 66,
   stock: 30,
   badge: "",
-  image: "https://picsum.photos/seed/big5-mens-shirt/500/500",
+  image: "/shop/mens-safari-shirt.jpg",
   description: "Breathable button-up safari shirt tailored for a men's fit.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["Khaki", "Olive", "Brown", "White"]
@@ -330,7 +330,7 @@ const products = [
   reviews: 58,
   stock: 30,
   badge: "",
-  image: "https://picsum.photos/seed/big5-womens-shirt/500/500",
+  image: "/shop/womens-safari-shirt.jpg",
   description: "Breathable button-up safari shirt tailored for a women's fit.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Khaki", "Olive", "White", "Grey"]
