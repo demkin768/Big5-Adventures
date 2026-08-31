@@ -156,14 +156,14 @@ background-color:#fff;
 padding:14px 0 18px;
 border-bottom:1px solid #eef1f5;
 position:fixed;
-top:66px;
+top:56px;
 left:0;
 width:100%;
 z-index:900;
 }
 
 .shop-title-bar + *{
-margin-top:94px;
+margin-top:164px;
 }
 
 .shop-title-bar .container{
