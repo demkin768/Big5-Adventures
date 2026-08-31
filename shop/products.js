@@ -315,7 +315,7 @@ const products = [
   reviews: 66,
   stock: 30,
   badge: "",
-  image: "https://picsum.photos/seed/big5-mens-shirt/500/500",
+  image: "<img src=\"/shop/mens-safari-shirt.jpg\" alt=\"Men's Safari Shirt\" class=\"product-image\">",
   description: "Breathable button-up safari shirt tailored for a men's fit.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["Khaki", "Olive", "Brown", "White"]
