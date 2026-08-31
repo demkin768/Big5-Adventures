@@ -134,6 +134,7 @@ MOBILE MENU TOGGLE (hardened — never collapses to 0px if the icon font is slow
 .menu-toggle{
 min-width:44px;
 min-height:44px;
+left: 0;
 display:flex!important;
 align-items:center;
 justify-content:center;
