@@ -164,7 +164,7 @@ z-index:900;
 }
 
 .shop-title-bar + *{
-margin-top:164px;
+margin-top:131px;
 }
 
 .shop-title-bar .container{
@@ -230,7 +230,7 @@ HERO
 height:80vh;
 background:
 linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url(https://picsum.photos/seed/big5-hero/1600/900)
+url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1800&q=80')
 center center/cover;
 display:flex;
 justify-content:center;
@@ -270,7 +270,7 @@ SEARCH
 ==========================*/
 
 .search-section{
-width: 95%;
+width: 100%;
 margin-top:-40px;
 position:relative;
 z-index:20;
