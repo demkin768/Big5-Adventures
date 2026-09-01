@@ -164,7 +164,7 @@ z-index:900;
 }
 
 .shop-title-bar + *{
-margin-top:130px;
+margin-top:164px;
 }
 
 .shop-title-bar .container{
@@ -270,7 +270,7 @@ SEARCH
 ==========================*/
 
 .search-section{
-width: 80%;
+width: 95%;
 margin-top:-40px;
 position:relative;
 z-index:20;
