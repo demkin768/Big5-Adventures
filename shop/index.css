@@ -131,14 +131,19 @@ overflow-y:visible;
 MOBILE MENU TOGGLE (hardened — never collapses to 0px if the icon font is slow/blocked)
 ==========================*/
 
-.menu-toggle{
-min-width:44px;
-min-height:44px;
-left: 0;
-display:flex!important;
-align-items:center;
-justify-content:center;
-z-index:1001;
+.menu-toggle {
+    display: flex !important;
+    min-width: 44px;
+    min-height: 44px;
+
+    align-items: center;
+    justify-content: center;
+
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    margin-right: auto;
 }
 
 @media(min-width:769px){
