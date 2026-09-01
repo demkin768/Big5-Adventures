@@ -14,7 +14,7 @@ const products = [
   reviews: 52,
   stock: 24,
   badge: "NEW",
-  image: "https://picsum.photos/seed/big5-mens-hat/500/500",
+  image: "/shop/men-hat.jpg",
   description: "Structured wide-brim hat built for men's fit, with a UPF-rated weave.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Khaki", "Brown", "Black"]
@@ -29,7 +29,7 @@ const products = [
   reviews: 47,
   stock: 24,
   badge: "NEW",
-  image: "https://picsum.photos/seed/big5-womens-hat/500/500",
+  image: "/shop/women-hatt.jpg",
   description: "Lightweight wide-brim hat with an adjustable chin cord, cut for a women's fit.",
   sizes: ["S", "M", "L"],
   colours: ["Khaki", "White", "Grey"]
