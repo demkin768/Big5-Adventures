@@ -139,7 +139,7 @@ display:flex!important;
 align-items:center;
 justify-content:center;
 z-index:1001;
-position:relative;
+position:absolute;
 }
 
 @media(min-width:769px){
@@ -157,14 +157,14 @@ background-color:#fff;
 padding:13px 0 17px;
 border-bottom:1px solid #eef1f5;
 position:fixed;
-top:56px;
+top:57px;
 left:0;
 width:100%;
 z-index:900;
 }
 
 .shop-title-bar + *{
-margin-top:164px;
+margin-top:127px;
 }
 
 .shop-title-bar .container{
@@ -293,7 +293,6 @@ padding-left:16px 20px;
 
 .search-box button{
 background:var(--primary);
-position: absolute;
 border:none;
 color:white;
 padding:16px 35px;
