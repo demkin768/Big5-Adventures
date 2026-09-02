@@ -14,7 +14,7 @@ const products = [
   reviews: 52,
   stock: 24,
   badge: "NEW",
-  image: "/shop/men-hat.jpg",
+  image: "/shop/men-hat.png",
   description: "Structured wide-brim hat built for men's fit, with a UPF-rated weave.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Khaki", "Brown", "Black"]
@@ -29,7 +29,7 @@ const products = [
   reviews: 47,
   stock: 24,
   badge: "NEW",
-  image: "/shop/women-hatt.jpg",
+  image: "/shop/women-hat.jpg",
   description: "Lightweight wide-brim hat with an adjustable chin cord, cut for a women's fit.",
   sizes: ["S", "M", "L"],
   colours: ["Khaki", "White", "Grey"]
@@ -44,7 +44,7 @@ const products = [
   reviews: 39,
   stock: 40,
   badge: "NEW",
-  image: "/shop/Plain-hoodie.png",
+  image: "/shop/Cheetah-hoodie.png",
   description: "Heavyweight fleece hoodie, plain by default with the option of a Big Five animal on the front.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["Khaki", "Jungle Green", "Black", "Grey"],
@@ -127,7 +127,7 @@ const products = [
   reviews: 118,
   stock: 22,
   badge: "NEW",
-  image: "https://picsum.photos/seed/big5-boots1/500/500",
+  image: "/shop/Safari-boots.jpg",
   description: "Comfortable waterproof safari boots.",
   sizes: ["40", "41", "42", "43", "44", "45"],
   colours: ["Brown", "Black"]
@@ -142,7 +142,7 @@ const products = [
   reviews: 88,
   stock: 9,
   badge: "",
-  image: "https://picsum.photos/seed/big5-binoculars1/500/500",
+  image: "/shop/Binoculars.jpg",
   description: "Professional wildlife viewing binoculars.",
   sizes: ["10x42"],
   colours: ["Black"]
@@ -157,7 +157,7 @@ const products = [
   reviews: 93,
   stock: 32,
   badge: "",
-  image: "https://picsum.photos/seed/big5-trousers/500/500",
+  image: "/shop/Cargo-trousers.png",
   description: "Quick drying cargo safari trousers.",
   sizes: ["30", "32", "34", "36", "38"],
   colours: ["Khaki", "Olive"]
@@ -172,7 +172,7 @@ const products = [
   reviews: 70,
   stock: 15,
   badge: "NEW",
-  image: "https://picsum.photos/seed/big5-jacket/500/500",
+  image: "Fleece-jacket.jpg",
   description: "Warm fleece jacket for early morning game drives.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Jungle Green", "Black"]
@@ -187,7 +187,7 @@ const products = [
   reviews: 54,
   stock: 20,
   badge: "",
-  image: "https://picsum.photos/seed/big5-rain/500/500",
+  image: "/shop/Rain-jacket.jpg",
   description: "Lightweight waterproof shell.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Olive", "Black"]
@@ -202,7 +202,7 @@ const products = [
   reviews: 61,
   stock: 44,
   badge: "",
-  image: "https://picsum.photos/seed/big5-belt/500/500",
+  image: "/shop/Leather-belt.jfif",
   description: "Premium leather safari belt.",
   sizes: ["32", "34", "36", "38"],
   colours: ["Brown", "Black"]
@@ -217,7 +217,7 @@ const products = [
   reviews: 74,
   stock: 21,
   badge: "",
-  image: "https://picsum.photos/seed/big5-backpack/500/500",
+  image: "/shop/Backpack.jpg",
   description: "Adventure backpack with hydration compatibility.",
   sizes: ["35L"],
   colours: ["Olive", "Black"]
@@ -292,17 +292,17 @@ const products = [
   reviews: 28,
   stock: 22,
   badge: "SALE",
-  image: "https://picsum.photos/seed/big5-set-plain/500/500",
+  image: "/shop/Rhino-set.png",
   description: "Matching hoodie and sweatpants set, plain by default with the option of a Big Five animal — on the hoodie front and the sweatpants' upper left leg.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["Khaki", "Jungle Green", "Black", "Grey"],
   animals: [
-    { name: "Plain", image: "https://picsum.photos/seed/big5-set-plain/500/500" },
-    { name: "Lion", image: "https://picsum.photos/seed/big5-set-lion/500/500" },
-    { name: "Elephant", image: "https://picsum.photos/seed/big5-set-elephant/500/500" },
-    { name: "Buffalo", image: "https://picsum.photos/seed/big5-set-buffalo/500/500" },
-    { name: "Rhino", image: "https://picsum.photos/seed/big5-set-rhino/500/500" },
-    { name: "Cheetah", image: "https://picsum.photos/seed/big5-set-cheetah/500/500" }
+    { name: "Plain", image: "/shop/Plain-set.png" },
+    { name: "Lion", image: "/shop/Lion-set.png" },
+    { name: "Elephant", image: "/shop/Elephant-set.png" },
+    { name: "Buffalo", image: "/shop/Buffalo-set.png" },
+    { name: "Rhino", image: "/shop/Rhino-set.png" },
+    { name: "Cheetah", image: "/shop/Cheetah-set.png" }
   ]
 },
 
@@ -315,7 +315,7 @@ const products = [
   reviews: 66,
   stock: 30,
   badge: "",
-  image: "/shop/mens-safari-shirt.jpg",
+  image: "/shop/men-safari-shirt.jpg",
   description: "Breathable button-up safari shirt tailored for a men's fit.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["Khaki", "Olive", "Brown", "White"]
@@ -330,7 +330,7 @@ const products = [
   reviews: 58,
   stock: 30,
   badge: "",
-  image: "/shop/womens-safari-shirt.jpg",
+  image: "/shop/women-safari-shirt.jpg",
   description: "Breathable button-up safari shirt tailored for a women's fit.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Khaki", "Olive", "White", "Grey"]
@@ -345,7 +345,7 @@ const products = [
   reviews: 44,
   stock: 26,
   badge: "",
-  image: "https://picsum.photos/seed/big5-mens-trousers/500/500",
+  image: "/shop/men-trouser.png",
   description: "Durable quick-dry safari trousers cut for a men's fit.",
   sizes: ["30", "32", "34", "36", "38"],
   colours: ["Khaki", "Olive", "Brown", "Black"]
@@ -360,7 +360,7 @@ const products = [
   reviews: 41,
   stock: 26,
   badge: "",
-  image: "https://picsum.photos/seed/big5-womens-trousers/500/500",
+  image: "/shop/women-trouser.png",
   description: "Durable quick-dry safari trousers cut for a women's fit.",
   sizes: ["6", "8", "10", "12", "14"],
   colours: ["Khaki", "Olive", "Grey", "Black"]
@@ -436,7 +436,7 @@ const products = [
   reviews: 57,
   stock: 60,
   badge: "NEW",
-  image: "https://picsum.photos/seed/big5-beads/500/500",
+  image: "/shop/Beads.jpeg",
   description: "Handcrafted beaded necklaces made by local Kenyan artisans — each piece is one of a kind.",
   sizes: ["One Size"],
   colours: ["Multicolour"]
