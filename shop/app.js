@@ -613,6 +613,36 @@ if (headerEl) {
 }
 
 /*=========================================
+HIDE HEADER ON SCROLL DOWN, REVEAL ON SCROLL UP
+(the SAFARI SHOP title bar always stays visible — it slides up
+to take the header's place while the header is hidden)
+=========================================*/
+
+const shopTitleBarEl = document.querySelector(".shop-title-bar");
+
+if (headerEl && shopTitleBarEl) {
+
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll", () => {
+
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > lastScrollY && currentScrollY > 150) {
+            // scrolling down — hide header, title bar rises to top:0
+            headerEl.classList.add("header-hidden");
+            shopTitleBarEl.classList.add("title-bar-raised");
+        } else {
+            // scrolling up — reveal header, title bar drops back down
+            headerEl.classList.remove("header-hidden");
+            shopTitleBarEl.classList.remove("title-bar-raised");
+        }
+
+        lastScrollY = currentScrollY;
+    });
+}
+
+/*=========================================
 BACK TO TOP
 =========================================*/
 

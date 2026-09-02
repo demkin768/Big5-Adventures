@@ -44,17 +44,17 @@ const products = [
   reviews: 39,
   stock: 40,
   badge: "NEW",
-  image: "https://picsum.photos/seed/big5-hoodie-plain/500/500",
+  image: "/shop/Plain-hoodie.png",
   description: "Heavyweight fleece hoodie, plain by default with the option of a Big Five animal on the front.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["Khaki", "Jungle Green", "Black", "Grey"],
   animals: [
-    { name: "Plain", image: "https://picsum.photos/seed/big5-hoodie-plain/500/500" },
-    { name: "Lion", image: "https://picsum.photos/seed/big5-hoodie-lion/500/500" },
-    { name: "Elephant", image: "https://picsum.photos/seed/big5-hoodie-elephant/500/500" },
-    { name: "Buffalo", image: "https://picsum.photos/seed/big5-hoodie-buffalo/500/500" },
-    { name: "Rhino", image: "https://picsum.photos/seed/big5-hoodie-rhino/500/500" },
-    { name: "Cheetah", image: "https://picsum.photos/seed/big5-hoodie-cheetah/500/500" }
+    { name: "Plain", image: "/shop/Plain-hoodie.png" },
+    { name: "Lion", image: "/shop/Lion-hoodie.png" },
+    { name: "Elephant", image: "/shop/Elephant-hoodie.png" },
+    { name: "Buffalo", image: "/shop/Buffalo-hoodie.png" },
+    { name: "Rhino", image: "/shop/Rhino-hoodie.png" },
+    { name: "Cheetah", image: "/shop/Cheetah-hoodie.png" }
   ]
 },
 
