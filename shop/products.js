@@ -29,7 +29,7 @@ const products = [
   reviews: 47,
   stock: 24,
   badge: "NEW",
-  image: "/shop/women-hat.jpg",
+  image: "/shop/women-hat.png",
   description: "Lightweight wide-brim hat with an adjustable chin cord, cut for a women's fit.",
   sizes: ["S", "M", "L"],
   colours: ["Khaki", "White", "Grey"]
@@ -315,7 +315,7 @@ const products = [
   reviews: 66,
   stock: 30,
   badge: "",
-  image: "/shop/men-safari-shirt.jpg",
+  image: "/shop/men-safari-shirt.png",
   description: "Breathable button-up safari shirt tailored for a men's fit.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["Khaki", "Olive", "Brown", "White"]
@@ -330,7 +330,7 @@ const products = [
   reviews: 58,
   stock: 30,
   badge: "",
-  image: "/shop/women-safari-shirt.jpg",
+  image: "/shop/women-safari-shirt.png",
   description: "Breathable button-up safari shirt tailored for a women's fit.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Khaki", "Olive", "White", "Grey"]
@@ -345,7 +345,7 @@ const products = [
   reviews: 44,
   stock: 26,
   badge: "",
-  image: "/shop/men-trouser.png",
+  image: "/shop/Men-trouser.png",
   description: "Durable quick-dry safari trousers cut for a men's fit.",
   sizes: ["30", "32", "34", "36", "38"],
   colours: ["Khaki", "Olive", "Brown", "Black"]
@@ -360,7 +360,7 @@ const products = [
   reviews: 41,
   stock: 26,
   badge: "",
-  image: "/shop/women-trouser.png",
+  image: "/shop/Women-trouser.png",
   description: "Durable quick-dry safari trousers cut for a women's fit.",
   sizes: ["6", "8", "10", "12", "14"],
   colours: ["Khaki", "Olive", "Grey", "Black"]
