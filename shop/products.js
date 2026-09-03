@@ -54,7 +54,7 @@ const products = [
     { name: "Elephant", image: "/shop/Elephant-hoodie.png" },
     { name: "Buffalo", image: "/shop/Buffalo-hoodie.png" },
     { name: "Rhino", image: "/shop/Rhino-hoodie.png" },
-    { name: "Cheetah", image: "/shop/Cheetah-hoodie.png" }
+    { name: "Leopard", image: "/shop/Leopard-hoodie.png" }
   ]
 },
 
@@ -172,7 +172,7 @@ const products = [
   reviews: 70,
   stock: 15,
   badge: "NEW",
-  image: "Fleece-jacket.jpg",
+  image: "Fleece-jacket.png",
   description: "Warm fleece jacket for early morning game drives.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Jungle Green", "Black"]
@@ -302,7 +302,7 @@ const products = [
     { name: "Elephant", image: "/shop/Elephant-set.png" },
     { name: "Buffalo", image: "/shop/Buffalo-set.png" },
     { name: "Rhino", image: "/shop/Rhino-set.png" },
-    { name: "Cheetah", image: "/shop/Cheetah-set.png" }
+    { name: "Leopard", image: "/shop/Leopard-set.png" }
   ]
 },
 
@@ -375,17 +375,17 @@ const products = [
   reviews: 71,
   stock: 50,
   badge: "",
-  image: "https://picsum.photos/seed/big5-mtee-plain/500/500",
+  image: "/shop/Lion-Mtshirt.png",
   description: "Soft cotton tee, plain by default with the option of a Big Five animal print.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["White", "Khaki", "Jungle Green", "Grey", "Black"],
   animals: [
-    { name: "Plain", image: "https://picsum.photos/seed/big5-mtee-plain/500/500" },
-    { name: "Lion", image: "https://picsum.photos/seed/big5-mtee-lion/500/500" },
-    { name: "Elephant", image: "https://picsum.photos/seed/big5-mtee-elephant/500/500" },
-    { name: "Buffalo", image: "https://picsum.photos/seed/big5-mtee-buffalo/500/500" },
-    { name: "Rhino", image: "https://picsum.photos/seed/big5-mtee-rhino/500/500" },
-    { name: "Cheetah", image: "https://picsum.photos/seed/big5-mtee-cheetah/500/500" }
+    { name: "Plain", image: "/shop/Men-Tshirt.png" },
+    { name: "Lion", image: "/shop/Lion-Mtshirt.png" },
+    { name: "Elephant", image: "/shop/Elephant-Mtshirt.png" },
+    { name: "Buffalo", image: "/shop/Buffalo-Mtshirt.png" },
+    { name: "Rhino", image: "/shop/Rhino-Mtshirt.png" },
+    { name: "Leopard", image: "/shop/Leopard-Mtshirt.png" }
   ]
 },
 
@@ -398,17 +398,17 @@ const products = [
   reviews: 64,
   stock: 50,
   badge: "",
-  image: "https://picsum.photos/seed/big5-wtee-plain/500/500",
+  image: "/shop/Women-Tshirt.png",
   description: "Soft cotton tee, plain by default with the option of a Big Five animal print.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["White", "Khaki", "Jungle Green", "Grey", "Black"],
   animals: [
-    { name: "Plain", image: "https://picsum.photos/seed/big5-wtee-plain/500/500" },
-    { name: "Lion", image: "https://picsum.photos/seed/big5-wtee-lion/500/500" },
-    { name: "Elephant", image: "https://picsum.photos/seed/big5-wtee-elephant/500/500" },
-    { name: "Buffalo", image: "https://picsum.photos/seed/big5-wtee-buffalo/500/500" },
-    { name: "Rhino", image: "https://picsum.photos/seed/big5-wtee-rhino/500/500" },
-    { name: "Cheetah", image: "https://picsum.photos/seed/big5-wtee-cheetah/500/500" }
+    { name: "Plain", image: "/shop/Women-Ptshirt.png" },
+    { name: "Lion", image: "/shop/Lion-Wtshirt.png" },
+    { name: "Elephant", image: "/shop/Elephant-Wtshirt.png" },
+    { name: "Buffalo", image: "/shop/Buffalo-Wtshirt.png" },
+    { name: "Rhino", image: "/shop/Rhino-Wtshirt.png" },
+    { name: "Leopard", image: "/shop/Leopard-Wtshirt.png" }
   ]
 },
 
