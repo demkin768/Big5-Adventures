@@ -44,7 +44,7 @@ const products = [
   reviews: 39,
   stock: 40,
   badge: "NEW",
-  image: "/shop/Cheetah-hoodie.png",
+  image: "/shop/Leopard-hoodie.png",
   description: "Heavyweight fleece hoodie, plain by default with the option of a Big Five animal on the front.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["Khaki", "Jungle Green", "Black", "Grey"],
