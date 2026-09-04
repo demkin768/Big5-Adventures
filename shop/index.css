@@ -127,27 +127,6 @@ overflow-x:clip;
 overflow-y:visible;
 }
 
-/*=========================
-MOBILE MENU TOGGLE (hardened — never collapses to 0px if the icon font is slow/blocked)
-==========================*/
-
-.menu-toggle{
-width:44px;
-height:44px;
-min-width:44px;
-min-height:44px;
-display:flex!important;
-align-items:center;
-justify-content:center;
-z-index:1001;
-position:relative;
-}
-
-@media(min-width:769px){
-.menu-toggle{
-display:none!important;
-}
-}
 
 /*=========================
 SHOP TITLE BAR (split hero — white, unchanged regardless of header theme)
