@@ -172,7 +172,7 @@ const products = [
   reviews: 70,
   stock: 15,
   badge: "NEW",
-  image: "Fleece-jacket.png",
+  image: "/shop/Fleece-jacket.png",
   description: "Warm fleece jacket for early morning game drives.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Jungle Green", "Black"]
@@ -380,7 +380,7 @@ const products = [
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["White", "Khaki", "Jungle Green", "Grey", "Black"],
   animals: [
-    { name: "Plain", image: "/shop/Men-Tshirt.png" },
+    { name: "Plain", image: "/shop/Men-Tshirt.jpg" },
     { name: "Lion", image: "/shop/Lion-Mtshirt.png" },
     { name: "Elephant", image: "/shop/Elephant-Mtshirt.png" },
     { name: "Buffalo", image: "/shop/Buffalo-Mtshirt.png" },

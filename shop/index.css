@@ -46,11 +46,6 @@ ul{
 list-style:none;
 }
 
-.container{
-width:90%;
-max-width:1400px;
-margin:auto;
-}
 
 /* Wider container for the shop sections so 4-column cards have more room */
 .shop-zone .container,
