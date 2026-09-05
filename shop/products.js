@@ -45,7 +45,7 @@ const products = [
   stock: 40,
   badge: "NEW",
   image: "/shop/Leopard-hoodie.png",
-  description: "Heavyweight fleece hoodie, plain by default with the option of a Big Five animal on the front.",
+  description: "Heavyweight fleece hoodie, plain by default with the option of a Big Five animal on the front or the back.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["Khaki", "Jungle Green", "Black", "Grey"],
   animals: [
@@ -293,7 +293,7 @@ const products = [
   stock: 22,
   badge: "SALE",
   image: "/shop/Rhino-set.png",
-  description: "Matching hoodie and sweatpants set, plain by default with the option of a Big Five animal — on the hoodie front and the sweatpants' upper left leg.",
+  description: "Matching hoodie and sweatpants set, plain by default with the option of a Big Five animal — on the hoodie front or back and the sweatpants' upper left leg.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["Khaki", "Jungle Green", "Black", "Grey"],
   animals: [
