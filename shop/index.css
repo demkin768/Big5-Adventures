@@ -132,7 +132,7 @@ background-color:#fff;
 padding:24px 0 18px;
 border-bottom:1px solid #eef1f5;
 position:fixed;
-top:66px;
+top:60px;
 left:0;
 width:100%;
 z-index:900;
@@ -742,7 +742,7 @@ background:var(--accent);
 }
 
 .quick-button{
-padding:13px 14px;
+padding:13px 11px;
 background:var(--secondary);
 color:#fff;
 border:none;
