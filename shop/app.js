@@ -138,12 +138,26 @@ function addToCart(id, btnEl){
     const product = products.find(p => p.id === id);
     if (!product) return;
 
+    // Use whatever image is actually shown on the card that was clicked
+    // (Best Sellers, Featured, etc. can each show a different photo for
+    // the same product) rather than always defaulting to the catalog's
+    // canonical image.
+    let displayImage = product.image;
+
+    if (btnEl) {
+        const card = btnEl.closest(".product-card");
+        const cardImg = card ? card.querySelector("img") : null;
+        if (cardImg && cardImg.src) {
+            displayImage = cardImg.src;
+        }
+    }
+
     const existing = cart.find(item => (item.cartId || String(item.id)) === String(id));
 
     if (existing) {
         existing.qty++;
     } else {
-        cart.push({ ...product, qty: 1 });
+        cart.push({ ...product, image: displayImage, qty: 1 });
     }
 
     saveCart();
@@ -556,6 +570,7 @@ function startCountdown(){
     if (!daysEl) return;
 
     const endTime = SALE_END;
+    let interval;
 
     function tick(){
 
@@ -575,7 +590,7 @@ function startCountdown(){
     }
 
     tick();
-    const interval = setInterval(tick, 1000);
+    interval = setInterval(tick, 1000);
 }
 
 /*=========================================
@@ -771,6 +786,40 @@ document.querySelectorAll(".footer-newsletter, .newsletter form").forEach(form =
         form.reset();
     });
 });
+
+/*=========================================
+HERO SLIDESHOW
+=========================================*/
+
+const heroSlides = document.querySelectorAll(".hero-slide");
+const heroDots = document.querySelectorAll(".hero-dot");
+let heroIndex = 0;
+let heroInterval = null;
+
+function showHeroSlide(index){
+    heroSlides.forEach(s => s.classList.remove("active"));
+    heroDots.forEach(d => d.classList.remove("active"));
+    heroSlides[index].classList.add("active");
+    heroDots[index].classList.add("active");
+    heroIndex = index;
+}
+
+function startHeroSlideshow(){
+    heroInterval = setInterval(() => {
+        showHeroSlide((heroIndex + 1) % heroSlides.length);
+    }, 5000);
+}
+
+if (heroSlides.length) {
+    heroDots.forEach(dot => {
+        dot.addEventListener("click", () => {
+            clearInterval(heroInterval);
+            showHeroSlide(parseInt(dot.dataset.slide, 10));
+            startHeroSlideshow();
+        });
+    });
+    startHeroSlideshow();
+}
 
 /*=========================================
 INITIALISE
