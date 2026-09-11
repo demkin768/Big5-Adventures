@@ -23,6 +23,17 @@ const cartItems = document.getElementById("cartItems");
 const subtotal = document.getElementById("subtotal");
 const searchInput = document.getElementById("searchInput");
 
+/**
+ * Always trust the catalog's price for this product id, never the
+ * price value sitting in localStorage — that value can be edited by
+ * anyone in devtools before checkout, and money math should never
+ * read from client storage.
+ */
+function trustedPrice(item) {
+  const product = products.find(p => p.id === item.id);
+  return product ? product.price : 0; // unknown id → don't charge for it
+}
+
 /*=========================================
 LOAD PRODUCTS
 =========================================*/
@@ -55,6 +66,10 @@ function renderProducts(list = products) {
         const isWishlisted = wishlist.includes(product.id);
         const showBadge = product.badge && (product.badge !== "SALE" || isSaleActive());
 
+        // Featured grid: no Add To Cart / Quick View buttons — the whole
+        // image is the click target, straight to the product page where
+        // colour/size/animal is picked. Best Sellers below keeps its own
+        // direct-add button and is untouched by this change.
         productGrid.innerHTML += `
 
         <div class="product-card" id="product-${product.id}">
@@ -67,7 +82,7 @@ function renderProducts(list = products) {
 
             <img src="${product.image}" alt="${product.name}" onclick="location.href='/shop/product/?id=${product.id}'" style="cursor:pointer;">
 
-            <div class="product-info">
+            <div class="product-info" onclick="location.href='/shop/product/?id=${product.id}'" style="cursor:pointer;">
 
                 <h3>${product.name}</h3>
 
@@ -76,15 +91,6 @@ function renderProducts(list = products) {
                 </div>
 
                 <div class="price">$${product.price}</div>
-
-                <div class="product-buttons">
-                    <button class="cart-button" onclick="location.href='/shop/product/?id=${product.id}'">
-                        <i class="fas fa-cart-shopping"></i> Add To Cart
-                    </button>
-                    <button class="quick-button" onclick="quickView(${product.id})">
-                        Quick View
-                    </button>
-                </div>
 
             </div>
 
@@ -196,7 +202,9 @@ function updateCart(){
 
     cart.forEach(item => {
 
-        const lineTotal = item.price * item.qty;
+        // Price integrity: recalculated from the catalog every time,
+        // never trusted from what's sitting in localStorage.
+        const lineTotal = trustedPrice(item) * item.qty;
         total += lineTotal;
         const key = item.cartId || item.id;
 
@@ -687,7 +695,7 @@ const checkoutView = document.getElementById("checkoutView");
 const cartDrawerTitle = document.getElementById("cartDrawerTitle");
 
 function cartTotal(){
-    return cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+    return cart.reduce((sum, item) => sum + trustedPrice(item) * item.qty, 0);
 }
 
 function showCheckoutView(){
@@ -701,6 +709,11 @@ function showCheckoutView(){
     cartView.style.display = "none";
     checkoutView.style.display = "block";
     cartDrawerTitle.textContent = "Checkout";
+
+    // Populate the country dropdown from the shared list (see countries.js)
+    if (typeof populateCountrySelect === "function") {
+        populateCountrySelect("checkoutCountry");
+    }
 }
 
 function showCartView(){
