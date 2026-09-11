@@ -504,7 +504,7 @@ transform:scale(1.05);
 }
 
 .product-info{
-padding:25px;
+padding:10px;
 display:flex;
 flex-direction:column;
 flex:1;
@@ -532,7 +532,7 @@ color:#64748b;
 font-size:20px;
 font-weight:700;
 color:var(--primary);
-margin-bottom:20px;
+margin-bottom:10px;
 }
 
 /*=========================================
