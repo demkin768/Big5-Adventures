@@ -504,7 +504,7 @@ transform:scale(1.05);
 }
 
 .product-info{
-padding:10px;
+padding:8px;
 display:flex;
 flex-direction:column;
 flex:1;
@@ -529,10 +529,11 @@ color:#64748b;
 }
 
 .price{
-font-size:20px;
+font-size:15px;
 font-weight:700;
 color:var(--primary);
-margin-bottom:10px;
+margin-top:auto;
+margin-bottom:4px;
 }
 
 /*=========================================
