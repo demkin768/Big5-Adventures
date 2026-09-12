@@ -132,7 +132,7 @@ background-color:#fff;
 padding:24px 0 18px;
 border-bottom:1px solid #eef1f5;
 position:fixed;
-top:58px;
+top:56px;
 left:0;
 width:100%;
 z-index:900;
@@ -152,7 +152,7 @@ transform:translateY(-100%);
 }
 
 .shop-title-bar + *{
-margin-top:162px;
+margin-top:158px;
 }
 
 .shop-title-bar .container{
@@ -183,7 +183,7 @@ width:auto;
 }
 
 .shop-title-bar-inner h1{
-font-size:31px;
+font-size:28px;
 font-weight:800;
 color:#111;
 text-transform:uppercase;
