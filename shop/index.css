@@ -256,7 +256,7 @@ background:rgba(0,0,0,.45);
 .hero-slide.active{
 opacity:1;
 }
- 
+
 .slideshow-controls{
 position:absolute;
 bottom:24px;
@@ -264,9 +264,10 @@ left:50%;
 transform:translateX(-50%);
 display:flex;
 gap:12px;
-z-index:3;
+z-index:10;
+pointer-events:auto;
 }
- 
+
 .hero-dot{
 width:11px;
 height:11px;
@@ -274,6 +275,8 @@ border-radius:50%;
 background:rgba(255,255,255,.5);
 cursor:pointer;
 transition:.3s;
+display:block;
+pointer-events:auto;
 }
  
 .hero-dot.active{
