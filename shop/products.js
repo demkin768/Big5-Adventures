@@ -371,11 +371,11 @@ const products = [
   name: "Boonie Hat with Neck Flap",
   category: "Hats",
   price: 29,
-  rating: 4.8,
+  rating: 3.8,
   reviews: 41,
   stock: 26,
   badge: "",
-  image: "/shop/Bonnie-hat.png",
+  image: "/shop/Boonie-hat.png",
   description: "Unisex bonnie-hat with neck flap | Brim neck cover sun UV flap cap outdoor boonie fishing hiking hat.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Khaki", "Olive", "Grey",]
@@ -451,7 +451,7 @@ const products = [
   reviews: 41,
   stock: 26,
   badge: "",
-  image: "/shop/Women-Bonniehat.png",
+  image: "/shop/Women-Booniehat.png",
   description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Khaki", "Olive", "Grey",]
@@ -466,7 +466,7 @@ const products = [
   reviews: 41,
   stock: 26,
   badge: "",
-  image: "/shop/Men-Bonniehat.png",
+  image: "/shop/Men-Booniehat.png",
   description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Khaki", "Olive", "Grey",]
