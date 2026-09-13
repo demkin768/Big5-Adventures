@@ -17,7 +17,7 @@ const products = [
   image: "/shop/men-hat.png",
   description: "Structured wide-brim hat built for men's fit, with a UPF-rated weave.",
   sizes: ["S", "M", "L", "XL"],
-  colours: ["Khaki", "Brown", "Black"]
+  colours: ["Khaki", "Brown", "Olive"]
 },
 
 {
@@ -32,7 +32,7 @@ const products = [
   image: "/shop/women-hat.png",
   description: "Lightweight wide-brim hat with an adjustable chin cord, cut for a women's fit.",
   sizes: ["S", "M", "L"],
-  colours: ["Khaki", "White", "Grey"]
+  colours: ["Khaki", "Brown", "Olive"]
 },
 
 {
@@ -367,6 +367,21 @@ const products = [
 },
 
 {
+  id: 31,
+  name: "Boonie Hat with Neck Flap",
+  category: "Hats",
+  price: 29,
+  rating: 4.8,
+  reviews: 41,
+  stock: 26,
+  badge: "",
+  image: "/shop/Bonnie-hat.png",
+  description: "Unisex bonnie-hat with neck flap | Brim neck cover sun UV flap cap outdoor boonie fishing hiking hat.",
+  sizes: ["S", "M", "L", "XL"],
+  colours: ["Khaki", "Olive", "Grey",]
+},
+
+{
   id: 24,
   name: "Men's Safari T-Shirt",
   category: "Clothing",
@@ -425,6 +440,36 @@ const products = [
   description: "Lightweight breathable safari shoes, built for warm-weather game drives and walking trails.",
   sizes: ["38", "39", "40", "41", "42", "43", "44", "45"],
   colours: ["Khaki", "Grey", "Black", "Brown"]
+},
+
+{
+  id: 29,
+  name: "Women Boonie Hat",
+  category: "Hats",
+  price: 38,
+  rating: 3.8,
+  reviews: 41,
+  stock: 26,
+  badge: "",
+  image: "/shop/Women-Bonniehat.png",
+  description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
+  sizes: ["S", "M", "L", "XL"],
+  colours: ["Khaki", "Olive", "Grey",]
+},
+
+{
+  id: 30,
+  name: "Men Boonie Hat",
+  category: "Hats",
+  price: 38,
+  rating: 4.0,
+  reviews: 41,
+  stock: 26,
+  badge: "",
+  image: "/shop/Men-Bonniehat.png",
+  description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
+  sizes: ["S", "M", "L", "XL"],
+  colours: ["Khaki", "Olive", "Grey",]
 },
 
 {
