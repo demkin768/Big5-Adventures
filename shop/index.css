@@ -552,7 +552,8 @@ transform:translateY(-8px);
 
 .product-card img{
 height:320px;
-object-fit:contain;
+object-fit:cover;
+object-position:top;
 transition:.4s;
 flex-shrink:0;
 }
