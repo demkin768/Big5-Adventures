@@ -149,12 +149,10 @@ function addToCart(id, btnEl){
     // the same product) rather than always defaulting to the catalog's
     // canonical image.
     let displayImage = product.image;
-    let displayName = product.name;
 
     if (btnEl) {
         const card = btnEl.closest(".product-card");
         const cardImg = card ? card.querySelector("img") : null;
-        const cardName = card ? card.querySelector("h3") : null;
         if (cardImg && cardImg.src) {
             displayImage = cardImg.src;
         }
