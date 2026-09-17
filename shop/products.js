@@ -9,30 +9,30 @@ const products = [
   id: 16,
   name: "Men's Explorer Safari Hat",
   category: "Hats",
-  price: 38,
-  rating: 4.8,
+  price: 15,
+  rating: 4.3,
   reviews: 52,
   stock: 24,
   badge: "",
   image: "/shop/men-hat.png",
   description: "Structured wide-brim hat built for men's fit, with a UPF-rated weave.",
   sizes: ["S", "M", "L", "XL"],
-  colours: ["Khaki", "Brown", "Black"]
+  colours: ["Khaki", "Brown", "Olive"]
 },
 
 {
   id: 17,
   name: "Women's Explorer Safari Hat",
   category: "Hats",
-  price: 38,
-  rating: 4.9,
+  price: 15,
+  rating: 4.4,
   reviews: 47,
   stock: 24,
   badge: "",
   image: "/shop/women-hat.png",
   description: "Lightweight wide-brim hat with an adjustable chin cord, cut for a women's fit.",
   sizes: ["S", "M", "L"],
-  colours: ["Khaki", "White", "Grey"]
+  colours: ["Khaki", "Brown", "Olive"]
 },
 
 {
@@ -60,32 +60,32 @@ const products = [
 
 {
   id: 1,
-  name: "Safari Explorer Shirt",
-  category: "Clothing",
-  price: 59,
-  rating: 4.9,
+  name: "Women Rufiji Boots",
+  category: "Footwear",
+  price: 48,
+  rating: 4.0,
   reviews: 184,
   stock: 27,
   badge: "NEW",
-  image: "https://picsum.photos/seed/big5-shirt1/500/500",
-  description: "Lightweight breathable safari shirt with UPF protection.",
+  image: "/shop/Women-boots.jpg",
+  description: "Stylish leather boots.",
   sizes: ["S", "M", "L", "XL", "XXL"],
   colours: ["Khaki", "Olive", "Brown"]
 },
 
 {
   id: 2,
-  name: "Safari Bush Hat",
+  name: "Safari Leather Hat",
   category: "Hats",
-  price: 35,
-  rating: 4.8,
+  price: 51,
+  rating: 4.1 (5),
   reviews: 96,
   stock: 18,
   badge: "",
-  image: "https://picsum.photos/seed/big5-hat1/500/500",
-  description: "Wide brim safari hat for maximum sun protection.",
+  image: "/shop/Hat.png",
+  description: "Men adjustable leather hat.",
   sizes: ["S", "M", "L"],
-  colours: ["Khaki", "Olive"]
+  colours: ["Brown",]
 },
 
 {
@@ -93,11 +93,11 @@ const products = [
   name: "Safari Expedition Duffel",
   category: "Luggage",
   price: 149,
-  rating: 4.9,
+  rating: 4.7,
   reviews: 62,
   stock: 14,
   badge: "SALE",
-  image: "https://picsum.photos/seed/big5-bag1/500/500",
+  image: "/shop/Duffel.png",
   description: "Heavy duty expedition duffel bag.",
   sizes: ["60L"],
   colours: ["Khaki", "Black"]
@@ -112,10 +112,16 @@ const products = [
   reviews: 41,
   stock: 75,
   badge: "",
-  image: "https://picsum.photos/seed/big5-repellent2/500/500",
-  description: "Long lasting outdoor insect protection.",
-  sizes: ["100ml"],
-  colours: ["Standard"]
+  image: "/shop/Trek-insect-repellent.png",
+  description: "Long lasting outdoor insect repellent 60ml.",
+  sizes: ["60ml"],
+  colours: ["Standard"],
+  animals: [
+    { name: "Turquoise Green", image: "/shop/Trek-insect-repellent.png" },
+    { name: "Light blue", image: "/shop/Trek-BRepellent.jpg" },
+    { name: "Orange", image: "/shop/Trek-ORepellent.png" },
+  ]
+
 },
 
 {
@@ -212,7 +218,7 @@ const products = [
   id: 11,
   name: "Safari Backpack",
   category: "Luggage",
-  price: 119,
+  price: 21,
   rating: 4.8,
   reviews: 74,
   stock: 21,
@@ -220,20 +226,20 @@ const products = [
   image: "/shop/Backpack.jpg",
   description: "Adventure backpack with hydration compatibility.",
   sizes: ["35L"],
-  colours: ["Olive", "Black"]
+  colours: ["Olive", "Khaki", "Black"]
 },
 
 {
   id: 12,
   name: "Safari Water Bottle",
   category: "Accessories",
-  price: 24,
-  rating: 4.9,
+  price: 13,
+  rating: 4.7,
   reviews: 131,
   stock: 58,
   badge: "SALE",
-  image: "https://picsum.photos/seed/big5-bottle/500/500",
-  description: "Insulated stainless steel bottle.",
+  image: "/shop/Bottle.jpeg",
+  description: "1600ml Water bottle with flip lid, detachable belt strap | Suitable for both cold and warm beverages.",
   sizes: ["750ml"],
   colours: ["Jungle Green", "Black"]
 },
@@ -242,13 +248,13 @@ const products = [
   id: 13,
   name: "Headlamp",
   category: "Equipment",
-  price: 39,
+  price: 9,
   rating: 4.8,
   reviews: 46,
   stock: 30,
   badge: "",
-  image: "https://picsum.photos/seed/big5-headlamp/500/500",
-  description: "Rechargeable LED headlamp.",
+  image: "/shop/Head-lamp3.jpg",
+  description: "Rechargeable LED headlamp,waterproof zoomable head lamp 3 modes light for outdoors camping.",
   sizes: ["Standard"],
   colours: ["Black"]
 },
@@ -262,25 +268,40 @@ const products = [
   reviews: 33,
   stock: 18,
   badge: "",
-  image: "https://picsum.photos/seed/big5-gloves/500/500",
+  image: "/shop/Khaki-gloves.png",
   description: "Comfortable outdoor gloves.",
   sizes: ["S", "M", "L"],
-  colours: ["Brown", "Black"]
+  colours: ["Olive", "Brown", "Black"]
 },
 
 {
   id: 15,
   name: "Safari Socks",
   category: "Accessories",
-  price: 15,
+  price: 11,
   rating: 4.8,
   reviews: 82,
   stock: 90,
   badge: "",
-  image: "https://picsum.photos/seed/big5-socks/500/500",
-  description: "Breathable safari socks.",
-  sizes: ["39-45"],
-  colours: ["Khaki", "Grey"]
+  image: "/shop/Socks-grey.png",
+  description: "Breathable 4 pack hiking socks.",
+  sizes: ["S", "M", "L"],
+  colours: ["Brown", "Olive", "Grey", "Black"]
+},
+
+{
+  id: 32,
+  name: "Headlamp",
+  category: "Equipment",
+  price: 16,
+  rating: 4.5,
+  reviews: 46,
+  stock: 30,
+  badge: "",
+  image: "/shop/Headlamp7.jpg",
+  description: "Led Superior headlamp rechargeable usb 7 head torch |3 modes waterproof for bikers, camping, hiking, fishing.",
+  sizes: ["Standard"],
+  colours: ["Black"]
 },
 
 {
@@ -318,7 +339,7 @@ const products = [
   image: "/shop/men-safari-shirt.png",
   description: "Breathable button-up safari shirt tailored for a men's fit.",
   sizes: ["S", "M", "L", "XL", "XXL"],
-  colours: ["Khaki", "Olive", "Brown", "White"]
+  colours: ["Khaki", "Olive", "Brown",]
 },
 
 {
@@ -333,7 +354,7 @@ const products = [
   image: "/shop/women-safari-shirt.png",
   description: "Breathable button-up safari shirt tailored for a women's fit.",
   sizes: ["S", "M", "L", "XL"],
-  colours: ["Khaki", "Olive", "White", "Grey"]
+  colours: ["Khaki", "Olive", "Brown",]
 },
 
 {
@@ -363,7 +384,22 @@ const products = [
   image: "/shop/Women-trouser.png",
   description: "Durable quick-dry safari trousers cut for a women's fit.",
   sizes: ["6", "8", "10", "12", "14"],
-  colours: ["Khaki", "Olive", "Grey", "Black"]
+  colours: ["Khaki", "Olive", "Brown", "Black"]
+},
+
+{
+  id: 31,
+  name: "Boonie Hat",
+  category: "Hats",
+  price: 29,
+  rating: 3.8,
+  reviews: 41,
+  stock: 26,
+  badge: "",
+  image: "/shop/Boonie-hat.png",
+  description: "Unisex bonnie-hat | Wide brim sun hat, outdoor boonie fishing, hiking hat.",
+  sizes: ["S", "M", "L", "XL"],
+  colours: ["Khaki", "Olive", "Grey",]
 },
 
 {
@@ -421,17 +457,47 @@ const products = [
   reviews: 35,
   stock: 28,
   badge: "NEW",
-  image: "https://picsum.photos/seed/big5-shoes/500/500",
+  image: "/shop/Sandals.png",
   description: "Lightweight breathable safari shoes, built for warm-weather game drives and walking trails.",
   sizes: ["38", "39", "40", "41", "42", "43", "44", "45"],
   colours: ["Khaki", "Grey", "Black", "Brown"]
 },
 
 {
+  id: 29,
+  name: "Women Boonie Hat",
+  category: "Hats",
+  price: 38,
+  rating: 3.8,
+  reviews: 41,
+  stock: 26,
+  badge: "",
+  image: "/shop/Women-Booniehat.png",
+  description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
+  sizes: ["S", "M", "L", "XL"],
+  colours: ["Khaki", "Olive", "Grey",]
+},
+
+{
+  id: 30,
+  name: "Men Boonie Hat",
+  category: "Hats",
+  price: 38,
+  rating: 4.0,
+  reviews: 41,
+  stock: 26,
+  badge: "",
+  image: "/shop/Men-Booniehat.png",
+  description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
+  sizes: ["S", "M", "L", "XL"],
+  colours: ["Khaki", "Olive", "Grey",]
+},
+
+{
   id: 27,
   name: "Beads and Necklaces",
   category: "Accessories",
-  price: 22,
+  price: 4,
   rating: 4.9,
   reviews: 57,
   stock: 60,
@@ -446,13 +512,13 @@ const products = [
   id: 28,
   name: "Carvings",
   category: "Accessories",
-  price: 45,
+  price: 22,
   rating: 4.8,
   reviews: 33,
   stock: 20,
   badge: "NEW",
-  image: "https://picsum.photos/seed/big5-carvings/500/500",
-  description: "Hand-carved wooden Big Five figures and ornaments, sourced from local Kenyan artisans.",
+  image: "/shop/Carvings.png",
+  description: "Hand-carved wooden Big Five figures and ornaments, sourced from local artisans.",
   sizes: ["One Size"],
   colours: ["Natural Wood"]
 }
