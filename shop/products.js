@@ -62,7 +62,7 @@ const products = [
   id: 1,
   name: "Women Rufiji Boots",
   category: "Footwear",
-  price: ,
+  price: 48,
   rating: 4.0,
   reviews: 184,
   stock: 27,
