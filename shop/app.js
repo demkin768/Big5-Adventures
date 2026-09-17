@@ -156,9 +156,6 @@ function addToCart(id, btnEl){
         if (cardImg && cardImg.src) {
             displayImage = cardImg.src;
         }
-        if (cardName && cardName.textContent.trim()) {
-            displayName = cardName.textContent.trim();
-        }
     }
 
     const existing = cart.find(item => (item.cartId || String(item.id)) === String(id));
