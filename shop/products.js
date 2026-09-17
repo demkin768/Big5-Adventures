@@ -78,7 +78,7 @@ const products = [
   name: "Safari Leather Hat",
   category: "Hats",
   price: 51,
-  rating: 4.1 (5),
+  rating: 4.1,
   reviews: 96,
   stock: 18,
   badge: "",
