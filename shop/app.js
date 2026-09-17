@@ -168,7 +168,7 @@ function addToCart(id, btnEl){
     if (existing) {
         existing.qty++;
     } else {
-        cart.push({ ...product, name: displayName, image: displayImage, qty: 1 });
+        cart.push({ ...product, image: displayImage, qty: 1 });
     }
 
     saveCart();
