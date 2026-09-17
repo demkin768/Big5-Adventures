@@ -115,7 +115,7 @@ const products = [
   image: "/shop/Trek-insect-repellent.webp",
   description: "Long lasting outdoor insect repellent 60ml.",
   sizes: ["60ml"],
-  colours: ["Standard"]
+  colours: ["Standard"],
   animals: [
     { name: "Turquoise Green", image: "/shop/Trek-insect-repellent.webp" },
     { name: "Light blue", image: "/shop/Trek-BRepellent.jpg" },
