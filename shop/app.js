@@ -10,7 +10,7 @@ let currentQuickViewId = null;
 // Fixed end date/time for the current sale — shared by the countdown timer AND the
 // "SALE" badges on products. To run a new sale, just change this one line — the
 // countdown and every "SALE" badge site-wide will pick it up automatically.
-const SALE_END = new Date("2026-09-18T23:59:59").getTime();
+const SALE_END = new Date("2026-09-26T23:59:59").getTime();
 
 function isSaleActive(){
     return Date.now() < SALE_END;
@@ -90,7 +90,7 @@ function renderProducts(list = products) {
                     ⭐ ${product.rating}
                 </div>
 
-                <div class="price">$${product.price}</div>
+                <div class="price">$${product.price}${product.wasPrice ? `<span class="price-was">$${product.wasPrice}</span>` : ""}</div>
 
             </div>
 
