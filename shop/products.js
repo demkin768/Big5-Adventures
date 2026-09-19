@@ -39,7 +39,7 @@ const products = [
   id: 18,
   name: "Safari Hoodie",
   category: "Clothing",
-  price: 65,
+  price: 24,
   rating: 4.8,
   reviews: 39,
   stock: 40,
@@ -174,7 +174,7 @@ const products = [
   id: 8,
   name: "Safari Fleece Jacket",
   category: "Clothing",
-  price: 89,
+  price: 26,
   rating: 4.1,
   reviews: 70,
   stock: 15,
@@ -189,7 +189,7 @@ const products = [
   id: 9,
   name: "Waterproof Rain Jacket",
   category: "Clothing",
-  price: 99,
+  price: 17,
   rating: 4.7,
   reviews: 54,
   stock: 20,
@@ -243,7 +243,7 @@ const products = [
   image: "/shop/Bottle.jpeg",
   description: "1600ml Water bottle with flip lid, detachable belt strap | Suitable for both cold and warm beverages.",
   sizes: ["750ml"],
-  colours: ["Jungle Green", "Black"]
+  colours: ["Black"]
 },
 
 {
@@ -310,7 +310,7 @@ const products = [
   id: 19,
   name: "Safari Hoodie and Sweatpants Set",
   category: "Clothing",
-  price: 110,
+  price: 28,
   wasPrice: 138,
   rating: 4.9,
   reviews: 28,
