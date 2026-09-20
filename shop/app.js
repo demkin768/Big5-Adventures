@@ -10,7 +10,7 @@ let currentQuickViewId = null;
 // Fixed end date/time for the current sale — shared by the countdown timer AND the
 // "SALE" badges on products. To run a new sale, just change this one line — the
 // countdown and every "SALE" badge site-wide will pick it up automatically.
-const SALE_END = new Date("2026-10-6T23:59:59").getTime();
+const SALE_END = new Date("2026-10-06T23:59:59").getTime();
 
 function isSaleActive(){
     return Date.now() < SALE_END;
