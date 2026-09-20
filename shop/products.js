@@ -82,7 +82,7 @@ const products = [
   reviews: 96,
   stock: 18,
   badge: "",
-  image: "/shop/Hat.jpg",
+  image: "/shop/Hat.png",
   description: "Men adjustable leather hat.",
   sizes: ["S", "M", "L"],
   colours: ["Brown",]
@@ -134,7 +134,7 @@ const products = [
   reviews: 118,
   stock: 22,
   badge: "NEW",
-  image: "/shop/Safari-Beigeboot.png",
+  image: "/shop/Safari-Beigeboot.jpg",
   description: "Waterproof & Breathable unisex high-top tactical safari boots.",
   sizes: ["40", "41", "42", "43", "44", "45"],
   colours: [""],
@@ -229,7 +229,7 @@ const products = [
   reviews: 118,
   stock: 22,
   badge: "",
-  image: "/shop/Tactical-Siwarboots.png",
+  image: "/shop/Green-Tactical.png",
   description: "Comfortable military waterproof outdoor boots.",
   sizes: ["40", "41", "42", "43", "44", "45"],
   colours: ["Brown", "Black"]
