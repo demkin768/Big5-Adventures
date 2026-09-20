@@ -127,17 +127,22 @@ const products = [
 
 {
   id: 5,
-  name: "Safari Walking Boots",
+  name: "Unisex Tactical Military Boots",
   category: "Footwear",
-  price: 129,
-  rating: 5,
+  price: 66,
+  rating: 4.7,
   reviews: 118,
   stock: 22,
   badge: "NEW",
-  image: "/shop/Safari-boots.jpg",
-  description: "Comfortable waterproof safari boots.",
+  image: "/shop/Safari-Beigeboot.png",
+  description: "Waterproof & Breathable unisex high-top tactical safari boots.",
   sizes: ["40", "41", "42", "43", "44", "45"],
-  colours: ["Brown", "Black"]
+  colours: [""],
+  animals: [
+    { name: "Beige", image: "/shop/Safari-Beigeboots.jpg" },
+    { name: "Black", image: "/shop/Safari-Blackboots.jpg" },
+    { name: "Brown", image: "/shop/Safari-Brownboots.jpg" },
+  ]  
 },
 
 {
@@ -198,6 +203,36 @@ const products = [
   description: "Lightweight waterproof shell.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Olive", "Black"]
+},
+
+{
+  id: 33,
+  name: "Tactical Military/Siwar Hiking Boots",
+  category: "Footwear",
+  price: 38,
+  rating: 4.8,
+  reviews: 118,
+  stock: 22,
+  badge: "",
+  image: "/shop/Tactical-Siwarboots.jpg",
+  description: "High-top tactical combat boot .",
+  sizes: ["40", "41", "42", "43", "44", "45"],
+  colours: ["Brown", "Black"]
+},
+
+{
+  id: 34,
+  name: "Jungle Green Tactical Military Boots",
+  category: "Footwear",
+  price: 26,
+  rating: 4.6,
+  reviews: 118,
+  stock: 22,
+  badge: "",
+  image: "/shop/Tactical-Siwarboots.png",
+  description: "Comfortable military waterproof outdoor boots.",
+  sizes: ["40", "41", "42", "43", "44", "45"],
+  colours: ["Brown", "Black"]
 },
 
 {
@@ -262,6 +297,21 @@ const products = [
 },
 
 {
+  id: 35,
+  name: "Camouflage Tactical Combat Boots",
+  category: "Footwear",
+  price: 28,
+  rating: 4.4,
+  reviews: 118,
+  stock: 22,
+  badge: "",
+  image: "/shop/Camouflage-Boots.jpg",
+  description: "Woodland camouflage boots with tan/desert accents.",
+  sizes: ["40", "41", "42", "43", "44", "45"],
+  colours: ["Brown", "Black"]
+},
+
+{
   id: 14,
   name: "Safari Gloves",
   category: "Accessories",
@@ -295,11 +345,12 @@ const products = [
   id: 32,
   name: "7-LEDs Headlamp",
   category: "Equipment",
-  price: 16,
+  price: 15,
+  wasPrice: 22,
   rating: 4.5,
   reviews: 46,
   stock: 30,
-  badge: "",
+  badge: "SALE",
   image: "/shop/Headlamp7.jpg",
   description: "Led Superior headlamp rechargeable usb 7 head torch |3 modes waterproof for bikers, camping, hiking, fishing.",
   sizes: ["Standard"],
@@ -310,8 +361,8 @@ const products = [
   id: 19,
   name: "Safari Hoodie and Sweatpants Set",
   category: "Clothing",
-  price: 28,
-  wasPrice: 138,
+  price: 27,
+  wasPrice: 34,
   rating: 4.9,
   reviews: 28,
   stock: 22,
