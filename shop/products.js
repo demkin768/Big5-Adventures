@@ -207,7 +207,7 @@ const products = [
 
 {
   id: 33,
-  name: "Tactical Military/Siwar Hiking Boots",
+  name: "Siwar Tactical Military Hiking Boots",
   category: "Footwear",
   price: 38,
   rating: 4.8,
@@ -217,7 +217,7 @@ const products = [
   image: "/shop/Tactical-Siwarboots.jpg",
   description: "High-top tactical combat boot .",
   sizes: ["40", "41", "42", "43", "44", "45"],
-  colours: ["Brown", "Black"]
+  colours: ["Beige",]
 },
 
 {
@@ -244,7 +244,7 @@ const products = [
   reviews: 61,
   stock: 44,
   badge: "",
-  image: "/shop/Leather-belt.jfif",
+  image: "/shop/Leather-belt.png",
   description: "Premium leather safari belt.",
   sizes: ["32", "34", "36", "38"],
   colours: ["Brown", "Black"]
@@ -263,6 +263,36 @@ const products = [
   description: "Adventure backpack with hydration compatibility.",
   sizes: ["35L"],
   colours: ["Olive", "Khaki", "Black"]
+},
+
+{
+  id: 22,
+  name: "Men's Safari Trousers",
+  category: "Clothing",
+  price: 69,
+  rating: 4.7,
+  reviews: 44,
+  stock: 26,
+  badge: "",
+  image: "/shop/Men-trouser.png",
+  description: "Durable quick-dry safari trousers cut for a men's fit.",
+  sizes: ["30", "32", "34", "36", "38"],
+  colours: ["Khaki", "Olive", "Brown", "Black"]
+},
+
+{
+  id: 23,
+  name: "Women's Safari Trousers",
+  category: "Clothing",
+  price: 69,
+  rating: 4.8,
+  reviews: 41,
+  stock: 26,
+  badge: "",
+  image: "/shop/Women-trouser.png",
+  description: "Durable quick-dry safari trousers cut for a women's fit.",
+  sizes: ["6", "8", "10", "12", "14"],
+  colours: ["Khaki", "Olive", "Brown", "Black"]
 },
 
 {
@@ -298,6 +328,21 @@ const products = [
 
 {
   id: 35,
+  name: "Siwar Military Desert Brown Men's Tactical Boots",
+  category: "Footwear",
+  price: 38,
+  rating: 4.8,
+  reviews: 118,
+  stock: 22,
+  badge: "",
+  image: "/shop/Tactical-Desertbrown.png",
+  description: "Desert Brown tactical boots built for outdoor use .",
+  sizes: ["40", "41", "42", "43", "44", "45"],
+  colours: ["Brown",]
+},
+
+{
+  id: 36,
   name: "Camouflage Tactical Combat Boots",
   category: "Footwear",
   price: 28,
@@ -309,36 +354,6 @@ const products = [
   description: "Woodland camouflage boots with tan/desert accents.",
   sizes: ["40", "41", "42", "43", "44", "45"],
   colours: ["Brown", "Black"]
-},
-
-{
-  id: 14,
-  name: "Safari Gloves",
-  category: "Accessories",
-  price: 26,
-  rating: 3.9,
-  reviews: 33,
-  stock: 18,
-  badge: "",
-  image: "/shop/Khaki-gloves.png",
-  description: "Comfortable outdoor gloves.",
-  sizes: ["S", "M", "L"],
-  colours: ["Olive", "Brown", "Black"]
-},
-
-{
-  id: 15,
-  name: "Safari Socks",
-  category: "Accessories",
-  price: 11,
-  rating: 4.2,
-  reviews: 82,
-  stock: 90,
-  badge: "",
-  image: "/shop/Socks-grey.png",
-  description: "Breathable 4 pack hiking socks.",
-  sizes: ["S", "M", "L"],
-  colours: ["Brown", "Olive", "Grey", "Black"]
 },
 
 {
@@ -409,36 +424,6 @@ const products = [
   description: "Breathable button-up safari shirt tailored for a women's fit.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Khaki", "Olive", "Brown",]
-},
-
-{
-  id: 22,
-  name: "Men's Safari Trousers",
-  category: "Clothing",
-  price: 69,
-  rating: 4.7,
-  reviews: 44,
-  stock: 26,
-  badge: "",
-  image: "/shop/Men-trouser.png",
-  description: "Durable quick-dry safari trousers cut for a men's fit.",
-  sizes: ["30", "32", "34", "36", "38"],
-  colours: ["Khaki", "Olive", "Brown", "Black"]
-},
-
-{
-  id: 23,
-  name: "Women's Safari Trousers",
-  category: "Clothing",
-  price: 69,
-  rating: 4.8,
-  reviews: 41,
-  stock: 26,
-  badge: "",
-  image: "/shop/Women-trouser.png",
-  description: "Durable quick-dry safari trousers cut for a women's fit.",
-  sizes: ["6", "8", "10", "12", "14"],
-  colours: ["Khaki", "Olive", "Brown", "Black"]
 },
 
 {
@@ -545,6 +530,36 @@ const products = [
   description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Khaki", "Olive", "Grey",]
+},
+
+{
+  id: 14,
+  name: "Safari Gloves",
+  category: "Accessories",
+  price: 26,
+  rating: 3.9,
+  reviews: 33,
+  stock: 18,
+  badge: "",
+  image: "/shop/Khaki-gloves.png",
+  description: "Comfortable outdoor gloves.",
+  sizes: ["S", "M", "L"],
+  colours: ["Olive", "Brown", "Black"]
+},
+
+{
+  id: 15,
+  name: "Safari Socks",
+  category: "Accessories",
+  price: 11,
+  rating: 4.2,
+  reviews: 82,
+  stock: 90,
+  badge: "",
+  image: "/shop/Socks-grey.png",
+  description: "Breathable 4 pack hiking socks.",
+  sizes: ["S", "M", "L"],
+  colours: ["Brown", "Olive", "Grey", "Black"]
 },
 
 {
