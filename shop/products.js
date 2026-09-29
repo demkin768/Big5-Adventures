@@ -70,7 +70,7 @@ const products = [
   image: "/shop/Women-boots.jpg",
   description: "Stylish leather boots.",
   sizes: ["35", "36", "37", "38", "39", "40", "41",],
-  colours: ["Khaki", "Olive", "Brown"]
+  colours: []
 },
 
 {
@@ -232,7 +232,7 @@ const products = [
   image: "/shop/Green-Tactical.png",
   description: "Comfortable military waterproof outdoor boots.",
   sizes: ["40", "41", "42", "43", "44", "45"],
-  colours: ["Brown", "Black"]
+  colours: []
 },
 
 {
