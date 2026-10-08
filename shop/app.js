@@ -90,7 +90,7 @@ function renderProducts(list = products) {
                     ⭐ ${product.rating}
                 </div>
 
-                <div class="price">$${product.price}${product.wasPrice ? `<span class="price-was">$${product.wasPrice}</span>` : ""}</div>
+                <div class="price">$${product.price}${product.wasPrice && isSaleActive() ? `<span class="price-was">$${product.wasPrice}</span>` : ""}</div>
 
             </div>
 

@@ -136,7 +136,7 @@ const products = [
   badge: "NEW",
   image: "/shop/Safari-Beigeboot.jpg",
   description: "Waterproof & Breathable unisex high-top tactical safari boots.",
-  sizes: ["40", "41", "42", "43", "44", "45"],
+  sizes: ["38", "39","40", "41", "42", "43", "44", "45"],
   colours: [""],
   animals: [
     { name: "Beige", image: "/shop/Safari-Beigeboots.jpg" },
@@ -293,6 +293,36 @@ const products = [
   description: "Durable quick-dry safari trousers cut for a women's fit.",
   sizes: ["6", "8", "10", "12", "14"],
   colours: ["Khaki", "Olive", "Brown", "Black"]
+},
+
+{
+  id: 29,
+  name: "Women Boonie Hat",
+  category: "Hats",
+  price: 38,
+  rating: 3.8,
+  reviews: 41,
+  stock: 26,
+  badge: "",
+  image: "/shop/Women-Booniehat.png",
+  description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
+  sizes: ["S", "M", "L", "XL"],
+  colours: ["Khaki", "Olive", "Grey",]
+},
+
+{
+  id: 30,
+  name: "Men Boonie Hat",
+  category: "Hats",
+  price: 38,
+  rating: 4.0,
+  reviews: 41,
+  stock: 26,
+  badge: "",
+  image: "/shop/Men-Booniehat.png",
+  description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
+  sizes: ["S", "M", "L", "XL"],
+  colours: ["Khaki", "Olive", "Grey",]
 },
 
 {
@@ -503,33 +533,19 @@ const products = [
 },
 
 {
-  id: 29,
-  name: "Women Boonie Hat",
-  category: "Hats",
-  price: 38,
-  rating: 3.8,
-  reviews: 41,
-  stock: 26,
-  badge: "",
-  image: "/shop/Women-Booniehat.png",
-  description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
-  sizes: ["S", "M", "L", "XL"],
-  colours: ["Khaki", "Olive", "Grey",]
-},
-
-{
-  id: 30,
-  name: "Men Boonie Hat",
-  category: "Hats",
-  price: 38,
-  rating: 4.0,
-  reviews: 41,
-  stock: 26,
-  badge: "",
-  image: "/shop/Men-Booniehat.png",
-  description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
-  sizes: ["S", "M", "L", "XL"],
-  colours: ["Khaki", "Olive", "Grey",]
+  id: 37,
+  name: "Safari Water Bottle",
+  category: "Accessories",
+  price: 12,
+  wasPrice: 15,
+  rating: 4.1,
+  reviews: 131,
+  stock: 58,
+  badge: "SALE",
+  image: "/shop/Motivational-Water-Bottles.jpeg",
+  description: "1 Litre Sipper motivational Water bottle with time marker | For adults, kids, school, gym and outdoor.",
+  sizes: ["1L"],
+  colours: [""]
 },
 
 {
@@ -573,8 +589,12 @@ const products = [
   badge: "",
   image: "/shop/Beads.jpeg",
   description: "Handcrafted beaded necklaces made by local Kenyan artisans — each piece is one of a kind.",
-  sizes: ["One Size"],
+  sizes: ["S", "M", "L"],
   colours: ["Multicolour"]
+  animals: [
+    { name: "Kenya Bracelet", image: "/shop/Kenya-Bracelet.jfif" },
+    { name: "Maasai Beads", image: "/shop/Maasai-beads.jepg" },
+  ]    
 },
 
 {
