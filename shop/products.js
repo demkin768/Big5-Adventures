@@ -590,7 +590,7 @@ const products = [
   image: "/shop/Beads.jpeg",
   description: "Handcrafted beaded necklaces made by local Kenyan artisans — each piece is one of a kind.",
   sizes: ["S", "M", "L"],
-  colours: ["Multicolour"]
+  colours: ["Multicolour"],
   animals: [
     { name: "Kenya Bracelet", image: "/shop/Kenya-Bracelet.jfif" },
     { name: "Maasai Beads", image: "/shop/Maasai-beads.jepg" },
