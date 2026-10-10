@@ -327,7 +327,7 @@ const products = [
 
 {
   id: 12,
-  name: "Safari Water Bottle",
+  name: "Ultra Pro Motivational Water Bottle",
   category: "Accessories",
   price: 13,
   wasPrice: 16,
@@ -339,6 +339,21 @@ const products = [
   description: "1600ml Water bottle with flip lid, detachable belt strap | Suitable for both cold and warm beverages.",
   sizes: ["750ml"],
   colours: ["Black"]
+},
+
+{
+  id: 40,
+  name: "Motivational Water Bottle 3Pcs Set",
+  category: "Accessories",
+  price: 10,
+  rating: 4.0,
+  reviews: 131,
+  stock: 58,
+  badge: "",
+  image: "/shop/Motivational-3pcs.jpeg",
+  description: "Leak-proof 3pcs motivational water bottle with loocking lid, straw one handed push-button | Gym, hiking, cycling, indoor and outdoor.",
+  sizes: [""],
+  colours: [""]
 },
 
 {
@@ -400,6 +415,21 @@ const products = [
   description: "Led Superior headlamp rechargeable usb 7 head torch |3 modes waterproof for bikers, camping, hiking, fishing.",
   sizes: ["Standard"],
   colours: ["Black"]
+},
+
+{
+  id: 41,
+  name: "Motivational Sports Bottle 3Pcs Set",
+  category: "Accessories",
+  price: 13,
+  rating: 4.1,
+  reviews: 131,
+  stock: 58,
+  badge: "",
+  image: "/shop/Bluebottle-3pcs.jpeg",
+  description: "3pcs 2000ml,800ml,300ml motivational sports bottle with loocking lid, straw one handed push-button.",
+  sizes: [""],
+  colours: [""]
 },
 
 {
@@ -518,6 +548,21 @@ const products = [
 },
 
 {
+  id: 41,
+  name: "Cropped Hooded Jacket",
+  category: "Clothing",
+  price: 48,
+  rating: 4.6,
+  reviews: 70,
+  stock: 15,
+  badge: "NEW",
+  image: "/shop/Snap-Jacket.jepg",
+  description: "Cropped snap jacket with adjustable high neck, with elasticated drawstrings and a hood.",
+  sizes: ["S", "M", "L",],
+  colours: ["Camel"]
+},
+
+{
   id: 26,
   name: "Safari Shoes",
   category: "Footwear",
@@ -534,7 +579,7 @@ const products = [
 
 {
   id: 37,
-  name: "Safari Water Bottle",
+  name: "1L Sipper Motivational Water Bottle",
   category: "Accessories",
   price: 12,
   wasPrice: 15,
@@ -543,7 +588,23 @@ const products = [
   stock: 58,
   badge: "SALE",
   image: "/shop/Motivational-Water-Bottles.jpeg",
-  description: "1 Litre Sipper motivational Water bottle with time marker | For adults, kids, school, gym and outdoor.",
+  description: "1 Litre Sipper motivational water bottle with time marker | For adults, kids, school, gym and outdoor.",
+  sizes: ["1L"],
+  colours: [""]
+},
+
+{
+  id: 38,
+  name: "Spirit 1L Large Capacity Water Bottle",
+  category: "Accessories",
+  price: 11,
+  wasPrice:13 ,
+  rating: 4.3,
+  reviews: 131,
+  stock: 58,
+  badge: "SALE",
+  image: "/shop/Spirit-1L.jpeg",
+  description: "Large capacity sports water bottle with carry strap | For office, school, gym and outdoor.",
   sizes: ["1L"],
   colours: [""]
 },
@@ -593,7 +654,7 @@ const products = [
   colours: ["Multicolour"],
   animals: [
     { name: "Kenya Bracelet", image: "/shop/Kenya-Bracelet.jfif" },
-    { name: "Maasai Beads", image: "/shop/Maasai-beads.jepg" },
+    { name: "Maasai Beads", image: "/shop/Maasai-beads.png" },
   ]    
 },
 
@@ -611,5 +672,21 @@ const products = [
   sizes: ["One Size"],
   colours: ["Natural Wood"]
 }
+
+{
+  id: 39,
+  name: "3pcs Motivational Water Bottle",
+  category: "Accessories",
+  price: 16,
+  wasPrice:20 ,
+  rating: 4.0,
+  reviews: 131,
+  stock: 58,
+  badge: "SALE",
+  image: "/shop/3pcs-mot.jpeg",
+  description: "3pcs motivational water bottle | 2ltr,900ml,300ml.",
+  sizes: [""],
+  colours: [""]
+},
 
 ];

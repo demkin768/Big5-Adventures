@@ -57,7 +57,7 @@ product.js — standalone product detail page
                 <h2>${product.name}</h2>
                 <div class="rating">⭐ ${product.rating}</div>
                 <p class="product-detail-description">${product.description}</p>
-                <div class="price" id="detailPrice">$${product.price}</div>
+                <div class="price" id="detailPrice">$${currentPrice(product)}${product.wasPrice && isSaleActive() ? `<span class="price-was">$${product.wasPrice}</span>` : ""}</div>
 
                 ${colorSwatches ? `<div class="variant-label">Colour:</div><div class="colors">${colorSwatches}</div>` : ""}
                 ${product.animals ? `<div class="variant-label">Choose design:</div>${animalThumbs}` : ""}
@@ -122,7 +122,7 @@ product.js — standalone product detail page
         const name = variantParts.length ? `${product.name} (${variantParts.join(", ")})` : product.name;
 
         let message = `Hi Big5 Adventures! I'd like to order:\n\n`;
-        message += `${name} - $${product.price}\n\n`;
+        message += `${name} - $${currentPrice(product)}\n\n`;
         message += `Please confirm availability and delivery details. Thank you!`;
 
         const url = `https://wa.me/254701941527?text=${encodeURIComponent(message)}`;
@@ -142,7 +142,7 @@ product.js — standalone product detail page
             <a class="like-card" href="/shop/product/?id=${p.id}">
                 <img src="${p.image}" alt="${p.name}">
                 <h4>${p.name}</h4>
-                <span class="like-price">$${p.price}</span>
+                <span class="like-price">$${currentPrice(p)}</span>
             </a>
         `).join("");
     }

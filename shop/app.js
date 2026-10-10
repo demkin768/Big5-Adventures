@@ -10,10 +10,17 @@ let currentQuickViewId = null;
 // Fixed end date/time for the current sale — shared by the countdown timer AND the
 // "SALE" badges on products. To run a new sale, just change this one line — the
 // countdown and every "SALE" badge site-wide will pick it up automatically.
-const SALE_END = new Date("2026-10-06T23:59:59").getTime();
+const SALE_END = new Date("2026-10-17T23:59:59").getTime();
 
 function isSaleActive(){
     return Date.now() < SALE_END;
+}
+
+// The price a shopper pays right now: the sale price while the sale is
+// running, and the original price (wasPrice) once it has ended.
+// Products without a wasPrice always use their normal price.
+function currentPrice(product){
+    return (product.wasPrice && !isSaleActive()) ? product.wasPrice : product.price;
 }
 
 const productGrid = document.getElementById("productGrid");
@@ -31,7 +38,7 @@ const searchInput = document.getElementById("searchInput");
  */
 function trustedPrice(item) {
   const product = products.find(p => p.id === item.id);
-  return product ? product.price : 0; // unknown id → don't charge for it
+  return product ? currentPrice(product) : 0; // unknown id → don't charge for it
 }
 
 /*=========================================
@@ -90,7 +97,7 @@ function renderProducts(list = products) {
                     ⭐ ${product.rating}
                 </div>
 
-                <div class="price">$${product.price}${product.wasPrice && isSaleActive() ? `<span class="price-was">$${product.wasPrice}</span>` : ""}</div>
+                <div class="price">$${currentPrice(product)}${product.wasPrice && isSaleActive() ? `<span class="price-was">$${product.wasPrice}</span>` : ""}</div>
 
             </div>
 
@@ -331,7 +338,7 @@ function renderWishlist(){
             <img src="${product.image}">
             <div class="cart-details">
                 <h4>${product.name}</h4>
-                <p class="cart-price">$${product.price}</p>
+                <p class="cart-price">$${currentPrice(product)}</p>
                 <button class="wishlist-add-btn" onclick="addToCart(${product.id})">
                     <i class="fas fa-cart-shopping"></i> Add to Cart
                 </button>
@@ -400,7 +407,7 @@ function quickView(id){
     currentQuickColor = null;
 
     document.getElementById("quickTitle").innerText = product.name;
-    document.getElementById("quickPrice").innerText = "$" + product.price;
+    document.getElementById("quickPrice").innerHTML = "$" + currentPrice(product) + (product.wasPrice && isSaleActive() ? `<span class="price-was">$${product.wasPrice}</span>` : "");
     document.getElementById("quickImage").src = product.image;
     document.getElementById("quickDescription").innerText = product.description;
 
@@ -780,7 +787,7 @@ function quickOrderWhatsApp(){
     }
 
     let message = `Hi Big5 Adventures! I'd like to order:\n\n`;
-    message += `${name} - $${product.price}\n\n`;
+    message += `${name} - $${currentPrice(product)}\n\n`;
     message += `Please confirm availability and delivery details. Thank you!`;
 
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
