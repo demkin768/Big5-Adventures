@@ -147,16 +147,32 @@ const products = [
 
 {
   id: 6,
-  name: "Professional Binoculars",
+  name: "Solognac Hunting Binoculars",
   category: "Equipment",
-  price: 199,
-  rating: 5,
+  price: 66,
+  rating: 4.8,
   reviews: 88,
   stock: 9,
   badge: "",
-  image: "/shop/Binoculars.jpg",
-  description: "Professional wildlife viewing binoculars.",
-  sizes: ["10x42"],
+  image: "/shop/Solognac-Binoculars.jepg",
+  description: "10x50 lightweight wildlife viewing binoculars, with bright vision until twilight.",
+  sizes: ["10x50"],
+  colours: ["Black"]
+},
+
+{
+  id: 42,
+  name: "Quechua Hiking Binoculars",
+  category: "Equipment",
+  price: 73,
+  wasPrice: 79,
+  rating: 4.6,
+  reviews: 88,
+  stock: 9,
+  badge: "SALE",
+  image: "/shop/Quechua-Binoculars.jepg",
+  description: "Large lenses and X12 magnification binoculars for observing nature and wildlife.",
+  sizes: ["10x50"],
   colours: ["Black"]
 },
 
@@ -671,7 +687,7 @@ const products = [
   description: "Hand-carved wooden Big Five figures and ornaments, sourced from local artisans.",
   sizes: ["One Size"],
   colours: ["Natural Wood"]
-}
+},
 
 {
   id: 39,
