@@ -154,14 +154,14 @@ const products = [
   reviews: 88,
   stock: 9,
   badge: "",
-  image: "/shop/Solognac-Binoculars.jepg",
+  image: "/shop/Solognac-Binoculars.jpeg",
   description: "10x50 lightweight wildlife viewing binoculars, with bright vision until twilight.",
   sizes: ["10x50"],
   colours: ["Black"]
 },
 
 {
-  id: 42,
+  id: 43,
   name: "Quechua Hiking Binoculars",
   category: "Equipment",
   price: 73,
@@ -170,7 +170,7 @@ const products = [
   reviews: 88,
   stock: 9,
   badge: "SALE",
-  image: "/shop/Quechua-Binoculars.jepg",
+  image: "/shop/Quechua-Binoculars.jpeg",
   description: "Large lenses and X12 magnification binoculars for observing nature and wildlife.",
   sizes: ["10x50"],
   colours: ["Black"]
@@ -564,7 +564,7 @@ const products = [
 },
 
 {
-  id: 41,
+  id: 42,
   name: "Cropped Hooded Jacket",
   category: "Clothing",
   price: 48,
@@ -572,7 +572,7 @@ const products = [
   reviews: 70,
   stock: 15,
   badge: "NEW",
-  image: "/shop/Snap-Jacket.jepg",
+  image: "/shop/Snap-Jacket.jpeg",
   description: "Cropped snap jacket with adjustable high neck, with elasticated drawstrings and a hood.",
   sizes: ["S", "M", "L",],
   colours: ["Camel"]

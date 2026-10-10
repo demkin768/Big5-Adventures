@@ -141,6 +141,7 @@ transition:top .3s ease;
 
 .shop-title-bar.title-bar-raised{
 top:0;
+padding-top:10px;
 }
 
 header{
