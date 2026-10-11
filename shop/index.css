@@ -136,7 +136,7 @@ top:48px;
 left:0;
 width:100%;
 z-index:900;
-transition:top .3s ease;
+transition:padding-top .3s ease;
 }
 
 .shop-title-bar.title-bar-raised{
@@ -145,7 +145,7 @@ padding-top:10px;
 }
 
 header{
-transition:transform .3s ease;
+transition:none;   /* moved by scroll code, not by a timed slide */
 }
 
 header.header-hidden{
@@ -184,8 +184,8 @@ width:auto;
 }
 
 .shop-title-bar-inner h1{
-font-size:28px;
-font-weight:800;
+font-size:27px;
+font-weight:700;
 color:#111;
 text-transform:uppercase;
 letter-spacing:1px;
@@ -1333,6 +1333,11 @@ top:84px;
 padding:16px 0 14px;
 }
 
+.shop-title-bar .container{
+width:100%;           /* was 97%: removes the ~6px gap at the screen edge */
+padding-left:3px;     /* was 20px from the main-site .container rule */
+}
+
 .shop-title-bar + *{
 margin-top:130px;
 }
@@ -1364,7 +1369,7 @@ height:26px;
 .shop-title-bar-inner .header-icons{
 justify-self:auto;
 flex-shrink:0;
-gap:14px;
+gap:13px;
 }
 
 .shop-title-bar-inner .icon{
@@ -1372,7 +1377,7 @@ font-size:18px;
 }
 
 .hero{
-height:70vh;
+height:60vh;
 }
 
 .hero p{
