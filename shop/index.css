@@ -136,7 +136,7 @@ top:48px;
 left:0;
 width:100%;
 z-index:900;
-transition:padding-top .3s ease;
+transition:transform .3s ease;
 }
 
 .shop-title-bar.title-bar-raised{
@@ -145,8 +145,7 @@ padding-top:10px;
 }
 
 header{
-transition:none;   /* moved by scroll code, not by a timed slide */
-}
+transition:transform .3s ease; }
 
 header.header-hidden{
 transform:translateY(-100%);
@@ -216,7 +215,7 @@ HERO
 ==========================*/
  
 .hero{
-height:80vh;
+height:77vh;
 background:var(--secondary);
 display:flex;
 justify-content:center;
@@ -1348,7 +1347,7 @@ flex-direction:row;
 justify-content:space-between;
 align-items:center;
 flex-wrap:nowrap;
-gap:10px;
+gap:8px;
 }
 
 .shop-title-link{
@@ -1377,7 +1376,7 @@ font-size:18px;
 }
 
 .hero{
-height:60vh;
+height:67vh;
 }
 
 .hero p{
