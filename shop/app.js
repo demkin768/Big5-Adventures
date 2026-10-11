@@ -657,29 +657,24 @@ const shopTitleBarEl = document.querySelector(".shop-title-bar");
 
 if (headerEl && shopTitleBarEl) {
 
-let lastScrollY = Math.max(window.scrollY, 0);
-let hiddenAmount = 0;   // 0 = header fully visible, headerHeight = fully hidden
+    let lastScrollY = window.scrollY;
 
-function updateHeaderPosition(){
-    const headerHeight = headerEl.offsetHeight;
-    const titleBarTop = parseFloat(getComputedStyle(shopTitleBarEl).top) || headerHeight;
+    window.addEventListener("scroll", () => {
 
-    const y = Math.max(window.scrollY, 0);   // ignore iOS rubber-band overscroll
-    const delta = y - lastScrollY;
-    lastScrollY = y;
+        const currentScrollY = window.scrollY;
 
-    hiddenAmount = Math.min(Math.max(hiddenAmount + delta, 0), headerHeight);
-    const progress = headerHeight ? hiddenAmount / headerHeight : 0;
+        if (currentScrollY > lastScrollY && currentScrollY > 150) {
+            // scrolling down — hide header, title bar rises to top:0
+            headerEl.classList.add("header-hidden");
+            shopTitleBarEl.classList.add("title-bar-raised");
+        } else {
+            // scrolling up — reveal header, title bar drops back down
+            headerEl.classList.remove("header-hidden");
+            shopTitleBarEl.classList.remove("title-bar-raised");
+        }
 
-    headerEl.style.transform = `translateY(${-hiddenAmount}px)`;
-    shopTitleBarEl.style.transform = `translateY(${-progress * titleBarTop}px)`;
-    shopTitleBarEl.classList.toggle("title-bar-raised", progress >= 1);
-}
-
-window.addEventListener("scroll", updateHeaderPosition, { passive: true });
-window.addEventListener("resize", updateHeaderPosition);
-updateHeaderPosition();
-
+        lastScrollY = currentScrollY;
+    });
 }
 
 /*=========================================
