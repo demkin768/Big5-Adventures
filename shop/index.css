@@ -141,16 +141,18 @@ transition:padding-top .3s ease;
 
 .shop-title-bar.title-bar-raised{
 top:0;
-padding-top:10px;
+padding-top:8px;
 }
 
 header{
 transition:none; }
 
-header.header-hidden{}
+header.header-hidden{
+transform:translateY(-100%);
+}
 
 .shop-title-bar + *{
-margin-top:148px;
+margin-top:152px;
 }
 
 .shop-title-bar .container{
