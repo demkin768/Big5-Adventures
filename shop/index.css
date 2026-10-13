@@ -136,7 +136,7 @@ top:48px;
 left:0;
 width:100%;
 z-index:900;
-transition:top .3s ease;
+transition:padding-top .3s ease;
 }
 
 .shop-title-bar.title-bar-raised{
@@ -145,8 +145,7 @@ padding-top:10px;
 }
 
 header{
-transition:transform .3s ease;
-}
+transition:none; }
 
 header.header-hidden{
 transform:translateY(-100%);
@@ -184,8 +183,8 @@ width:auto;
 }
 
 .shop-title-bar-inner h1{
-font-size:28px;
-font-weight:800;
+font-size:27px;
+font-weight:700;
 color:#111;
 text-transform:uppercase;
 letter-spacing:1px;
@@ -216,7 +215,7 @@ HERO
 ==========================*/
  
 .hero{
-height:80vh;
+height:77vh;
 background:var(--secondary);
 display:flex;
 justify-content:center;
@@ -561,6 +560,16 @@ flex-shrink:0;
 
 .product-card:hover img{
 transform:scale(1.05);
+}
+
+/* Phones: the image box follows the card width instead of a fixed 320px,
+   so the narrow 2-column cards don't crop the photos. This block has to come
+   AFTER the .product-card img rule above, or that rule wins. */
+@media(max-width:600px){
+.product-card img{
+height:auto;
+aspect-ratio:5 / 6;
+}
 }
 
 .product-info{
@@ -1333,6 +1342,11 @@ top:84px;
 padding:16px 0 14px;
 }
 
+.shop-title-bar .container{
+width:100%;           /* was 97%: removes the ~6px gap at the screen edge */
+padding-left:3px;     /* was 20px from the main-site .container rule */
+}
+
 .shop-title-bar + *{
 margin-top:130px;
 }
@@ -1343,7 +1357,7 @@ flex-direction:row;
 justify-content:space-between;
 align-items:center;
 flex-wrap:nowrap;
-gap:10px;
+gap:8px;
 }
 
 .shop-title-link{
@@ -1364,7 +1378,7 @@ height:26px;
 .shop-title-bar-inner .header-icons{
 justify-self:auto;
 flex-shrink:0;
-gap:14px;
+gap:13px;
 }
 
 .shop-title-bar-inner .icon{
@@ -1372,7 +1386,7 @@ font-size:18px;
 }
 
 .hero{
-height:60vh;
+height:67vh;
 }
 
 .hero p{
