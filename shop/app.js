@@ -657,27 +657,29 @@ const shopTitleBarEl = document.querySelector(".shop-title-bar");
 
 if (headerEl && shopTitleBarEl) {
 
-    let lastScrollY = Math.max(window.scrollY, 0);
-    let hiddenAmount = 0;   // 0 = header fully visible, headerHeight = fully hidden
+let lastScrollY = Math.max(window.scrollY, 0);
+let hiddenAmount = 0;   // 0 = header fully visible, headerHeight = fully hidden
 
-    function updateHeaderPosition(){
-        const headerHeight = headerEl.offsetHeight;
+function updateHeaderPosition(){
+    const headerHeight = headerEl.offsetHeight;
+    const titleBarTop = parseFloat(getComputedStyle(shopTitleBarEl).top) || headerHeight;
 
-        const y = Math.max(window.scrollY, 0);   // ignore iOS rubber-band overscroll
-        const delta = y - lastScrollY;
-        lastScrollY = y;
+    const y = Math.max(window.scrollY, 0);   // ignore iOS rubber-band overscroll
+    const delta = y - lastScrollY;
+    lastScrollY = y;
 
-        hiddenAmount = Math.min(Math.max(hiddenAmount + delta, 0), headerHeight);
+    hiddenAmount = Math.min(Math.max(hiddenAmount + delta, 0), headerHeight);
+    const progress = headerHeight ? hiddenAmount / headerHeight : 0;
 
-        headerEl.style.transform = hiddenAmount ? `translateY(${-hiddenAmount}px)` : "";
-        shopTitleBarEl.style.top = `${headerHeight - hiddenAmount}px`;
-        shopTitleBarEl.classList.toggle("title-bar-raised", hiddenAmount >= headerHeight);
-    }
+    headerEl.style.transform = `translateY(${-hiddenAmount}px)`;
+    shopTitleBarEl.style.transform = `translateY(${-progress * titleBarTop}px)`;
+    shopTitleBarEl.classList.toggle("title-bar-raised", progress >= 1);
+}
 
-    window.addEventListener("scroll", updateHeaderPosition, { passive: true });
-    window.addEventListener("resize", updateHeaderPosition);
-    window.addEventListener("load", updateHeaderPosition);
-    updateHeaderPosition();
+window.addEventListener("scroll", updateHeaderPosition, { passive: true });
+window.addEventListener("resize", updateHeaderPosition);
+updateHeaderPosition();
+
 }
 
 /*=========================================
