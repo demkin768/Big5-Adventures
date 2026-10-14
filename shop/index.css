@@ -397,11 +397,11 @@ SECTION
 ==========================*/
 
 .section{
-padding:60px 0;
+padding:50px 0;
 }
 
 .section-title{
-font-size:42px;
+font-size:38px;
 text-align:center;
 margin-bottom:15px;
 padding-bottom:0;
@@ -457,7 +457,7 @@ padding:25px;
 }
 
 .category-content h3{
-font-size:24px;
+font-size:18px;
 margin-bottom:12px;
 }
 
