@@ -72,7 +72,7 @@ background-color:var(--secondary)!important;
 /* Light green shared styling for Shop by Category / Featured / Best Sellers, each its own band with a gap between */
 .shop-zone{
 background:#eefaf1;
-margin-bottom:30px;
+margin-bottom:20px;
 }
 
 .shop-zone:last-of-type{
@@ -129,10 +129,10 @@ SHOP TITLE BAR (split hero — white, unchanged regardless of header theme)
 
 .shop-title-bar{
 background-color:#fff;
-padding:16px 0 18px;
+padding:26px 0 18px;
 border-bottom:1px solid #eef1f5;
 position:fixed;
-top:48px;
+top:46px;
 left:0;
 width:100%;
 z-index:900;
@@ -152,7 +152,7 @@ transform:translateY(-100%);
 }
 
 .shop-title-bar + *{
-margin-top:152px;
+margin-top:150px;
 }
 
 .shop-title-bar .container{
@@ -397,7 +397,7 @@ SECTION
 ==========================*/
 
 .section{
-padding:100px 0;
+padding:60px 0;
 }
 
 .section-title{
@@ -1429,6 +1429,14 @@ font-size:32px;
 .countdown{
 gap:15px;
 }
+
+.feature{
+padding:25px 20px;
+}
+
+.feature-grid{
+gap:15px;
+ }
 
 }
 
