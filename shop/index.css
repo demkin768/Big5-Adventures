@@ -129,7 +129,7 @@ SHOP TITLE BAR (split hero — white, unchanged regardless of header theme)
 
 .shop-title-bar{
 background-color:#fff;
-padding:18px 0 18px;
+padding:16px 0 16px;
 border-bottom:1px solid #eef1f5;
 position:fixed;
 top:46px;
@@ -183,7 +183,6 @@ width:auto;
 }
 
 .shop-title-bar-inner h1{
-font-family:'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 font-size:27px;
 font-weight:700;
 color:#111;
@@ -398,11 +397,11 @@ SECTION
 ==========================*/
 
 .section{
-padding:45px 0;
+padding:35px 0;
 }
 
 .section-title{
-font-size:38px;
+font-size:35px;
 text-align:center;
 margin-bottom:15px;
 padding-bottom:0;
