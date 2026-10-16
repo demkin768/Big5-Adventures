@@ -8,6 +8,9 @@
 <meta name="description" content="Premium safari clothing, expedition luggage, outdoor equipment, and adventure essentials from Big5 Adventures.">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="big 5.css">
 <link rel="stylesheet" href="index.css">
 </head>
@@ -58,9 +61,13 @@
 <!-- ==========================
 SHOP TITLE BAR (split hero, matches header colour)
 =========================== -->
-<section class="shop-title-bar">
+<section class="shop-title-bar has-search">
 <div class="container shop-title-bar-inner">
 <a href="/shop/" class="shop-title-link"><img src="landcruiser-icon.jpg" alt="" class="shop-title-icon" onerror="this.style.display='none'"><h1>Safari Store</h1></a>
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search safari shirts, hats, boots...">
+<button type="button" aria-label="Search"><i class="fas fa-magnifying-glass"></i></button>
+</div>
 <div class="header-icons">
 <div class="icon wishlist-btn" id="wishlistBtn">
 <i class="far fa-heart"></i>
@@ -101,17 +108,6 @@ HERO
 </div>
 </section>
  
-<!-- ==========================
-SEARCH
-=========================== -->
-<section class="search-section">
-<div class="container">
-<div class="search-box">
-<input type="text" id="searchInput" placeholder="Search safari shirts, hats, boots...">
-<button type="button"><i class="fas fa-magnifying-glass"></i></button>
-</div>
-</div>
-</section>
 
 <!-- ==========================
 FEATURES
