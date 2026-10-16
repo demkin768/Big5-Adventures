@@ -169,8 +169,8 @@ gap:20px;
 }
 
 .shop-title-link{
-grid-column:2;
-justify-self:center;
+grid-column:1;
+justify-self:start;
 display:flex;
 align-items:center;
 gap:12px;
