@@ -60,7 +60,7 @@ const products = [
 
 {
   id: 1,
-  name: "Rufiji Combat Boots",
+  name: "Women Rufiji Boots",
   category: "Footwear",
   price: 48,
   rating: 4.0,
@@ -68,9 +68,9 @@ const products = [
   stock: 27,
   badge: "NEW",
   image: "/shop/Women-boots.jpg",
-  description: "Stylish leather combat boots. Handmade in Africa, genuine cowhide leather and rubber soles | For fishing, hiking, walking and travel ",
+  description: "Stylish leather boots.",
   sizes: ["35", "36", "37", "38", "39", "40", "41",],
-  colours: [Brown]
+  colours: []
 },
 
 {
@@ -637,7 +637,7 @@ const products = [
   image: "/shop/Khaki-gloves.png",
   description: "Comfortable outdoor gloves.",
   sizes: ["S", "M", "L"],
-  colours: ["Olive", "Brown", "Black", "Khaki",]
+  colours: ["Olive", "Brown", "Black"]
 },
 
 {
