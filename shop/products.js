@@ -222,21 +222,6 @@ const products = [
 },
 
 {
-  id: 44,
-  name: "Plain Hoodie",
-  category: "Clothing",
-  price: 22,
-  rating: 4.6,
-  reviews: 39,
-  stock: 40,
-  badge: "",
-  image: "/shop/Plain-hoodie.png",
-  description: "Heavyweight plain fleece hoodie.",
-  sizes: ["S", "M", "L", "XL", "XXL"],
-  colours: ["Khaki", "Jungle Green", "Black", "Grey"],
-},
-
-{
   id: 33,
   name: "Siwar Tactical Military Hiking Boots",
   category: "Footwear",
@@ -652,7 +637,7 @@ const products = [
   image: "/shop/Khaki-gloves.png",
   description: "Comfortable outdoor gloves.",
   sizes: ["S", "M", "L"],
-  colours: ["Olive", "Brown", "Black"]
+  colours: ["Olive", "Brown", "Black", "Khaki",]
 },
 
 {
