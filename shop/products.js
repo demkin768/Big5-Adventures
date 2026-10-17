@@ -222,6 +222,21 @@ const products = [
 },
 
 {
+  id: 44,
+  name: "Plain Hoodie",
+  category: "Clothing",
+  price: 22,
+  rating: 4.8,
+  reviews: 39,
+  stock: 40,
+  badge: "",
+  image: "/shop/Plain-hoodie.png",
+  description: "Heavyweight plain fleece hoodie.",
+  sizes: ["S", "M", "L", "XL", "XXL"],
+  colours: ["Khaki", "Jungle Green", "Black", "Grey"],
+},
+
+{
   id: 33,
   name: "Siwar Tactical Military Hiking Boots",
   category: "Footwear",
@@ -452,7 +467,7 @@ const products = [
   id: 19,
   name: "Safari Hoodie and Sweatpants Set",
   category: "Clothing",
-  price: 27,
+  price: 31,
   wasPrice: 34,
   rating: 4.9,
   reviews: 28,
@@ -591,6 +606,21 @@ const products = [
   description: "Lightweight breathable safari shoes, built for warm-weather game drives and walking trails.",
   sizes: ["38", "39", "40", "41", "42", "43", "44", "45"],
   colours: ["Khaki", "Grey", "Black", "Brown"]
+},
+
+{
+  id: 45,
+  name: "Plain Hoodie and Sweatpants Set",
+  category: "Clothing",
+  price: 27,
+  rating: 4.7,
+  reviews: 28,
+  stock: 22,
+  badge: "",
+  image: "/shop/Plain-set.png",
+  description: "Matching hoodie and sweatpants plain set.",
+  sizes: ["S", "M", "L", "XL", "XXL"],
+  colours: ["Khaki", "Jungle Green", "Black", "Grey"],
 },
 
 {
