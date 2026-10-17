@@ -173,12 +173,12 @@ grid-column:1;
 justify-self:start;
 display:flex;
 align-items:center;
-gap:12px;
+gap:9px;
 text-decoration:none;
 }
 
 .shop-title-icon{
-height:62px;
+height:60px;
 width:auto;
 }
 
@@ -188,7 +188,7 @@ font-size:27px;
 font-weight:700;
 color:#111;
 text-transform:uppercase;
-letter-spacing:1px;
+letter-spacing:0.8px;
 margin-bottom:0;
 }
 
