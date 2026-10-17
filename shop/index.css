@@ -1746,15 +1746,15 @@ min-width:0;
 }
 
 .product-detail-image img{
-width:73%;
+width:69%;
 border-radius:20px;
 object-fit:cover;
-max-height:550px;
+max-height:500px;
 }
 
 .product-detail-info h2{
-font-size:26px;
-margin-bottom:3px;
+font-size:20px;
+margin-bottom:2px;
 }
 
 .product-detail-info .rating{
