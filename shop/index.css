@@ -516,6 +516,8 @@ color:#fff;
 border-radius:8px;
 font-weight:600;
 transition:.3s;
+margin-top:auto;
+margin-bottom:1px;
 }
 
 .category-btn:hover{
