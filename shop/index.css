@@ -129,7 +129,7 @@ SHOP TITLE BAR (split hero — white, unchanged regardless of header theme)
 
 .shop-title-bar{
 background-color:#fff;
-padding:14px 0 14px;
+padding:12px 0 12px;
 border-bottom:1px solid #eef1f5;
 position:fixed;
 top:46px;
@@ -173,7 +173,7 @@ grid-column:1;
 justify-self:start;
 display:flex;
 align-items:center;
-gap:5px;
+gap:2px;
 text-decoration:none;
 }
 
@@ -233,7 +233,7 @@ padding:5px 5px 5px 18px;
 align-items:center;
 border:1px solid #e2e8f0;
 box-shadow:none;
-background:#f8fafc;
+background:#acb2b8;
 }
  
 .has-search .search-box input{
