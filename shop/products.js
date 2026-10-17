@@ -60,7 +60,7 @@ const products = [
 
 {
   id: 1,
-  name: "Women Rufiji Boots",
+  name: "Rufiji Combat Boots",
   category: "Footwear",
   price: 48,
   rating: 4.0,
@@ -68,9 +68,9 @@ const products = [
   stock: 27,
   badge: "NEW",
   image: "/shop/Women-boots.jpg",
-  description: "Stylish leather boots.",
+  description: "Stylish leather combat boots. Handmade in Africa, genuine cowhide leather and rubber soles | For fishing, hiking, walking and travel ",
   sizes: ["35", "36", "37", "38", "39", "40", "41",],
-  colours: []
+  colours: [Brown]
 },
 
 {
@@ -219,6 +219,21 @@ const products = [
   description: "Lightweight waterproof shell.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Olive", "Black"]
+},
+
+{
+  id: 44,
+  name: "Plain Hoodie",
+  category: "Clothing",
+  price: 22,
+  rating: 4.6,
+  reviews: 39,
+  stock: 40,
+  badge: "",
+  image: "/shop/Plain-hoodie.png",
+  description: "Heavyweight plain fleece hoodie.",
+  sizes: ["S", "M", "L", "XL", "XXL"],
+  colours: ["Khaki", "Jungle Green", "Black", "Grey"],
 },
 
 {
