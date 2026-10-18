@@ -482,6 +482,8 @@ border-radius:20px;
 overflow:hidden;
 box-shadow:0 10px 25px rgba(0,0,0,.08);
 transition:.35s;
+display:flex;
+flex-direction:column;
 }
 
 .category-card:hover{
@@ -495,6 +497,9 @@ object-fit:cover;
 
 .category-content{
 padding:25px;
+display:flex;
+flex-direction:column;
+flex:1;
 }
 
 .category-content h3{
@@ -517,7 +522,7 @@ border-radius:8px;
 font-weight:600;
 transition:.3s;
 margin-top:auto;
-margin-bottom:1px;
+align-self:flex-start;
 }
 
 .category-btn:hover{
@@ -1746,10 +1751,10 @@ min-width:0;
 }
 
 .product-detail-image img{
-width:75%;
+width:85%;
 border-radius:20px;
 object-fit:cover;
-max-height:500px;
+max-height:485px;
 }
 
 .product-detail-info h2{
