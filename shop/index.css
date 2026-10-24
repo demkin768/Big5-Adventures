@@ -2080,6 +2080,19 @@ margin-bottom:30px;
 }
 
 @media(max-width:600px){
-  .detail-gallery{ flex-direction:column; }
-  .detail-thumbs{ flex-direction:row; flex:none; }
+  .detail-gallery{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .product-detail-image .detail-gallery > img{
+    width:90%;
+    max-height:485px;
+    flex:none;
+  }
+
+  .detail-thumbs{
+    flex-direction:row;
+    flex:none;
+  }
 }

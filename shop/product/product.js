@@ -93,6 +93,12 @@ product.js — standalone product detail page
         document.getElementById("detailImage").src = selectedImage;
     };
 
+    window.selectDetailThumb = function (el) {
+    document.querySelectorAll(".detail-thumb").forEach(t => t.classList.remove("selected"));
+    el.classList.add("selected");
+    document.getElementById("detailImage").src = el.src;
+    };
+
     function currentSelections(){
         const sizeEl = detailEl.querySelector(".sizes button.selected");
         const colorEl = detailEl.querySelector(".colors .color.selected");
