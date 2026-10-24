@@ -155,6 +155,11 @@ const products = [
   stock: 9,
   badge: "",
   image: "/shop/Solognac-Binoculars.jpeg",
+  gallery: [
+    "/shop/Solognac-Binoculars1.jpeg",
+    "/shop/Solognac-Binoculars2.avif",
+    "/shop/Solognac-Binoculars3.avif",
+  ],
   description: "10x50 lightweight wildlife viewing binoculars, with bright vision until twilight.",
   sizes: ["10x50"],
   colours: ["Black"]
@@ -429,7 +434,7 @@ const products = [
   image: "/shop/Camouflage-Boots.jpg",
   description: "Woodland camouflage boots with tan/desert accents.",
   sizes: ["40", "41", "42", "43", "44", "45"],
-  colours: ["Brown", "Black"]
+  colours: [""]
 },
 
 {
@@ -739,7 +744,7 @@ const products = [
   id: 46,
   name: "Large Canvas Travelling MS Duffle Bag",
   category: "Luggage",
-  price: 149,
+  price: 13,
   rating: 4.0,
   reviews: 62,
   stock: 14,

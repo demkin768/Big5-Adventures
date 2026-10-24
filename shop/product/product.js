@@ -48,10 +48,20 @@ product.js — standalone product detail page
           `).join("")}</div>`
         : "";
 
+    const gallery = (product.gallery && product.gallery.length > 1) ? product.gallery : [];
+    
+    const thumbStrip = gallery.length
+    ? `<div class="detail-thumbs">${gallery.slice(0, 3).map((src, i) => `
+        <img src="${src}" alt="${product.name} view ${i + 1}" class="detail-thumb${i === 0 ? " selected" : ""}" onclick="selectDetailThumb(this)">
+      `).join("")}</div>`
+    : "";
+
     detailEl.innerHTML = `
         <div class="product-detail-grid">
             <div class="product-detail-image">
-                <img id="detailImage" src="${selectedImage}" alt="${product.name}">
+                 <div class="detail-gallery">
+                <img id="detailImage" src="${selectedImage}" alt="${product.name}">${thumbStrip}
+                </div>
             </div>
             <div class="product-detail-info">
                 <h2>${product.name}</h2>
