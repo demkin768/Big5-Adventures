@@ -735,4 +735,23 @@ const products = [
   colours: [""]
 },
 
+{
+  id: 46,
+  name: "Large Canvas Travelling MS Duffle Bag",
+  category: "Luggage",
+  price: 149,
+  rating: 4.0,
+  reviews: 62,
+  stock: 14,
+  badge: "",
+  image: "/shop/MS-Duffel1.jpg",
+  description: "Large canvas travelling bag.",
+  sizes: ["60L"],
+  colours: [],
+  animals: [
+    { name: "Green", image: "/shop/MS-Duffel1.jpg" },
+    { name: "Brown", image: "/shop/MS-Duffel2.png" },
+  ]
+},
+
 ];
