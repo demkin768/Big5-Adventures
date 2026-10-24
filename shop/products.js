@@ -156,8 +156,8 @@ const products = [
   badge: "",
   image: "/shop/Solognac-Binoculars1.jpeg",
   gallery: [
-    "/shop/Solognac-Binoculars.jpeg",
     "/shop/Solognac-Binoculars1.jpeg",
+    "/shop/Solognac-Binoculars.jpeg",
     "/shop/Solognac-Binoculars2.avif",
     "/shop/Solognac-Binoculars3.avif",
   ],
