@@ -154,7 +154,7 @@ const products = [
   reviews: 88,
   stock: 9,
   badge: "",
-  image: "/shop/Solognac-Binoculars.jpeg",
+  image: "/shop/Solognac-Binoculars1.jpeg",
   gallery: [
     "/shop/Solognac-Binoculars.jpeg",
     "/shop/Solognac-Binoculars1.jpeg",
