@@ -196,8 +196,8 @@ const products = [
   sizes: ["30", "32", "34", "36", "38"],
   colours: ["Olive", "Khaki"],
   colourImages: {
-  "Khaki": "/shop/Cargo-trousers.png",
-  "Olive": "/shop/Women-trouser.png",
+  "Olive": "/shop/Cargo-trousers.png",
+  "Khaki": "/shop/Women-trouser.png",
   },
 },
 
