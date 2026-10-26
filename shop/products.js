@@ -198,7 +198,7 @@ const products = [
   colourImages: [
   "Khaki": "/shop/Cargo-trousers.png",
   "Olive": "/shop/Women-trouser.png",
-  ]
+  ],
 },
 
 {
