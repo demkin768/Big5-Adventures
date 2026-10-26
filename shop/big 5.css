@@ -1037,6 +1037,8 @@ footer {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
+        position: relative;
+        z-index: 2;
     }
 
     .nav-links {

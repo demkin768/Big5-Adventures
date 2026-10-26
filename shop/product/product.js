@@ -32,7 +32,7 @@ product.js — standalone product detail page
 
     const colorSwatches = (product.colours || [])
         .filter(c => COLOR_CLASS_MAP[c.toLowerCase()])
-        .map(c => `<span class="color ${COLOR_CLASS_MAP[c.toLowerCase()]}" title="${c}" onclick="toggleSelect(this)"></span>`)
+        .map(c => `<span class="color ${COLOR_CLASS_MAP[c.toLowerCase()]}" title="${c}" onclick="selectDetailColour(this)"></span>`)
         .join("");
 
     const sizeButtons = (product.sizes && product.sizes.length > 1)
@@ -99,6 +99,22 @@ product.js — standalone product detail page
     document.getElementById("detailImage").src = el.src;
     };
 
+    window.selectDetailColour = function (el) {
+    // already selected: do nothing
+    if (el.classList.contains("selected")) return;
+
+    // move the highlight to the new colour
+    el.parentElement.querySelectorAll(".color").forEach(c => c.classList.remove("selected"));
+    el.classList.add("selected");
+
+    // switch the photo if this colour has one
+    const img = product.colourImages && product.colourImages[el.getAttribute("title")];
+    if (img) {
+        selectedImage = img;
+        document.getElementById("detailImage").src = selectedImage;
+    }
+    };
+
     function currentSelections(){
         const sizeEl = detailEl.querySelector(".sizes button.selected");
         const colorEl = detailEl.querySelector(".colors .color.selected");
@@ -162,5 +178,8 @@ product.js — standalone product detail page
             </a>
         `).join("");
     }
+
+    const firstColour = detailEl.querySelector(".colors .color");
+    if (firstColour) selectDetailColour(firstColour);
 
 })();
