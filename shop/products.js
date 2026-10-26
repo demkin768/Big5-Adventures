@@ -195,10 +195,10 @@ const products = [
   description: "Quick drying cargo safari trousers.",
   sizes: ["30", "32", "34", "36", "38"],
   colours: ["Olive", "Khaki"],
-  colourImages: [
+  colourImages: {
   "Khaki": "/shop/Cargo-trousers.png",
   "Olive": "/shop/Women-trouser.png",
-  ],
+  },
 },
 
 {
