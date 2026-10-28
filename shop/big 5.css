@@ -1039,7 +1039,6 @@ footer {
         display: block;
         width: 44px;                                /* added: the box is only this wide */
         height: 44px;                               /* added */
-        position: relative;
         z-index: 2;
         -webkit-tap-highlight-color: transparent;
     }
