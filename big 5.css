@@ -140,7 +140,7 @@ nav {
 .logo {
     height: 60px;
     width: 100px;
-    margin-left: 3px;
+    margin-left: 4px;
     margin-top: 0px;
 }
 
@@ -1039,6 +1039,7 @@ footer {
         display: block;
         width: 44px;                                /* added: the box is only this wide */
         height: 44px;                               /* added */
+        margin-left:0;
         position: relative;
         z-index: 2;
         -webkit-tap-highlight-color: transparent;
