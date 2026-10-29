@@ -132,7 +132,7 @@ nav {
 .logo-text {
     position: absolute;
     padding-top: 0px;
-    left: 30px;
+    left: 37px;
     display: flex;
     gap: 0px;
     flex-direction: column;
@@ -1037,12 +1037,6 @@ footer {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
-        width: 44px;                                /* added: the box is only this wide */
-        height: 44px;                               /* added */
-        position: relative;
-        z-index: 2;
-        -webkit-tap-highlight-color: transparent;
-    }
     }
 
     .nav-links {
