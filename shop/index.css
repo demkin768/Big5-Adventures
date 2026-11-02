@@ -2042,19 +2042,28 @@ color:#64748b;
 margin-bottom:30px;
 }
 
+/* ---------- desktop: main photo + vertical thumbnails on the right ---------- */
 .detail-gallery{
   display:flex;
   gap:14px;
   align-items:flex-start;
 }
 
-.product-detail-image .detail-gallery > img{
-  width:auto;
+.detail-slider{
   flex:1;
   min-width:0;
+}
+
+.product-detail-image .detail-slider img{
+  width:100%;
   max-height:485px;
   border-radius:20px;
   object-fit:cover;
+}
+
+/* desktop shows only the main photo here; extras are for phones */
+.detail-slider .detail-slide:not(#detailImage){
+  display:none;
 }
 
 .detail-thumbs{
@@ -2079,20 +2088,43 @@ margin-bottom:30px;
   box-shadow:0 0 4px rgba(230,126,34,.5);
 }
 
+/* ---------- phone: swipe row, no thumbnails ---------- */
 @media(max-width:600px){
-  .detail-gallery{
-    flex-direction:column;
-    align-items:stretch;
-  }
 
-  .product-detail-image .detail-gallery > img{
-    width:97%;
-    max-height:485px;
-    flex:none;
+  .detail-gallery{
+    display:block;
   }
 
   .detail-thumbs{
-    flex-direction:row;
-    flex:none;
+    display:none;
+  }
+
+  .detail-slider{
+    display:flex;
+    gap:12px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:10px;
+    scrollbar-width:thin;
+    scrollbar-color:#bbb transparent;
+  }
+
+  .detail-slider::-webkit-scrollbar{ height:4px; }
+  .detail-slider::-webkit-scrollbar-thumb{ background:#bbb; border-radius:4px; }
+
+  .product-detail-image .detail-slider img,
+  .product-detail-image .detail-slider .detail-slide:not(#detailImage){
+    display:block;
+    flex:0 0 85%;          /* leaves the next photo peeking in */
+    width:85%;
+    max-height:485px;
+    scroll-snap-align:start;
+  }
+
+  /* only one photo: no swipe row needed */
+  .product-detail-image .detail-slider .detail-slide:only-child{
+    flex-basis:90%;
+    width:90%;
   }
 }

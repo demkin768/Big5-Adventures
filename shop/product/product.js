@@ -50,19 +50,30 @@ product.js — standalone product detail page
 
     const gallery = (product.gallery && product.gallery.length > 1) ? product.gallery : [];
     
-    const thumbStrip = gallery.length
+// desktop: vertical thumbnail strip
+const thumbStrip = gallery.length
     ? `<div class="detail-thumbs">${gallery.slice(0, 4).map((src, i) => `
         <img src="${src}" alt="${product.name} view ${i + 1}" class="detail-thumb${i === 0 ? " selected" : ""}" onclick="selectDetailThumb(this)">
       `).join("")}</div>`
     : "";
 
+// phone: swipe row (the extra photos after the main one)
+const extraSlides = (product.gallery || [])
+    .filter(src => src !== product.image)
+    .map((src, i) => `<img src="${src}" alt="${product.name} view ${i + 2}" class="detail-slide">`)
+    .join("");
+
     detailEl.innerHTML = `
         <div class="product-detail-grid">
-            <div class="product-detail-image">
-                 <div class="detail-gallery">
-                <img id="detailImage" src="${selectedImage}" alt="${product.name}">${thumbStrip}
-                </div>
-            </div>
+<div class="product-detail-image">
+    <div class="detail-gallery">
+        <div class="detail-slider" id="detailSlider">
+            <img id="detailImage" class="detail-slide" src="${selectedImage}" alt="${product.name}">
+            ${extraSlides}
+        </div>
+        ${thumbStrip}
+    </div>
+</div>
             <div class="product-detail-info">
                 <h2>${product.name}</h2>
                 <div class="rating">⭐ ${product.rating}</div>
