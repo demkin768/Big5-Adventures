@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    const total = savedCart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+    const total = savedCart.reduce((sum, item) => sum + (trustedPrice(item) * item.qty), 0);
 
     const itemsHTML = savedCart.map(item => `
         <div class="payment-line">
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h4>${item.name}</h4>
                 <span>Qty: ${item.qty}</span>
             </div>
-            <div class="payment-line-price">$${(item.price * item.qty).toFixed(2)}</div>
+            <div class="payment-line-price">$${(trustedPrice(item) * item.qty).toFixed(2)}</div>
         </div>
     `).join("");
 
