@@ -2057,12 +2057,12 @@ margin-bottom:30px;
 .product-detail-image .detail-slider img{
   width:100%;
   aspect-ratio:auto;
-  height:480px;
-  max-width:560px;
+  height:460px;
+  max-width:540px;
   max-height:none;
   border-radius:20px;
   object-fit:cover;
-  object-position:center;
+  object-position:top;
 }
 
 /* desktop shows only the main photo here; extras are for phones */
