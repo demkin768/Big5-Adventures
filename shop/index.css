@@ -2057,8 +2057,8 @@ margin-bottom:30px;
 .product-detail-image .detail-slider img{
   width:100%;
   aspect-ratio:auto;
-  height:460px;
-  max-width:540px;
+  height:455px;
+  max-width:560px;
   max-height:none;
   border-radius:20px;
   object-fit:contain;
