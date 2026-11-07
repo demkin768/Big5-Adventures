@@ -264,9 +264,9 @@ const products = [
   image: "/shop/Tactical-Siwarboots.jpg",
    gallery: [
     "/shop/Tactical-Siwarboots.jpg",
-    "/shop/Tactical-Siwarboots2.jpg",
-    "/shop/Tactical-Siwarboots3.jpg",
-    "/shop/Tactical-Siwarboots4.jpg",
+    "/shop/Tactical-Siwarboots2.png",
+    "/shop/Tactical-Siwarboots3.png",
+    "/shop/Tactical-Siwarboots4.png",
   ], 
   description: "High-top tactical combat boot .",
   sizes: ["40", "41", "42", "43", "44", "45"],
@@ -432,7 +432,7 @@ const products = [
   image: "/shop/Head-lamp3.jpg",
   description: "Rechargeable LED headlamp,waterproof zoomable head lamp 3 modes light for outdoors camping.",
   sizes: ["Standard"],
-  colours: ["Black"]
+  colours: [""]
 },
 
 {
@@ -483,7 +483,7 @@ const products = [
   image: "/shop/Headlamp7.jpg",
   description: "Led Superior headlamp rechargeable usb 7 head torch |3 modes waterproof for bikers, camping, hiking, fishing.",
   sizes: ["Standard"],
-  colours: ["Black"]
+  colours: [""]
 },
 
 {
