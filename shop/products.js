@@ -265,7 +265,7 @@ const products = [
    gallery: [
     "/shop/Tactical-Siwarboots.jpg",
     "/shop/Tactical-Siwarboots2.png",
-    "/shop/Black-Backpack.png",
+    "/shop/Tactical-Siwarboots3.png",
     "/shop/Tactical-Siwarboots4.png",
   ], 
   description: "High-top tactical combat boot .",
