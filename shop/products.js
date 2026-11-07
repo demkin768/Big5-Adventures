@@ -278,6 +278,7 @@ const products = [
   badge: "",
   image: "/shop/Green-Tactical.png",
   gallery: [
+    "/shop/Green-Tactical.png",
     "/shop/Green-Tactical2.jfif",
     "/shop/Green-Tactical3.jfif",
   ],
@@ -438,8 +439,9 @@ const products = [
   badge: "",
   image: "/shop/Tactical-Desertbrown.png",
   gallery: [
-    "/shop/Siwar-Desert1.jpeg",
-    "/shop/Siwar-Desert2.jpeg",
+    "/shop/Tactical-Desertbrown.png",
+    "/shop/Siwar-Desert1.jpg",
+    "/shop/Siwar-Desert2.jpg",
   ],
   description: "Desert Brown tactical boots built for outdoor use .",
   sizes: ["40", "41", "42", "43", "44", "45"],
@@ -652,9 +654,9 @@ const products = [
   colours: ["Black", "Jungle Green", "White", "Grey"],
   colourImages: {
   "Black": "/shop/Plain-set.png",
-  "Jungle Green": "/shop/Olive-set.png",
-  "White": "/shop/White-set.png",
-  "Grey": "/shop/Grey-set.png",
+  "Jungle Green": "/shop/Olive-Set.png",
+  "White": "/shop/White-Set.png",
+  "Grey": "/shop/Grey-Set.png",
   },
 },
 
