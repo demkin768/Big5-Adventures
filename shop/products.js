@@ -262,6 +262,12 @@ const products = [
   stock: 22,
   badge: "",
   image: "/shop/Tactical-Siwarboots.jpg",
+   gallery: [
+    "/shop/Tactical-Siwarboots.jpg",
+    "/shop/Tactical-Siwarboots2.jpg",
+    "/shop/Tactical-Siwarboots3.jpg",
+    "/shop/Tactical-Siwarboots4.jpg",
+  ], 
   description: "High-top tactical combat boot .",
   sizes: ["40", "41", "42", "43", "44", "45"],
   colours: ["Beige",]
@@ -281,6 +287,7 @@ const products = [
     "/shop/Green-Tactical.png",
     "/shop/Green-Tactical2.jfif",
     "/shop/Green-Tactical3.jfif",
+    "/shop/Green-Tactical4.jpg",
   ],
   description: "Comfortable military waterproof outdoor boots.",
   sizes: ["40", "41", "42", "43", "44", "45"],
