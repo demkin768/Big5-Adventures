@@ -2061,7 +2061,7 @@ margin-bottom:30px;
   max-width:540px;
   max-height:none;
   border-radius:20px;
-  object-fit:cover;
+  object-fit:contain;
   object-position:top;
 }
 

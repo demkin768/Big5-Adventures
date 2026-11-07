@@ -228,7 +228,7 @@ const products = [
   image: "/shop/Rain-jacket.jpg",
   description: "Lightweight waterproof shell.",
   sizes: ["S", "M", "L", "XL"],
-  colours: ["Olive", "Black"]
+  colours: [""]
 },
 
 {
@@ -243,7 +243,13 @@ const products = [
   image: "/shop/Plain-hoodie.png",
   description: "Heavyweight plain fleece hoodie.",
   sizes: ["S", "M", "L", "XL", "XXL"],
-  colours: ["Khaki", "Jungle Green", "Black", "Grey"],
+  colours: ["Jungle Green", "Black", "White", "Grey"],
+  colourImages: {
+  "Jungle Green": "/shop/Plain-hoodie.png",
+  "Black": "/shop/Black-Hoodie.png",
+  "White": "/shop/White-Hoodie.png",
+  "Grey": "/shop/Grey-Hoodie.png",
+  },
 },
 
 {
@@ -271,6 +277,10 @@ const products = [
   stock: 22,
   badge: "",
   image: "/shop/Green-Tactical.png",
+  gallery: [
+    "/shop/Green-Tactical2.jfif",
+    "/shop/Green-Tactical3.jfif",
+  ],
   description: "Comfortable military waterproof outdoor boots.",
   sizes: ["40", "41", "42", "43", "44", "45"],
   colours: []
@@ -303,7 +313,12 @@ const products = [
   image: "/shop/Backpack.jpg",
   description: "Adventure backpack with hydration compatibility.",
   sizes: ["35L"],
-  colours: ["Olive", "Khaki", "Black"]
+  colours: ["Olive", "Khaki", "Black"],
+  colourImages: {
+  "Olive": "/shop/Backpack.jpg",
+  "Khaki": "/shop/Khaki-Backpack.png",
+  "Black": "/shop/Black-Backpack.png",
+  },
 },
 
 {
@@ -422,6 +437,10 @@ const products = [
   stock: 22,
   badge: "",
   image: "/shop/Tactical-Desertbrown.png",
+  gallery: [
+    "/shop/Siwar-Desert1.jpeg",
+    "/shop/Siwar-Desert2.jpeg",
+  ],
   description: "Desert Brown tactical boots built for outdoor use .",
   sizes: ["40", "41", "42", "43", "44", "45"],
   colours: ["Brown",]
@@ -630,7 +649,13 @@ const products = [
   image: "/shop/Plain-set.png",
   description: "Matching hoodie and sweatpants plain set.",
   sizes: ["S", "M", "L", "XL", "XXL"],
-  colours: ["Khaki", "Jungle Green", "Black", "Grey"],
+  colours: ["Black", "Jungle Green", "White", "Grey"],
+  colourImages: {
+  "Black": "/shop/Plain-set.png",
+  "Jungle Green": "/shop/Olive-set.png",
+  "White": "/shop/White-set.png",
+  "Grey": "/shop/Grey-set.png",
+  },
 },
 
 {
