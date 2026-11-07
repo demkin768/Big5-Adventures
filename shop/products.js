@@ -270,7 +270,7 @@ const products = [
   ], 
   description: "High-top tactical combat boot .",
   sizes: ["40", "41", "42", "43", "44", "45"],
-  colours: ["Beige",]
+  colours: ["",]
 },
 
 {

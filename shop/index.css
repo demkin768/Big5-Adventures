@@ -2120,8 +2120,8 @@ margin-bottom:30px;
   .product-detail-image .detail-slider img,
   .product-detail-image .detail-slider .detail-slide:not(#detailImage){
     display:block;
-    flex:0 0 88%;          /* leaves the next photo peeking in */
-    width:88%;
+    flex:0 0 87%;          /* leaves the next photo peeking in */
+    width:87%;
     max-height:485px;
     scroll-snap-align:start;
   }
