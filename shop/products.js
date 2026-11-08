@@ -256,7 +256,7 @@ const products = [
   id: 33,
   name: "Siwar Tactical Military Hiking Boots",
   category: "Footwear",
-  price: 38,
+  price: 24,
   rating: 4.8,
   reviews: 118,
   stock: 22,
