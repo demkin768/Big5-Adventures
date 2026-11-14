@@ -344,7 +344,7 @@ const products = [
   badge: "",
   image: "/shop/Tactical-Green.jpg",
   description: "Tactical Suit combines a breathable combat shirt with durable, reinforced tactical trousers. The shirt features ventilation panels and adjustable cuffs for enhanced comfort and flexibility, while the trousers offer reinforced knees, spacious utility pockets, and MOLLE-compatible attachment points for carrying essential gear.",
-  sizes: ["30", "32", "34", "36", "38"],
+  sizes: ["S", "M", "L", "XL", "XXL", "XXXL",],
   colours: ["Olive", "Khaki", "Black"],
   colourImages: {
   "Olive": "/shop/Tactical-Green.jpg",
