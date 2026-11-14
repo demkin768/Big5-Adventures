@@ -92,16 +92,20 @@ const products = [
   id: 3,
   name: "Safari Expedition Duffel",
   category: "Luggage",
-  price: 149,
-  wasPrice: 186,
+  price: 141,
+  wasPrice: 152,
   rating: 4.7,
   reviews: 62,
   stock: 14,
   badge: "SALE",
-  image: "/shop/Duffel.png",
-  description: "Heavy duty expedition duffel bag.",
-  sizes: ["60L"],
-  colours: ["Khaki", "Black"]
+  image: "/shop/Brown-Duffel-Bag.png",
+  description: "Heavy duty leather expedition duffel bag, ideal for business trips and short travel with two-sided exterior leather pockets and removable, and adjustable leather shoulder strap.",
+  sizes: [""],
+  colours: ["Brown", "Black"],
+  colourImages: {
+  "Brown": "/shop/Brown-Duffel-Bag.png",
+  "Black": "/shop/Black-Duffel-Bag.png"
+ },
 },
 
 {
@@ -331,17 +335,22 @@ const products = [
 
 {
   id: 22,
-  name: "Men's Safari Trousers",
+  name: "Men's and Women's Tactical Cargo Suit",
   category: "Clothing",
-  price: 69,
+  price: 58,
   rating: 4.7,
   reviews: 44,
   stock: 26,
   badge: "",
-  image: "/shop/Men-trouser.png",
-  description: "Durable quick-dry safari trousers cut for a men's fit.",
+  image: "/shop/Tactical-Green.jpg",
+  description: "Tactical Suit combines a breathable combat shirt with durable, reinforced tactical trousers. The shirt features ventilation panels and adjustable cuffs for enhanced comfort and flexibility, while the trousers offer reinforced knees, spacious utility pockets, and MOLLE-compatible attachment points for carrying essential gear.",
   sizes: ["30", "32", "34", "36", "38"],
-  colours: ["Khaki", "Olive", "Brown", "Black"]
+  colours: ["Olive", "Khaki", "Black"],
+  colourImages: {
+  "Olive": "/shop/Tactical-Green.jpg",
+  "Khaki": "/shop/Tactical-Khaki.jpg",
+  "Black": "/shop/Tactical-Black.jpg",
+  },
 },
 
 {
@@ -356,7 +365,11 @@ const products = [
   image: "/shop/Women-trouser.png",
   description: "Durable quick-dry safari trousers cut for a women's fit.",
   sizes: ["6", "8", "10", "12", "14"],
-  colours: ["Khaki", "Olive", "Brown", "Black"]
+  colours: ["Khaki", "Olive", "Black"],
+  colourImages: {
+  "Olive": "/shop/Cargo-trousers.png",
+  "Khaki": "/shop/Women-trouser.png",
+  },
 },
 
 {
@@ -712,6 +725,36 @@ const products = [
   description: "Comfortable outdoor gloves.",
   sizes: ["S", "M", "L"],
   colours: ["Olive", "Brown", "Black", "Khaki",]
+},
+
+{
+  id: 47,
+  name: "Outdoor Multicam Tactical G2 CP Uniform",
+  category: "Clothing",
+  price: 57,
+  rating: 4.2,
+  reviews: 44,
+  stock: 26,
+  badge: "",
+  image: "/shop/Multi-Tactical-Trousers.jpg",
+  description: "G2 tactical suit CP, two-piece tactical set includes a combat shirt and cargo pants designed with advanced camouflage, reinforced fabric offering both protection and flexibility in demanding environments.",
+  sizes: ["S", "M", "L", "XL", "XXL", "XXXL",],
+  colours: [""]
+},
+
+{
+  id: 48,
+  name: "Tactical G2 CP Uniform",
+  category: "Clothing",
+  price: 55,
+  rating: 4.4,
+  reviews: 44,
+  stock: 26,
+  badge: "",
+  image: "/shop/Tactical-Trousers.jpg",
+  description: "Made from cotton and reinforced fabric offering both protection and flexibility in demanding environments.",
+  sizes: ["S", "M", "L", "XL", "XXL", "XXXL",],
+  colours: [""]
 },
 
 {
