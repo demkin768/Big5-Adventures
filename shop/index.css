@@ -1776,7 +1776,8 @@ margin-bottom:10px;
 
 .product-detail-description{
 font-family:'Lato', 'Segoe UI', sans-serif;
-font-weight:300;
+font-weight:400;
+font-size:15px; 
 color:#64748b;
 line-height:1.55;
 margin:0 0 10px;
@@ -2134,7 +2135,8 @@ margin-bottom:30px;
     display:block;
     flex:0 0 87%;          /* leaves the next photo peeking in */
     width:87%;
-    max-height:485px;
+    height:auto;
+    max-height:none;
     scroll-snap-align:start;
   }
 
