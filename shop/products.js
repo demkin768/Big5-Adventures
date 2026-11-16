@@ -199,8 +199,8 @@ const products = [
   image: "/shop/Black-Duffel-Bag.png",
   gallery: [
     "/shop/Black-Duffel-Bag.png",
-    "/shop/Black-Duffel-Bag1.jepg",
-    "/shop/Black-Duffel-Bag2.jpg",
+    "/shop/Black-Duffel-Bag1.jpg",
+    "/shop/Black-Duffel-Bag2.png",
   ],
   description: "Large-capacity leather expedition duffel bag, a water-resistant PU leather travel and gym bag with two-sided exterior leather pockets, removable and adjustable leather shoulder strap.",
   sizes: [""],
@@ -417,7 +417,7 @@ const products = [
   reviews: 41,
   stock: 26,
   badge: "",
-  image: "/shop/Men-Booniehat.png",
+  image: "/shop/Men-Booniehat.jpg",
   description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
   sizes: ["S", "M", "L", "XL"],
   colours: ["Khaki", "Olive", "Grey",]
@@ -660,7 +660,11 @@ const products = [
   stock: 15,
   badge: "NEW",
   image: "/shop/Snap-Jacket.jpeg",
-  description: "Cropped snap jacket with adjustable high neck, with elasticated drawstrings and a hood.",
+  gallery: [
+    "/shop/Snap-Jacket1.jfif",
+    "/shop/Snap-Jacket2.jfif",
+  ],
+  description: "Cropped snap jacket with adjustable high neck, with elasticated drawstrings and a hood. Long sleeves with elasticated cuffs. Front pockets with zip fastening. Elasticated hems. Front fastening with invisible zip and snap buttons.",
   sizes: ["S", "M", "L",],
   colours: ["Camel"]
 },
