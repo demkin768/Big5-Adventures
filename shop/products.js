@@ -99,7 +99,7 @@ const products = [
   stock: 14,
   badge: "SALE",
   image: "/shop/Brown-Duffel-Bag.png",
-  description: "Heavy duty leather expedition duffel bag, ideal for business trips and short travel with two-sided exterior leather pockets and removable, and adjustable leather shoulder strap.",
+  description: "Heavy duty leather expedition duffel bag, ideal for business trips and short travel with two-sided exterior leather pockets, removable and adjustable leather shoulder strap.",
   sizes: [""],
   colours: ["Brown", "Black"],
   colourImages: {
@@ -184,6 +184,27 @@ const products = [
   description: "Large lenses and X12 magnification binoculars for observing nature and wildlife.",
   sizes: ["10x50"],
   colours: ["Black"]
+},
+
+{
+  id: 49,
+  name: "Black Safari Expedition Duffel",
+  category: "Luggage",
+  price: 141,
+  wasPrice: 152,
+  rating: 4.7,
+  reviews: 62,
+  stock: 14,
+  badge: "SALE",
+  image: "/shop/Black-Duffel-Bag.png",
+  gallery: [
+    "/shop/Black-Duffel-Bag.png",
+    "/shop/Black-Duffel-Bag1.jpg",
+    "/shop/Black-Duffel-Bag2.jpg",
+  ],
+  description: "Large-capacity leather expedition duffel bag, a water-resistant PU leather travel and gym bag with two-sided exterior leather pockets, removable and adjustable leather shoulder strap.",
+  sizes: [""],
+  colours: [],
 },
 
 {
