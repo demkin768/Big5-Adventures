@@ -199,7 +199,7 @@ const products = [
   image: "/shop/Black-Duffel-Bag.png",
   gallery: [
     "/shop/Black-Duffel-Bag.png",
-    "/shop/Black-Duffel-Bag1.jpg",
+    "/shop/Black-Duffel-Bag1.jepg",
     "/shop/Black-Duffel-Bag2.jpg",
   ],
   description: "Large-capacity leather expedition duffel bag, a water-resistant PU leather travel and gym bag with two-sided exterior leather pockets, removable and adjustable leather shoulder strap.",
