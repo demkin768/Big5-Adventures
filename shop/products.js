@@ -661,6 +661,7 @@ const products = [
   badge: "NEW",
   image: "/shop/Snap-Jacket.jpeg",
   gallery: [
+    "/shop/Snap-Jacket.jpeg",
     "/shop/Snap-Jacket1.jfif",
     "/shop/Snap-Jacket2.jfif",
   ],
