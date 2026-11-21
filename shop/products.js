@@ -17,7 +17,7 @@ const products = [
   image: "/shop/men-hat.png",
   description: "Structured wide-brim hat built for men's fit, with a UPF-rated weave.",
   sizes: ["S", "M", "L", "XL"],
-  colours: ["Khaki", "Brown", "Olive"]
+  colours: ["Olive", "Brown", "Khaki"]
 },
 
 {
@@ -32,7 +32,7 @@ const products = [
   image: "/shop/women-hat.png",
   description: "Lightweight wide-brim hat with an adjustable chin cord, cut for a women's fit.",
   sizes: ["S", "M", "L"],
-  colours: ["Khaki", "Brown", "Olive"]
+  colours: ["Olive", "Brown", "Khaki"]
 },
 
 {
@@ -150,6 +150,27 @@ const products = [
 },
 
 {
+  id: 49,
+  name: "Black Safari Expedition Duffel",
+  category: "Luggage",
+  price: 141,
+  wasPrice: 152,
+  rating: 4.7,
+  reviews: 62,
+  stock: 14,
+  badge: "SALE",
+  image: "/shop/Black-Duffel-Bag.png",
+  gallery: [
+    "/shop/Black-Duffel-Bag.png",
+    "/shop/Black-Duffel-Bag1.jpg",
+    "/shop/Black-Duffel-Bag2.png",
+  ],
+  description: "Large-capacity leather expedition duffel bag, a water-resistant PU leather travel and gym bag with two-sided exterior leather pockets, removable and adjustable leather shoulder strap.",
+  sizes: [""],
+  colours: [],
+},
+
+{
   id: 6,
   name: "Solognac Hunting Binoculars",
   category: "Equipment",
@@ -181,30 +202,15 @@ const products = [
   stock: 9,
   badge: "SALE",
   image: "/shop/Quechua-Binoculars.jpeg",
+  gallery: [
+    "/shop/Quechua-Binoculars.jpeg",
+    "/shop/Quechua-Binoculars1.jpeg",
+    "/shop/Quechua-Binoculars2.jpeg",
+    "/shop/Quechua-Binoculars3.jpeg",
+  ],
   description: "Large lenses and X12 magnification binoculars for observing nature and wildlife.",
   sizes: ["10x50"],
   colours: ["Black"]
-},
-
-{
-  id: 49,
-  name: "Black Safari Expedition Duffel",
-  category: "Luggage",
-  price: 141,
-  wasPrice: 152,
-  rating: 4.7,
-  reviews: 62,
-  stock: 14,
-  badge: "SALE",
-  image: "/shop/Black-Duffel-Bag.png",
-  gallery: [
-    "/shop/Black-Duffel-Bag.png",
-    "/shop/Black-Duffel-Bag1.jpg",
-    "/shop/Black-Duffel-Bag2.png",
-  ],
-  description: "Large-capacity leather expedition duffel bag, a water-resistant PU leather travel and gym bag with two-sided exterior leather pockets, removable and adjustable leather shoulder strap.",
-  sizes: [""],
-  colours: [],
 },
 
 {
@@ -405,7 +411,7 @@ const products = [
   image: "/shop/Women-Booniehat.png",
   description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
   sizes: ["S", "M", "L", "XL"],
-  colours: ["Khaki", "Olive", "Grey",]
+  colours: ["Olive", "Brown", "Khaki",]
 },
 
 {
@@ -420,7 +426,7 @@ const products = [
   image: "/shop/Men-Booniehat.jpg",
   description: "Wide-brim sun hat with neck flap | UPF 50+ outdoor boonie fishing hiking hat.",
   sizes: ["S", "M", "L", "XL"],
-  colours: ["Khaki", "Olive", "Grey",]
+  colours: ["Olive", "Brown", "Khaki",]
 },
 
 {
@@ -433,7 +439,13 @@ const products = [
   reviews: 131,
   stock: 58,
   badge: "SALE",
-  image: "/shop/Bottle.jpeg",
+  image: "/shop/Super-Bottle.jpeg",
+  gallery: [
+    "/shop/Super-Bottle.jpeg",
+    "/shop/Super-Bottle1.jpeg",
+    "/shop/Super-Bottle2.jpeg",
+    "/shop/Super-Bottle3.jpeg",
+  ],
   description: "1600ml Water bottle with flip lid, detachable belt strap | Suitable for both cold and warm beverages.",
   sizes: ["750ml"],
   colours: ["Black"]
@@ -571,7 +583,7 @@ const products = [
   image: "/shop/men-safari-shirt.png",
   description: "Breathable button-up safari shirt tailored for a men's fit.",
   sizes: ["S", "M", "L", "XL", "XXL"],
-  colours: ["Khaki", "Olive", "Brown",]
+  colours: ["Olive", "Khaki", "Brown",]
 },
 
 {
@@ -586,7 +598,7 @@ const products = [
   image: "/shop/women-safari-shirt.png",
   description: "Breathable button-up safari shirt tailored for a women's fit.",
   sizes: ["S", "M", "L", "XL"],
-  colours: ["Khaki", "Olive", "Brown",]
+  colours: ["Olive", "Khaki", "Brown",]
 },
 
 {
@@ -733,6 +745,11 @@ const products = [
   stock: 58,
   badge: "SALE",
   image: "/shop/Spirit-1L.jpeg",
+  gallery: [
+    "/shop/Spirit-1L.jpeg",
+    "/shop/Spirit1-1L.png",
+    "/shop/Spirit2-1L.png",
+  ],
   description: "Large capacity sports water bottle with carry strap | For office, school, gym and outdoor.",
   sizes: ["1L"],
   colours: [""]
@@ -742,15 +759,21 @@ const products = [
   id: 14,
   name: "Safari Gloves",
   category: "Accessories",
-  price: 26,
+  price: 19,
   rating: 3.9,
   reviews: 33,
   stock: 18,
   badge: "",
   image: "/shop/Khaki-gloves.png",
-  description: "Comfortable outdoor gloves.",
+  description: "Comfortable outdoor gloves with Knuckle Protection. For work, sports, motorcycle cycling, hiking and climbing.",
   sizes: ["S", "M", "L"],
-  colours: ["Olive", "Brown", "Black", "Khaki",]
+  colours: ["Khaki", "Olive", "Black", "Brown",],
+  colourImages: {
+  "Khaki": "/shop/Khaki-gloves.png",
+  "Olive": "/shop/Olive-gloves.jfif",
+  "Black": "/shop/Black-gloves.avif",
+  "Brown": "/shop/Brown-gloves.avif",
+  },
 },
 
 {
@@ -795,7 +818,7 @@ const products = [
   image: "/shop/Socks-grey.png",
   description: "Breathable 4 pack hiking socks.",
   sizes: ["S", "M", "L"],
-  colours: ["Brown", "Olive", "Grey", "Black"]
+  colours: ["Grey", "Olive", "Brown", "Black"]
 },
 
 {
