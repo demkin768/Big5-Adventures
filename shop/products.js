@@ -22,7 +22,7 @@ const products = [
 
 {
   id: 17,
-  name: "Women's Tiller Salling Hat",
+  name: "Women's Tilley Salling Hat",
   category: "Hats",
   price: 15,
   rating: 4.4,
