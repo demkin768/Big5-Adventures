@@ -22,17 +22,22 @@ const products = [
 
 {
   id: 17,
-  name: "Women's Explorer Safari Hat",
+  name: "Women's Tiller Salling Hat",
   category: "Hats",
   price: 15,
   rating: 4.4,
   reviews: 47,
   stock: 24,
   badge: "",
-  image: "/shop/women-hat.png",
-  description: "Lightweight wide-brim hat with an adjustable chin cord, cut for a women's fit.",
+  image: "/shop/women-hat1.jpg",
+  description: "Lightweight wide-brim hat with an adjustable chin cord, cut for a women's fit. Made with durable cotton duck, this snap-up brim offers versatility, plus traditional ~aussie' style",
   sizes: ["S", "M", "L"],
-  colours: ["Olive", "Brown", "Khaki"]
+  colours: ["Olive", "Khaki", "Navy Blue"],
+  colourImages: {
+  "Olive": "/shop/women-hat.png",
+  "Khaki": "/shop/women-hat4.jpg",
+  "Navy Blue": "/shop/women-hat5.png"
+ },
 },
 
 {

@@ -56,6 +56,8 @@ const COLOR_CLASS_MAP = {
     grey: "grey",
     gray: "grey",
     beige: "beige",
+    navy: "navy",
+    "navy blue": "navy"
 };
 
 function renderProducts(list = products) {
